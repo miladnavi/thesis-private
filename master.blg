@@ -1,0 +1,18 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'master.blg'
+[38] biber-darwin:315> INFO - === Fri Aug  9, 2019, 00:22:57
+[67] Biber.pm:371> INFO - Reading 'master.bcf'
+[154] Biber.pm:889> INFO - Found 9 citekeys in bib section 0
+[167] Biber.pm:4093> INFO - Processing section 0
+[184] Biber.pm:4254> INFO - Looking for bibtex format file 'tpl/rfc.bib' for section 0
+[394] bibtex.pm:1523> INFO - LaTeX decoding ...
+[13659] bibtex.pm:1340> INFO - Found BibTeX data source 'tpl/rfc.bib'
+[14335] Biber.pm:4254> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[14337] bibtex.pm:1523> INFO - LaTeX decoding ...
+[14351] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliography.bib'
+[14378] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[14378] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[14378] Biber.pm:3921> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[14378] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[14385] bbl.pm:636> INFO - Writing 'master.bbl' with encoding 'UTF-8'
+[14387] bbl.pm:739> INFO - Output to master.bbl

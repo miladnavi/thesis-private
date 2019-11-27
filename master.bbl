@@ -1,0 +1,165 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{dante}{misc}{}
+      \field{labelalpha}{05}
+      \field{sortinit}{0}
+      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
+      \field{extraalpha}{1}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{note}{\url{http://www.dante.de/help}}
+      \field{title}{{Homepage der Deutschsprachigen Anwendervereinigung \TeX (DANTE) e.V.}}
+      \field{year}{2005}
+    \endentry
+    \entry{gnuplot_homepage}{misc}{}
+      \field{labelalpha}{05}
+      \field{sortinit}{0}
+      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
+      \field{extraalpha}{2}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{note}{\url{http://www.gnuplot.info}}
+      \field{title}{{Homepage von Gnuplot}}
+      \field{year}{2005}
+    \endentry
+    \entry{ispell_homepage}{misc}{}
+      \field{labelalpha}{05}
+      \field{sortinit}{0}
+      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
+      \field{extraalpha}{3}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{note}{\url{http://www.gnu.org/software/ispell/ispell.html}}
+      \field{title}{{Homepage von GNU ispell}}
+      \field{year}{2005}
+    \endentry
+    \entry{latex}{misc}{}
+      \field{labelalpha}{05}
+      \field{sortinit}{0}
+      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
+      \field{extraalpha}{4}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{note}{\url{http://www.latex-project.org}}
+      \field{title}{{LaTeX -- A document preparation system}}
+      \field{year}{2005}
+    \endentry
+    \entry{oo_homepage}{misc}{}
+      \field{labelalpha}{05}
+      \field{sortinit}{0}
+      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
+      \field{extraalpha}{5}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{note}{\url{http://de.openoffice.org}}
+      \field{title}{{Homepage von OpenOffice.org}}
+      \field{year}{2005}
+    \endentry
+    \entry{r_homepage}{misc}{}
+      \field{labelalpha}{05}
+      \field{sortinit}{0}
+      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
+      \field{extraalpha}{6}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{note}{\url{http://www.r-project.org}}
+      \field{title}{{The R Project for Statistical Computing}}
+      \field{year}{2005}
+    \endentry
+    \entry{pkg:algorithm2e}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=a5315ac91af386d0755259b7c836682f}{%
+           family={Fiorio},
+           familyi={F\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5315ac91af386d0755259b7c836682f}
+      \strng{fullhash}{a5315ac91af386d0755259b7c836682f}
+      \strng{bibnamehash}{a5315ac91af386d0755259b7c836682f}
+      \strng{authorbibnamehash}{a5315ac91af386d0755259b7c836682f}
+      \strng{authornamehash}{a5315ac91af386d0755259b7c836682f}
+      \strng{authorfullhash}{a5315ac91af386d0755259b7c836682f}
+      \field{labelalpha}{Fio17}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5.2}
+      \field{title}{{algorithm2e.sty — package for algorithms}}
+      \field{year}{2017}
+    \endentry
+    \entry{latex_book}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison Wesley Professional}%
+      }
+      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{bibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
+      \field{labelalpha}{Lam94}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{month}{6}
+      \field{note}{ISBN 0-2015-2983-1}
+      \field{title}{{LaTeX: A Document Preparation System}}
+      \field{year}{1994}
+    \endentry
+    \entry{mpo11}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=aa8b5a523497fddbb931bbdeeae1f3c8}{%
+           family={Rektor},
+           familyi={R\bibinitperiod},
+           given={Der},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{aa8b5a523497fddbb931bbdeeae1f3c8}
+      \strng{fullhash}{aa8b5a523497fddbb931bbdeeae1f3c8}
+      \strng{bibnamehash}{aa8b5a523497fddbb931bbdeeae1f3c8}
+      \strng{authorbibnamehash}{aa8b5a523497fddbb931bbdeeae1f3c8}
+      \strng{authornamehash}{aa8b5a523497fddbb931bbdeeae1f3c8}
+      \strng{authorfullhash}{aa8b5a523497fddbb931bbdeeae1f3c8}
+      \field{labelalpha}{Rek11}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.informatik.uni-bonn.de/en/for-students/master-of-science-in-computer-science/regulations-and-forms}}
+      \field{title}{{Prüfungsordnung für den Masterstudiengang Computer Science der Ma\-the\-ma\-tisch-Na\-tur\-wis\-senschaftlichen Fakultät der Rheinischen Friedrich-Wilhelms-Universität Bonn}}
+      \field{year}{2011}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
