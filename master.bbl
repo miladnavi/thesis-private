@@ -19,145 +19,187 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
-    \entry{dante}{misc}{}
-      \field{labelalpha}{05}
-      \field{sortinit}{0}
-      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
-      \field{extraalpha}{1}
-      \field{labeltitlesource}{title}
-      \field{month}{2}
-      \field{note}{\url{http://www.dante.de/help}}
-      \field{title}{{Homepage der Deutschsprachigen Anwendervereinigung \TeX (DANTE) e.V.}}
-      \field{year}{2005}
-    \endentry
-    \entry{gnuplot_homepage}{misc}{}
-      \field{labelalpha}{05}
-      \field{sortinit}{0}
-      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
-      \field{extraalpha}{2}
-      \field{labeltitlesource}{title}
-      \field{month}{2}
-      \field{note}{\url{http://www.gnuplot.info}}
-      \field{title}{{Homepage von Gnuplot}}
-      \field{year}{2005}
-    \endentry
-    \entry{ispell_homepage}{misc}{}
-      \field{labelalpha}{05}
-      \field{sortinit}{0}
-      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
-      \field{extraalpha}{3}
-      \field{labeltitlesource}{title}
-      \field{month}{2}
-      \field{note}{\url{http://www.gnu.org/software/ispell/ispell.html}}
-      \field{title}{{Homepage von GNU ispell}}
-      \field{year}{2005}
-    \endentry
-    \entry{latex}{misc}{}
-      \field{labelalpha}{05}
-      \field{sortinit}{0}
-      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
-      \field{extraalpha}{4}
-      \field{labeltitlesource}{title}
-      \field{month}{2}
-      \field{note}{\url{http://www.latex-project.org}}
-      \field{title}{{LaTeX -- A document preparation system}}
-      \field{year}{2005}
-    \endentry
-    \entry{oo_homepage}{misc}{}
-      \field{labelalpha}{05}
-      \field{sortinit}{0}
-      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
-      \field{extraalpha}{5}
-      \field{labeltitlesource}{title}
-      \field{month}{2}
-      \field{note}{\url{http://de.openoffice.org}}
-      \field{title}{{Homepage von OpenOffice.org}}
-      \field{year}{2005}
-    \endentry
-    \entry{r_homepage}{misc}{}
-      \field{labelalpha}{05}
-      \field{sortinit}{0}
-      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
-      \field{extraalpha}{6}
-      \field{labeltitlesource}{title}
-      \field{month}{2}
-      \field{note}{\url{http://www.r-project.org}}
-      \field{title}{{The R Project for Statistical Computing}}
-      \field{year}{2005}
-    \endentry
-    \entry{pkg:algorithm2e}{manual}{}
+    \entry{MNIST_dataset_example}{misc}{}
       \name{author}{1}{}{%
-        {{hash=a5315ac91af386d0755259b7c836682f}{%
-           family={Fiorio},
-           familyi={F\bibinitperiod},
-           given={Christophe},
-           giveni={C\bibinitperiod}}}%
+        {{hash=4e7b34ff912eae6b76d9d8a90be415b8}{%
+           family={Athul},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{a5315ac91af386d0755259b7c836682f}
-      \strng{fullhash}{a5315ac91af386d0755259b7c836682f}
-      \strng{bibnamehash}{a5315ac91af386d0755259b7c836682f}
-      \strng{authorbibnamehash}{a5315ac91af386d0755259b7c836682f}
-      \strng{authornamehash}{a5315ac91af386d0755259b7c836682f}
-      \strng{authorfullhash}{a5315ac91af386d0755259b7c836682f}
-      \field{labelalpha}{Fio17}
-      \field{sortinit}{F}
-      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \strng{namehash}{4e7b34ff912eae6b76d9d8a90be415b8}
+      \strng{fullhash}{4e7b34ff912eae6b76d9d8a90be415b8}
+      \strng{bibnamehash}{4e7b34ff912eae6b76d9d8a90be415b8}
+      \strng{authorbibnamehash}{4e7b34ff912eae6b76d9d8a90be415b8}
+      \strng{authornamehash}{4e7b34ff912eae6b76d9d8a90be415b8}
+      \strng{authorfullhash}{4e7b34ff912eae6b76d9d8a90be415b8}
+      \field{labelalpha}{Ath}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{5.2}
-      \field{title}{{algorithm2e.sty — package for algorithms}}
-      \field{year}{2017}
+      \field{howpublished}{\url{https://medium.com/@athul929/hand-written-digit-classifier-in-pytorch-42a53e92b63e}}
+      \field{note}{Accessed: 2019-12-16}
+      \field{title}{{Medium} Handwritten digit recognition using PyTorch}
+      \warn{\item Datamodel: Entry 'MNIST_dataset_example' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
     \endentry
-    \entry{latex_book}{book}{}
+    \entry{MNIST_best_result_reference}{misc}{}
       \name{author}{1}{}{%
-        {{hash=5d77435450d10a850a5b58577b9a456b}{%
-           family={Lamport},
+        {{hash=96e4d9dff0d80cd08134a7f889c573da}{%
+           family={Dan\bibnamedelima Cireşan},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Juergen\bibnamedelima Schmidhuber},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           suffix={Ueli\bibnamedelima Meier},
+           suffixi={U\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{96e4d9dff0d80cd08134a7f889c573da}
+      \strng{fullhash}{96e4d9dff0d80cd08134a7f889c573da}
+      \strng{bibnamehash}{96e4d9dff0d80cd08134a7f889c573da}
+      \strng{authorbibnamehash}{96e4d9dff0d80cd08134a7f889c573da}
+      \strng{authornamehash}{96e4d9dff0d80cd08134a7f889c573da}
+      \strng{authorfullhash}{96e4d9dff0d80cd08134a7f889c573da}
+      \field{labelalpha}{Dan12}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Annalen der Physik}
+      \field{title}{Multi-column Deep Neural Networks for Image Classification}
+      \field{volume}{20}
+      \field{year}{2012}
+      \verb{eprint}
+      \verb 1202.2745
+      \endverb
+      \warn{\item Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
+      \warn{\item Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'}
+    \endentry
+    \entry{CIFAR-10_dataset_reference}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
+           family={Krizhevsky},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{fullhash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{bibnamehash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{authorbibnamehash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{authornamehash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \strng{authorfullhash}{c5e3a676e2ac1164b3afcd539c131fc9}
+      \field{labelalpha}{Kri}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.cs.toronto.edu/~kriz/cifar.html}}
+      \field{note}{Accessed: 2019-12-16}
+      \field{title}{The CIFAR-10 dataset (Canadian Institute for Advanced Research)}
+      \warn{\item Datamodel: Entry 'CIFAR-10_dataset_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
+    \entry{MNIST_data_reference}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
            familyi={L\bibinitperiod},
-           given={Leslie},
-           giveni={L\bibinitperiod}}}%
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Addison Wesley Professional}%
-      }
-      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{bibnamehash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
-      \field{labelalpha}{Lam94}
+      \strng{namehash}{6a1aa6b7eab12b931ca7c7e3f927231d}
+      \strng{fullhash}{6a1aa6b7eab12b931ca7c7e3f927231d}
+      \strng{bibnamehash}{6a1aa6b7eab12b931ca7c7e3f927231d}
+      \strng{authorbibnamehash}{6a1aa6b7eab12b931ca7c7e3f927231d}
+      \strng{authornamehash}{6a1aa6b7eab12b931ca7c7e3f927231d}
+      \strng{authorfullhash}{6a1aa6b7eab12b931ca7c7e3f927231d}
+      \field{labelalpha}{LeC}
       \field{sortinit}{L}
       \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{2}
-      \field{month}{6}
-      \field{note}{ISBN 0-2015-2983-1}
-      \field{title}{{LaTeX: A Document Preparation System}}
-      \field{year}{1994}
+      \field{howpublished}{\url{http://yann.lecun.com/exdb/mnist/}}
+      \field{note}{Accessed: 2019-12-16}
+      \field{title}{{exdb} THE MNIST DATABASE of handwritten digits}
+      \warn{\item Datamodel: Entry 'MNIST_data_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
     \endentry
-    \entry{mpo11}{misc}{}
+    \entry{NIST}{misc}{}
       \name{author}{1}{}{%
-        {{hash=aa8b5a523497fddbb931bbdeeae1f3c8}{%
-           family={Rektor},
-           familyi={R\bibinitperiod},
-           given={Der},
-           giveni={D\bibinitperiod}}}%
+        {{hash=9d2bc8e83f6d89ecafc7252636bf7b82}{%
+           family={STANDFORD},
+           familyi={S\bibinitperiod}}}%
       }
-      \strng{namehash}{aa8b5a523497fddbb931bbdeeae1f3c8}
-      \strng{fullhash}{aa8b5a523497fddbb931bbdeeae1f3c8}
-      \strng{bibnamehash}{aa8b5a523497fddbb931bbdeeae1f3c8}
-      \strng{authorbibnamehash}{aa8b5a523497fddbb931bbdeeae1f3c8}
-      \strng{authornamehash}{aa8b5a523497fddbb931bbdeeae1f3c8}
-      \strng{authorfullhash}{aa8b5a523497fddbb931bbdeeae1f3c8}
-      \field{labelalpha}{Rek11}
-      \field{sortinit}{R}
-      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \strng{namehash}{9d2bc8e83f6d89ecafc7252636bf7b82}
+      \strng{fullhash}{9d2bc8e83f6d89ecafc7252636bf7b82}
+      \strng{bibnamehash}{9d2bc8e83f6d89ecafc7252636bf7b82}
+      \strng{authorbibnamehash}{9d2bc8e83f6d89ecafc7252636bf7b82}
+      \strng{authornamehash}{9d2bc8e83f6d89ecafc7252636bf7b82}
+      \strng{authorfullhash}{9d2bc8e83f6d89ecafc7252636bf7b82}
+      \field{labelalpha}{STA}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{\url{https://www.informatik.uni-bonn.de/en/for-students/master-of-science-in-computer-science/regulations-and-forms}}
-      \field{title}{{Prüfungsordnung für den Masterstudiengang Computer Science der Ma\-the\-ma\-tisch-Na\-tur\-wis\-senschaftlichen Fakultät der Rheinischen Friedrich-Wilhelms-Universität Bonn}}
-      \field{year}{2011}
+      \field{howpublished}{\url{https://www.nist.gov/data}}
+      \field{note}{Accessed: 2019-12-16}
+      \field{title}{{NIST} National Institute of Standards and Technology}
+      \warn{\item Datamodel: Entry 'NIST' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
+    \entry{CIFAR-10_best_result_reference}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=19b028e79b4f26acfca4460e9769d125}{%
+           family={Terrance\bibnamedelima DeVries},
+           familyi={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Graham\bibnamedelimb W.\bibnamedelimi Taylor},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{19b028e79b4f26acfca4460e9769d125}
+      \strng{fullhash}{19b028e79b4f26acfca4460e9769d125}
+      \strng{bibnamehash}{19b028e79b4f26acfca4460e9769d125}
+      \strng{authorbibnamehash}{19b028e79b4f26acfca4460e9769d125}
+      \strng{authornamehash}{19b028e79b4f26acfca4460e9769d125}
+      \strng{authorfullhash}{19b028e79b4f26acfca4460e9769d125}
+      \field{labelalpha}{Ter17}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{University of Guelph and Canadian Institute for Advanced Research and Vector Institute}
+      \field{title}{Improved Regularization of Convolutional Neural Networks with Cutout}
+      \field{volume}{8}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1708.04552
+      \endverb
+      \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
+      \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'}
+    \endentry
+    \entry{CIFAR-10_origin_dataset}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=75884d5d806492e7c2ec956437786200}{%
+           family={University},
+           familyi={U\bibinitperiod},
+           given={New\bibnamedelima York},
+           giveni={N\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{75884d5d806492e7c2ec956437786200}
+      \strng{fullhash}{75884d5d806492e7c2ec956437786200}
+      \strng{bibnamehash}{75884d5d806492e7c2ec956437786200}
+      \strng{authorbibnamehash}{75884d5d806492e7c2ec956437786200}
+      \strng{authornamehash}{75884d5d806492e7c2ec956437786200}
+      \strng{authorfullhash}{75884d5d806492e7c2ec956437786200}
+      \field{labelalpha}{Uni}
+      \field{sortinit}{U}
+      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://groups.csail.mit.edu/vision/TinyImages/}}
+      \field{note}{Accessed: 2019-12-16}
+      \field{title}{{Visual Dictionary} Teaching computers to recognize objects}
+      \warn{\item Datamodel: Entry 'CIFAR-10_origin_dataset' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
     \endentry
   \enddatalist
 \endrefsection

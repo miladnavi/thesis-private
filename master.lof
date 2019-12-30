@@ -8,18 +8,14 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces 7 examples per class of MNIST dataset, merged in one image \cite {MNIST_dataset_example}}}{3}{figure.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces The TCP/IP protocol stack during the communication process between two hosts}}{7}{figure.4.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Poor}}}{8}{figure.4.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Better}}}{8}{figure.4.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Examples for a presentation of measurement results}}{9}{figure.4.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Pseudocode for compilation of a research thesis.}}{10}{figure.4.3}% 
+\contentsline {figure}{\numberline {2}{\ignorespaces 10 examples per class of CIFAR-10 dataset, merged in one image \cite {CIFAR-10_dataset_reference}}}{4}{figure.3.2}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3}{\ignorespaces An example of single channel image with size of $4\times 4$ with its translations with size of $3\times 3$ patches and their horizontal reflections. The numbers determinate the pixels intensity}}{7}{figure.5.3}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

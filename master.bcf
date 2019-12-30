@@ -1996,18 +1996,16 @@
     <bcf:datasource type="file" datatype="bibtex">bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">mpo11</bcf:citekey>
-    <bcf:citekey order="2">mpo11</bcf:citekey>
-    <bcf:citekey order="3">latex_book</bcf:citekey>
-    <bcf:citekey order="3">latex</bcf:citekey>
-    <bcf:citekey order="4">dante</bcf:citekey>
-    <bcf:citekey order="5">mpo11</bcf:citekey>
-    <bcf:citekey order="6">mpo11</bcf:citekey>
-    <bcf:citekey order="7">gnuplot_homepage</bcf:citekey>
-    <bcf:citekey order="8">r_homepage</bcf:citekey>
-    <bcf:citekey order="9">oo_homepage</bcf:citekey>
-    <bcf:citekey order="10">pkg:algorithm2e</bcf:citekey>
-    <bcf:citekey order="11">ispell_homepage</bcf:citekey>
+    <bcf:citekey order="1">NIST</bcf:citekey>
+    <bcf:citekey order="2">MNIST_data_reference</bcf:citekey>
+    <bcf:citekey order="3">MNIST_best_result_reference</bcf:citekey>
+    <bcf:citekey order="4">MNIST_dataset_example</bcf:citekey>
+    <bcf:citekey order="5">MNIST_dataset_example</bcf:citekey>
+    <bcf:citekey order="6">CIFAR-10_origin_dataset</bcf:citekey>
+    <bcf:citekey order="7">CIFAR-10_dataset_reference</bcf:citekey>
+    <bcf:citekey order="8">CIFAR-10_best_result_reference</bcf:citekey>
+    <bcf:citekey order="9">CIFAR-10_dataset_reference</bcf:citekey>
+    <bcf:citekey order="10">CIFAR-10_dataset_reference</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
