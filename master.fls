@@ -607,10 +607,16 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/kpfonts/jkpmn7t.vf
+INPUT fig/stroke_warping_transforamtions.jpg
+INPUT ./fig/stroke_warping_transforamtions.jpg
+INPUT ./fig/stroke_warping_transforamtions.jpg
 INPUT master.lof
 INPUT master.lof
 OUTPUT master.lof
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/kpfonts/jkpmn7t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/kpfonts/jkposnbn8t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/kpfonts/jkpbn8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/kpfonts/jkpbne.tfm
 INPUT master.lot
 INPUT master.lot
 OUTPUT master.lot

@@ -30,7 +30,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Elastic Distrotion}{7}{section.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Storke Wraping}{9}{section.5.3}% 
+\contentsline {section}{\numberline {5.3}Stroke Warping}{9}{section.5.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.4}Bayesian Model}{9}{section.5.4}% 
 \defcounter {refsection}{0}\relax 

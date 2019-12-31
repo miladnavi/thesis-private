@@ -50,7 +50,7 @@ methods to compare their efficiency and capability. These methods are as follow:
 \begin{itemize}
   \item \textbf{Label Preserving Transformation} \ref{tit:label-preserving}
   \item \textbf{Elastic Distrotion} \ref{tit:elastic-distrotion}
-  \item \textbf{Storke Wraping} \ref{tit:storke-wraping}
+  \item \textbf{Stroke Warping} \ref{tit:stroke-warping}
   \item \textbf{Bayesian Model} \ref{tit:bayesian-model}
   \item \textbf{Manifold Approach} \ref{tit:manifold-approach}
         %\item GANs
@@ -94,10 +94,10 @@ The CIFAR-10 (Canadian Institute for Advanced Research)
 , collected by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton is a subset from 80 million tiny
 images dataset \cite{CIFAR-10_origin_dataset}.
 
-The dataset consists of $60,000$  RGB with $32 \times 32$ pixels images, which are divided to the $50,000$ train and $10,000$ test datasets. As the name makes it clear the CIFAR-10 contains 10 classes ([plane, car, bird, cat, deer, dog, frog, horse, ship, truck]) \cite{CIFAR-10_dataset_reference}. 
+The dataset consists of $60,000$  RGB with $32 \times 32$ pixels images, which are divided to the $50,000$ train and $10,000$ test datasets. As the name makes it clear the CIFAR-10 contains 10 classes ([plane, car, bird, cat, deer, dog, frog, horse, ship, truck]) \cite{CIFAR-10_dataset_reference}.
 One of the lowest reported error-rate with a convolutional neural network managed to achieve $2.56\%$ \cite{CIFAR-10_best_result_reference}.  You can
 find the information about the dataset at table
-\ref{dataset_table} and figure \ref{fig:cifar-10_dataset_example} shows an example of the dataset. 
+\ref{dataset_table} and figure \ref{fig:cifar-10_dataset_example} shows an example of the dataset.
 
 \begin{figure}
   \centering
@@ -124,7 +124,7 @@ blablabla
     {\textbf{Dataset}}  & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
     {\textbf{MNIST}}    & 10                                         & 60,000                                   & 10,000                                  & $28\times28$                                & 1 (Grayscale)                              \\
     {\textbf{EMNIST}}   & 26                                         &                                          &                                         &                                             &                                            \\
-    {\textbf{CIFAR-10}}  & 10                                         & 50,000                                         & 10,000                            &  $28\times28$                               &  3 (RGB)                                            \\
+    {\textbf{CIFAR-10}} & 10                                         & 50,000                                   & 10,000                                  & $28\times28$                                & 3 (RGB)                                    \\
     {\textbf{CIFAR100}} & 100                                        &                                          &                                         &                                             &                                            \\ \hline
   \end{tabular}
   \caption{Structure and organization of the datasets.}
@@ -176,7 +176,7 @@ of the predictions will be our network's prediction.
 
 \section{Elastic Distrotion}
 \label{tit:elastic-distrotion}
-Another well-known method for data augmentation is Elastic distortion. This method as the same as label preserving transformation generates artificial data (images) from a single data (image) but with
+Another well-known method for data augmentation is elastic distortion. This method as the same as label preserving transformation generates artificial data (images) from a single data (image) but with
 this difference that this time instead of resizing the image (translation) the pixels inside of the image will be moved and displaced. The intensity of pixels also will be changed with respect to
 their new places and their neighbors' intensity and their old places and their origin intensity.
 
@@ -207,8 +207,28 @@ fields $\Delta x$ and $\Delta y$ are convolved with a Gaussian filter with stand
 $\sigma$. The values of $\sigma$ and $\alpha$ depends on the image size and the image entropy. This process will generate elastic deformed image from orginal image which called elastic distrotion.
 
 
-\section{Storke Wraping}
-\label{tit:storke-wraping}
+\section{Stroke Warping}
+\label{tit:stroke-warping}
+This method as same as previously introduced methods uses predetermined families of transformations.
+In other words, we enlarge our dataset artificially with the aid of well-known classical computer
+vision transformations. This method notwithstanding of non-heavy complexity accomplished desirable
+results even on medical purposes \cite{stroke_tumor}. The ideas of this Methode raised from Tangent
+Dist and Tangent Prop \cite{stroke_idea_1992} and \cite{stroke_idea_1993} works. 
+
+In this method, we perform small changes in images to augment our data.  That means we augment our
+images with skewing, rotating and shearing them \cite{storke_warping_1997_source}. As same as the
+label preserving transformation and elastic distortion the augmentation will be started before the
+training phase and the training will be performed on enlarged data. In figure
+\ref{fig:stroke_warping_transforamtions} represents each mentioned translation to make them visually
+understandable.
+
+\begin{figure}
+  \centering
+  \label{fig:stroke_warping_transforamtions}
+  \includegraphics[width=1\textwidth]{fig/stroke_warping_transforamtions}
+  \caption{An exmaple of rotation, skew, and shear translations for stroke warping respectively from left to right. The first image of left is the orginal the image \cite{TODO-Augmentaion}}
+\end{figure}
+
 
 \section{Bayesian Model}
 \label{tit:bayesian-model}

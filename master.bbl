@@ -43,25 +43,90 @@
       \field{title}{{Medium} Handwritten digit recognition using PyTorch}
       \warn{\item Datamodel: Entry 'MNIST_dataset_example' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
     \endentry
-    \entry{MNIST_best_result_reference}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=96e4d9dff0d80cd08134a7f889c573da}{%
-           family={Dan\bibnamedelima Cireşan},
-           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={Juergen\bibnamedelima Schmidhuber},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-           suffix={Ueli\bibnamedelima Meier},
-           suffixi={U\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+    \entry{stroke_tumor}{article}{}
+      \name{author}{6}{}{%
+        {{hash=7ad5a03ac2c8da7f0ad2c8b944cc999a}{%
+           family={Baik},
+           familyi={B\bibinitperiod},
+           given={Sung\bibnamedelima W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=4d11eaca8dffa227f0d7f339988ef9f6}{%
+           family={Sajjad},
+           familyi={S\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2893f9d103585f3f0297c0c0bc10c36e}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Salman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fc7891c81d834c5b7ced804c65d6560f}{%
+           family={Muhammad},
+           familyi={M\bibinitperiod},
+           given={Khan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f59d6181fb5748adf358cce9757ce3a7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Wanqing},
+           giveni={W\bibinitperiod}}}%
+        {{hash=184f96ce16eeb5c68deb501d17727151}{%
+           family={Ullah},
+           familyi={U\bibinitperiod},
+           given={Amin},
+           giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{96e4d9dff0d80cd08134a7f889c573da}
-      \strng{fullhash}{96e4d9dff0d80cd08134a7f889c573da}
-      \strng{bibnamehash}{96e4d9dff0d80cd08134a7f889c573da}
-      \strng{authorbibnamehash}{96e4d9dff0d80cd08134a7f889c573da}
-      \strng{authornamehash}{96e4d9dff0d80cd08134a7f889c573da}
-      \strng{authorfullhash}{96e4d9dff0d80cd08134a7f889c573da}
-      \field{labelalpha}{Dan12}
-      \field{sortinit}{D}
-      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{6d4fca478c4914ed13576effab44466b}
+      \strng{fullhash}{3232b05845a6b8d1248cdc7b8c3d95cd}
+      \strng{bibnamehash}{6d4fca478c4914ed13576effab44466b}
+      \strng{authorbibnamehash}{6d4fca478c4914ed13576effab44466b}
+      \strng{authornamehash}{6d4fca478c4914ed13576effab44466b}
+      \strng{authorfullhash}{3232b05845a6b8d1248cdc7b8c3d95cd}
+      \field{labelalpha}{Bai+19}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{note}{\url{https://www.sciencedirect.com/science/article/pii/S1877750318307385}}
+      \field{title}{Multi-grade brain tumor classification using deep CNN with extensive data augmentation}
+      \field{volume}{30}
+      \field{year}{2019}
+      \field{pages}{174\bibrangedash 182}
+      \range{pages}{9}
+      \warn{\item Datamodel: Entry 'stroke_tumor' (bibliography.bib): Invalid field 'publisher' for entrytype 'article'}
+      \warn{\item Datamodel: Entry 'stroke_tumor' (bibliography.bib): Missing mandatory field 'journaltitle'}
+    \endentry
+    \entry{MNIST_best_result_reference}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=b44d52b65e72fd8ceb4f0fe71c2d13b5}{%
+           family={Cireşan},
+           familyi={C\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=be71dea014b345d130231579ad7a5115}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Ueli},
+           giveni={U\bibinitperiod}}}%
+        {{hash=2333709f91a1b22edafa71582c31e391}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Juergen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9fef942f24e57a49a7c7bdcc0614af99}
+      \strng{fullhash}{9fef942f24e57a49a7c7bdcc0614af99}
+      \strng{bibnamehash}{9fef942f24e57a49a7c7bdcc0614af99}
+      \strng{authorbibnamehash}{9fef942f24e57a49a7c7bdcc0614af99}
+      \strng{authornamehash}{9fef942f24e57a49a7c7bdcc0614af99}
+      \strng{authorfullhash}{9fef942f24e57a49a7c7bdcc0614af99}
+      \field{labelalpha}{CMS12}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.CV}
@@ -75,6 +140,42 @@
       \endverb
       \warn{\item Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
       \warn{\item Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'}
+    \endentry
+    \entry{CIFAR-10_best_result_reference}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=5f72faa67f3e3eeb5ab473ef067062aa}{%
+           family={DeVries},
+           familyi={D\bibinitperiod},
+           given={Terrance},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8c57b78bacc3da92f8aa3623167ea5de}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Graham\bibnamedelima W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{c654df171568208867bf898ab0b57ea8}
+      \strng{fullhash}{c654df171568208867bf898ab0b57ea8}
+      \strng{bibnamehash}{c654df171568208867bf898ab0b57ea8}
+      \strng{authorbibnamehash}{c654df171568208867bf898ab0b57ea8}
+      \strng{authornamehash}{c654df171568208867bf898ab0b57ea8}
+      \strng{authorfullhash}{c654df171568208867bf898ab0b57ea8}
+      \field{labelalpha}{DT17}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{University of Guelph and Canadian Institute for Advanced Research and Vector Institute}
+      \field{title}{Improved Regularization of Convolutional Neural Networks with Cutout}
+      \field{volume}{8}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1708.04552
+      \endverb
+      \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
+      \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'}
     \endentry
     \entry{CIFAR-10_dataset_reference}{misc}{}
       \name{author}{1}{}{%
@@ -124,6 +225,89 @@
       \field{title}{{exdb} THE MNIST DATABASE of handwritten digits}
       \warn{\item Datamodel: Entry 'MNIST_data_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
     \endentry
+    \entry{stroke_idea_1992}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=fba0c25dc264271a2cad9bf44bc364b3}{%
+           family={Simard},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2c3113a2ee66e3757a873c9fbddd9762}{%
+           family={Victorri},
+           familyi={V\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9ae8dc3a930d73e11e1b22a9ef065055}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=715b79fb7147a528ff3903944c7db8b8}{%
+           family={Denker},
+           familyi={D\bibinitperiod},
+           given={.T.},
+           giveni={.\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{170e09789a575fcfea8eb944d3e61492}
+      \strng{fullhash}{3718b65c916d7ced6d4d56770c3bc40e}
+      \strng{bibnamehash}{170e09789a575fcfea8eb944d3e61492}
+      \strng{authorbibnamehash}{170e09789a575fcfea8eb944d3e61492}
+      \strng{authornamehash}{170e09789a575fcfea8eb944d3e61492}
+      \strng{authorfullhash}{3718b65c916d7ced6d4d56770c3bc40e}
+      \field{labelalpha}{Sim+92}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems 4}
+      \field{title}{Tangent Prop-A Formalism for Specifying Selected Invariances in an Adaptive Network}
+      \field{year}{1992}
+      \field{pages}{895\bibrangedash 903}
+      \range{pages}{9}
+      \warn{\item Datamodel: Entry 'stroke_idea_1992' (bibliography.bib): Missing mandatory field 'editor'}
+    \endentry
+    \entry{stroke_idea_1993}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=fba0c25dc264271a2cad9bf44bc364b3}{%
+           family={Simard},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9ae8dc3a930d73e11e1b22a9ef065055}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=715b79fb7147a528ff3903944c7db8b8}{%
+           family={Denker},
+           familyi={D\bibinitperiod},
+           given={.T.},
+           giveni={.\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{60c735f3e484f05a881e4e39d732a1a2}
+      \strng{fullhash}{60c735f3e484f05a881e4e39d732a1a2}
+      \strng{bibnamehash}{60c735f3e484f05a881e4e39d732a1a2}
+      \strng{authorbibnamehash}{60c735f3e484f05a881e4e39d732a1a2}
+      \strng{authornamehash}{60c735f3e484f05a881e4e39d732a1a2}
+      \strng{authorfullhash}{60c735f3e484f05a881e4e39d732a1a2}
+      \field{labelalpha}{SLD93}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems 5}
+      \field{title}{Efficient Pattern Recognition Using a New Transformation Distance}
+      \field{year}{1993}
+      \field{pages}{50\bibrangedash 58}
+      \range{pages}{9}
+      \warn{\item Datamodel: Entry 'stroke_idea_1993' (bibliography.bib): Missing mandatory field 'editor'}
+    \endentry
     \entry{NIST}{misc}{}
       \name{author}{1}{}{%
         {{hash=9d2bc8e83f6d89ecafc7252636bf7b82}{%
@@ -145,37 +329,6 @@
       \field{note}{Accessed: 2019-12-16}
       \field{title}{{NIST} National Institute of Standards and Technology}
       \warn{\item Datamodel: Entry 'NIST' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
-    \endentry
-    \entry{CIFAR-10_best_result_reference}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=19b028e79b4f26acfca4460e9769d125}{%
-           family={Terrance\bibnamedelima DeVries},
-           familyi={T\bibinitperiod\bibinitdelim D\bibinitperiod},
-           given={Graham\bibnamedelimb W.\bibnamedelimi Taylor},
-           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-      }
-      \strng{namehash}{19b028e79b4f26acfca4460e9769d125}
-      \strng{fullhash}{19b028e79b4f26acfca4460e9769d125}
-      \strng{bibnamehash}{19b028e79b4f26acfca4460e9769d125}
-      \strng{authorbibnamehash}{19b028e79b4f26acfca4460e9769d125}
-      \strng{authornamehash}{19b028e79b4f26acfca4460e9769d125}
-      \strng{authorfullhash}{19b028e79b4f26acfca4460e9769d125}
-      \field{labelalpha}{Ter17}
-      \field{sortinit}{T}
-      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.CV}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{University of Guelph and Canadian Institute for Advanced Research and Vector Institute}
-      \field{title}{Improved Regularization of Convolutional Neural Networks with Cutout}
-      \field{volume}{8}
-      \field{year}{2017}
-      \verb{eprint}
-      \verb 1708.04552
-      \endverb
-      \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
-      \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'}
     \endentry
     \entry{CIFAR-10_origin_dataset}{misc}{}
       \name{author}{1}{}{%
@@ -201,7 +354,72 @@
       \field{title}{{Visual Dictionary} Teaching computers to recognize objects}
       \warn{\item Datamodel: Entry 'CIFAR-10_origin_dataset' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
     \endentry
+    \entry{storke_warping_1997_source}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=10c0258935662c3552dbd87046964492}{%
+           family={Yaeger},
+           familyi={Y\bibinitperiod},
+           given={Larry\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=cbe3e1814a3bd138e2608e9bd3d2fc84}{%
+           family={Lyon},
+           familyi={L\bibinitperiod},
+           given={Richard\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=5190e6f731d805e842cbf06840ad0257}{%
+           family={Webb},
+           familyi={W\bibinitperiod},
+           given={Brandyn\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=382b693040f824a8ec9b2698636efe18}{%
+           family={Mozer},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=0442c01fb14007ee1da9ccea3dfe2597}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={M.\bibnamedelimi I.},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=a0194579ba898c3bc3ebffb1ac89600e}{%
+           family={Petsche},
+           familyi={P\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{9b6a48ebe8643bfd12afdb584642c4f6}
+      \strng{fullhash}{9b6a48ebe8643bfd12afdb584642c4f6}
+      \strng{bibnamehash}{9b6a48ebe8643bfd12afdb584642c4f6}
+      \strng{authorbibnamehash}{9b6a48ebe8643bfd12afdb584642c4f6}
+      \strng{authornamehash}{9b6a48ebe8643bfd12afdb584642c4f6}
+      \strng{authorfullhash}{9b6a48ebe8643bfd12afdb584642c4f6}
+      \strng{editorbibnamehash}{e7b1e8e0713b5a2beb86533d6944aee9}
+      \strng{editornamehash}{e7b1e8e0713b5a2beb86533d6944aee9}
+      \strng{editorfullhash}{e7b1e8e0713b5a2beb86533d6944aee9}
+      \field{labelalpha}{YLW97}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems 9}
+      \field{title}{Effective Training of a Neural Network Character Classifier for Word Recognition}
+      \field{year}{1997}
+      \field{pages}{807\bibrangedash 816}
+      \range{pages}{10}
+      \verb{urlraw}
+      \verb http://papers.nips.cc/paper/1250-effective-training-of-a-neural-network-character-classifier-for-word-recognition.pdf
+      \endverb
+      \verb{url}
+      \verb http://papers.nips.cc/paper/1250-effective-training-of-a-neural-network-character-classifier-for-word-recognition.pdf
+      \endverb
+    \endentry
   \enddatalist
+  \missing{TODO-Augmentaion}
 \endrefsection
 \endinput
 

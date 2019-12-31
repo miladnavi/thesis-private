@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  27 DEC 2019 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  30 DEC 2019 17:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1791,6 +1791,16 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'stroke_tumor':
+(biblatex)                - Datamodel: Entry 'stroke_tumor' (bibliography.bib): Invalid field 'publisher' for entrytype 'article'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'stroke_tumor':
+(biblatex)                - Datamodel: Entry 'stroke_tumor' (bibliography.bib): Missing mandatory field 'journaltitle'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'MNIST_best_result_reference':
 (biblatex)                - Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'.
 
@@ -1798,21 +1808,6 @@ Package biblatex Warning: Biber reported the following issues
 Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'MNIST_best_result_reference':
 (biblatex)                - Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'CIFAR-10_dataset_reference':
-(biblatex)                - Datamodel: Entry 'CIFAR-10_dataset_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'MNIST_data_reference':
-(biblatex)                - Datamodel: Entry 'MNIST_data_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'NIST':
-(biblatex)                - Datamodel: Entry 'NIST' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
 
 
 Package biblatex Warning: Biber reported the following issues
@@ -1826,8 +1821,40 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'CIFAR-10_dataset_reference':
+(biblatex)                - Datamodel: Entry 'CIFAR-10_dataset_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'MNIST_data_reference':
+(biblatex)                - Datamodel: Entry 'MNIST_data_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'stroke_idea_1992':
+(biblatex)                - Datamodel: Entry 'stroke_idea_1992' (bibliography.bib): Missing mandatory field 'editor'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'stroke_idea_1993':
+(biblatex)                - Datamodel: Entry 'stroke_idea_1993' (bibliography.bib): Missing mandatory field 'editor'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'NIST':
+(biblatex)                - Datamodel: Entry 'NIST' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'CIFAR-10_origin_dataset':
 (biblatex)                - Datamodel: Entry 'CIFAR-10_origin_dataset' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO-Augmentaion
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
 
 )
 Package biblatex Info: Reference section=0 on input line 7.
@@ -2058,7 +2085,13 @@ File: fig/label-preserving-transformation.png Graphic file (type png)
 <use fig/label-preserving-transformation.png>
 Package pdftex.def Info: fig/label-preserving-transformation.png  used on input line 172.
 (pdftex.def)             Requested size: 429.89502pt x 332.1606pt.
- [7 <./fig/label-preserving-transformation.png>]) [8] [9]
+ [7 <./fig/label-preserving-transformation.png>] [8]
+<fig/stroke_warping_transforamtions.jpg, id=158, 2778.38pt x 712.6625pt>
+File: fig/stroke_warping_transforamtions.jpg Graphic file (type jpg)
+<use fig/stroke_warping_transforamtions.jpg>
+Package pdftex.def Info: fig/stroke_warping_transforamtions.jpg  used on input line 228.
+(pdftex.def)             Requested size: 429.89502pt x 110.26581pt.
+) [9 <./fig/stroke_warping_transforamtions.jpg>]
 chapter 6.
 [10
 
@@ -2100,18 +2133,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51316 strings out of 492616
- 986546 string characters out of 6129482
- 1556753 words of memory out of 5000000
- 54151 multiletter control sequences out of 15000+600000
- 765854 words of font info for 425 fonts, out of 8000000 for 9000
+ 51383 strings out of 492616
+ 987882 string characters out of 6129482
+ 1559102 words of memory out of 5000000
+ 54174 multiletter control sequences out of 15000+600000
+ 770194 words of font info for 457 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,120p,9178b,1745s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmitc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmite.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb>
-Output written on master.pdf (16 pages, 1335094 bytes).
+Output written on master.pdf (16 pages, 1453029 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 283 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 87233 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 87238 words of extra memory for PDF output out of 89155 (max. 10000000)
 
