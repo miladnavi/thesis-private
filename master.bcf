@@ -2012,6 +2012,7 @@
     <bcf:citekey order="14">storke_warping_1997_source</bcf:citekey>
     <bcf:citekey order="15">TODO-Augmentaion</bcf:citekey>
     <bcf:citekey order="16">TODO-Augmentaion</bcf:citekey>
+    <bcf:citekey order="17">poor_man_data_augmentation</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

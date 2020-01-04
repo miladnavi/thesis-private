@@ -51,7 +51,7 @@ methods to compare their efficiency and capability. These methods are as follow:
   \item \textbf{Label Preserving Transformation} \ref{tit:label-preserving}
   \item \textbf{Elastic Distrotion} \ref{tit:elastic-distrotion}
   \item \textbf{Stroke Warping} \ref{tit:stroke-warping}
-  \item \textbf{Bayesian Model} \ref{tit:bayesian-model}
+  \item \textbf{Bayesian Approach} \ref{tit:bayesian-approach}
   \item \textbf{Manifold Approach} \ref{tit:manifold-approach}
         %\item GANs
 \end{itemize}
@@ -226,15 +226,18 @@ understandable.
   \centering
   \label{fig:stroke_warping_transforamtions}
   \includegraphics[width=1\textwidth]{fig/stroke_warping_transforamtions}
-  \caption{An exmaple of rotation, skew, and shear translations for stroke warping respectively from left to right. The first image of left is the orginal the image \cite{TODO-Augmentaion}}
+  \caption{An exmaple of rotation, skew, shear, and scale translations for stroke warping respectively from left to right. The first image from left is the orginal image \cite{TODO-Augmentaion}}
 \end{figure}
 
 
-\section{Bayesian Model}
-\label{tit:bayesian-model}
-
-
+\section{Bayesian Approach}
+\label{tit:bayesian-approach}
+As you may until now realized, all introduced classes of techniques in this work for data augmentation were pre-defined families of statistical transformations. In other words, we generated synthetic images with computer vision techniques statistically before the training phase and we didn't change our augmented data until the end of the learning. In fact, the basic idea of each of them is known as “poor man’s” data augmentation (PMDA) \cite{poor_man_data_augmentation}. The point is if neural networks, in general, can learn such complex relations and patterns in images, therefore they should be able to learn latent variables to improve data augmentation dynamically. Put the matter another way, in this method, we focus not only on the classification task and learning patterns of images but also on learning how to improve our image augmentation dynamically and iteratively during the training and classification. 
 
 
 \section{Manifold Approach}
 \label{tit:manifold-approach}
+
+\chapter{Comprehensive Comparison}
+
+\chapter{Mthodes Combination and new method}
