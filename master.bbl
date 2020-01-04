@@ -330,6 +330,35 @@
       \field{title}{{NIST} National Institute of Standards and Technology}
       \warn{\item Datamodel: Entry 'NIST' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
     \endentry
+    \entry{poor_man_data_augmentation}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b36aedffb7e3265ccd87351ee72384f2}{%
+           family={Tanner},
+           familyi={T\bibinitperiod},
+           given={Martin\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag New York}%
+      }
+      \strng{namehash}{b36aedffb7e3265ccd87351ee72384f2}
+      \strng{fullhash}{b36aedffb7e3265ccd87351ee72384f2}
+      \strng{bibnamehash}{b36aedffb7e3265ccd87351ee72384f2}
+      \strng{authorbibnamehash}{b36aedffb7e3265ccd87351ee72384f2}
+      \strng{authornamehash}{b36aedffb7e3265ccd87351ee72384f2}
+      \strng{authorfullhash}{b36aedffb7e3265ccd87351ee72384f2}
+      \field{labelalpha}{Tan91}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{note}{ISBN 978-0-387-97525-2}
+      \field{subtitle}{Observed Data and Data Augmentation Methods}
+      \field{title}{{Tools for Statistical Inference}}
+      \field{volume}{67}
+      \field{year}{1991}
+    \endentry
     \entry{CIFAR-10_origin_dataset}{misc}{}
       \name{author}{1}{}{%
         {{hash=75884d5d806492e7c2ec956437786200}{%

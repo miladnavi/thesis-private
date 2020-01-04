@@ -18,6 +18,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3}{\ignorespaces An example of single channel image with size of $4\times 4$ with its translations with size of $3\times 3$ patches and their horizontal reflections. The numbers determinate the pixels intensity}}{7}{figure.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces An exmaple of rotation, skew, and shear translations for stroke warping respectively from left to right. The first image of left is the orginal the image \cite {TODO-Augmentaion}}}{9}{figure.5.4}% 
+\contentsline {figure}{\numberline {4}{\ignorespaces An exmaple of rotation, skew, shear, and scale translations for stroke warping respectively from left to right. The first image from left is the orginal image \cite {TODO-Augmentaion}}}{9}{figure.5.4}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
