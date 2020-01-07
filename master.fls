@@ -610,6 +610,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/kpfonts/jkpmn7t.vf
 INPUT fig/stroke_warping_transforamtions.jpg
 INPUT ./fig/stroke_warping_transforamtions.jpg
 INPUT ./fig/stroke_warping_transforamtions.jpg
+INPUT fig/gan_architectur.png
+INPUT ./fig/gan_architectur.png
+INPUT ./fig/gan_architectur.png
 INPUT master.lof
 INPUT master.lof
 OUTPUT master.lof

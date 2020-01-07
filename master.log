@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  4 JAN 2020 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  7 JAN 2020 18:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1852,7 +1852,28 @@ Package biblatex Warning: Biber reported the following issues
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                Same
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                TODO-Augmentaion
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO-google-reference
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2042,7 +2063,7 @@ chapter 2.
 
 ]
 chapter 3.
-<fig/mnist.jpeg, id=98, 481.8pt x 361.35pt>
+<fig/mnist.jpeg, id=101, 481.8pt x 361.35pt>
 File: fig/mnist.jpeg Graphic file (type jpg)
 <use fig/mnist.jpeg>
 Package pdftex.def Info: fig/mnist.jpeg  used on input line 83.
@@ -2054,7 +2075,7 @@ Package microtype Info: Character `029' is missing
 
 
  <./fig/mnist.jpeg>]
-<fig/cifar-10.png, id=118, 466.74374pt x 361.35pt>
+<fig/cifar-10.png, id=121, 466.74374pt x 361.35pt>
 File: fig/cifar-10.png Graphic file (type png)
 <use fig/cifar-10.png>
 Package pdftex.def Info: fig/cifar-10.png  used on input line 105.
@@ -2080,30 +2101,41 @@ chapter 5.
 
 
 ]
-<fig/label-preserving-transformation.png, id=144, 763.85374pt x 590.205pt>
+<fig/label-preserving-transformation.png, id=147, 763.85374pt x 590.205pt>
 File: fig/label-preserving-transformation.png Graphic file (type png)
 <use fig/label-preserving-transformation.png>
 Package pdftex.def Info: fig/label-preserving-transformation.png  used on input line 172.
 (pdftex.def)             Requested size: 429.89502pt x 332.1606pt.
  [7 <./fig/label-preserving-transformation.png>] [8]
-<fig/stroke_warping_transforamtions.jpg, id=162, 2778.38pt x 712.6625pt>
+<fig/stroke_warping_transforamtions.jpg, id=166, 2778.38pt x 712.6625pt>
 File: fig/stroke_warping_transforamtions.jpg Graphic file (type jpg)
 <use fig/stroke_warping_transforamtions.jpg>
 Package pdftex.def Info: fig/stroke_warping_transforamtions.jpg  used on input line 228.
 (pdftex.def)             Requested size: 429.89502pt x 110.26581pt.
  [9 <./fig/stroke_warping_transforamtions.jpg>] [10]
+<fig/gan_architectur.png, id=188, 828.09375pt x 384.43625pt>
+File: fig/gan_architectur.png Graphic file (type png)
+<use fig/gan_architectur.png>
+Package pdftex.def Info: fig/gan_architectur.png  used on input line 287.
+(pdftex.def)             Requested size: 429.89502pt x 199.5795pt.
+ [11 <./fig/gan_architectur.png>]
 chapter 6.
-[11
+[12
 
 
 ]
 chapter 7.
-) [12
+[13
 
 
 ]
 chapter 8.
-[13
+) [14
+
+
+]
+chapter 9.
+[15
 
 
 ]
@@ -2112,7 +2144,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 102
 \tf@lof=\write9
 \openout9 = `master.lof'.
 
- [14
+ [16
 
 
 
@@ -2122,11 +2154,11 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 102
 \tf@lot=\write10
 \openout10 = `master.lot'.
 
- [15
+ [17
 
 
 
-] (./tpl/declaration.tex) [16
+] (./tpl/declaration.tex) [18
 
 
 
@@ -2143,18 +2175,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51417 strings out of 492616
- 988359 string characters out of 6129482
- 1559188 words of memory out of 5000000
- 54179 multiletter control sequences out of 15000+600000
- 772485 words of font info for 476 fonts, out of 8000000 for 9000
+ 51443 strings out of 492616
+ 988749 string characters out of 6129482
+ 1559434 words of memory out of 5000000
+ 54188 multiletter control sequences out of 15000+600000
+ 773469 words of font info for 484 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,120p,9178b,1745s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmitc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmite.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb>
-Output written on master.pdf (19 pages, 1456218 bytes).
+Output written on master.pdf (21 pages, 1514820 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
- 62 named destinations out of 1000 (max. 500000)
- 87254 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 398 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 87267 words of extra memory for PDF output out of 89155 (max. 10000000)
 
