@@ -19,6 +19,36 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{AC-GANS}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=e7f99f5a6446b361517d6011546d8f8c}{%
+           family={A.Odena},
+           familyi={A\bibinitperiod}}}%
+        {{hash=fd434f4a680c4d82d98bad93a81d244f}{%
+           family={andJ.Shlens},
+           familyi={a\bibinitperiod},
+           given={C.Olah},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e554d167ee0c899b92b2830c7b21744}
+      \strng{fullhash}{2e554d167ee0c899b92b2830c7b21744}
+      \strng{bibnamehash}{2e554d167ee0c899b92b2830c7b21744}
+      \strng{authorbibnamehash}{2e554d167ee0c899b92b2830c7b21744}
+      \strng{authornamehash}{2e554d167ee0c899b92b2830c7b21744}
+      \strng{authorfullhash}{2e554d167ee0c899b92b2830c7b21744}
+      \field{labelalpha}{Aa16}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Conditional Image Synthesis With Auxiliary Classifier GANs}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1610.09585
+      \endverb
+    \endentry
     \entry{MNIST_dataset_example}{misc}{}
       \name{author}{1}{}{%
         {{hash=4e7b34ff912eae6b76d9d8a90be415b8}{%
@@ -359,6 +389,91 @@
       \field{volume}{67}
       \field{year}{1991}
     \endentry
+    \entry{bayesian_approach}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=04aab702d1b36c57f391ad5190b8c6c6}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5666f1d0069a32f97e599455ae4d5137}{%
+           family={Pham},
+           familyi={P\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b53ee6726110036671a261d882836492}{%
+           family={Carneiro},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2c137c04d5eb8eccd73811cd50b64ebd}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b20d1a298a6ffb25acd642c0531e2afe}{%
+           family={Reid},
+           familyi={R\bibinitperiod},
+           given={I.\bibnamedelimi D.},
+           giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2c57c9c51d440adefea9a8646d1830d}
+      \strng{fullhash}{e092bc8ccce706c6ec2f67b335f76780}
+      \strng{bibnamehash}{b2c57c9c51d440adefea9a8646d1830d}
+      \strng{authorbibnamehash}{b2c57c9c51d440adefea9a8646d1830d}
+      \strng{authornamehash}{b2c57c9c51d440adefea9a8646d1830d}
+      \strng{authorfullhash}{e092bc8ccce706c6ec2f67b335f76780}
+      \field{labelalpha}{Tra+17}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{NIPS}
+      \field{title}{A bayesian data augmentation approach for learning deep models,}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1710.10564
+      \endverb
+      \warn{\item Datamodel: Entry 'bayesian_approach' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
+    \endentry
+    \entry{Statistical_data_augmentation}{book}{}
+      \name{author}{2}{}{%
+        {{hash=b36aedffb7e3265ccd87351ee72384f2}{%
+           family={Tanner},
+           familyi={T\bibinitperiod},
+           given={Martin\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=3e2667ec66e3078eff980a41c242c704}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Wing\bibnamedelima Hung},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Statistical Association}%
+      }
+      \strng{namehash}{956dd2ac56754b699eaefb15abe94475}
+      \strng{fullhash}{956dd2ac56754b699eaefb15abe94475}
+      \strng{bibnamehash}{956dd2ac56754b699eaefb15abe94475}
+      \strng{authorbibnamehash}{956dd2ac56754b699eaefb15abe94475}
+      \strng{authornamehash}{956dd2ac56754b699eaefb15abe94475}
+      \strng{authorfullhash}{956dd2ac56754b699eaefb15abe94475}
+      \field{labelalpha}{TW87}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{note}{ISBN 82(398):528–540}
+      \field{subtitle}{Journal of the American Statistical Association}
+      \field{title}{{The Calculation of Posterior Distributions by Data Augmentation}}
+      \field{volume}{82}
+      \field{year}{1987}
+      \field{pages}{528\bibrangedash 540}
+      \range{pages}{13}
+    \endentry
     \entry{CIFAR-10_origin_dataset}{misc}{}
       \name{author}{1}{}{%
         {{hash=75884d5d806492e7c2ec956437786200}{%
@@ -448,7 +563,10 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{Same}
+  \missing{TODO}
   \missing{TODO-Augmentaion}
+  \missing{TODO-google-reference}
 \endrefsection
 \endinput
 

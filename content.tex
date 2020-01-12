@@ -52,7 +52,7 @@ methods to compare their efficiency and capability. These methods are as follow:
   \item \textbf{Elastic Distrotion} \ref{tit:elastic-distrotion}
   \item \textbf{Stroke Warping} \ref{tit:stroke-warping}
   \item \textbf{Bayesian Approach} \ref{tit:bayesian-approach}
-  \item \textbf{Manifold Approach} \ref{tit:manifold-approach}
+  %\item \textbf{Manifold Approach} \ref{tit:manifold-approach}
         %\item GANs
 \end{itemize}
 
@@ -85,7 +85,7 @@ find the information about the dataset at table
 \end{figure}
 
 
-\section{EMNIST}
+\section{Fashsion-MNIST}
 blablabla
 
 
@@ -121,11 +121,11 @@ blablabla
       c
       c}
     \hline
-    {\textbf{Dataset}}  & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
-    {\textbf{MNIST}}    & 10                                         & 60,000                                   & 10,000                                  & $28\times28$                                & 1 (Grayscale)                              \\
-    {\textbf{EMNIST}}   & 26                                         &                                          &                                         &                                             &                                            \\
-    {\textbf{CIFAR-10}} & 10                                         & 50,000                                   & 10,000                                  & $28\times28$                                & 3 (RGB)                                    \\
-    {\textbf{CIFAR100}} & 100                                        &                                          &                                         &                                             &                                            \\ \hline
+    {\textbf{Dataset}}        & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
+    {\textbf{MNIST}}          & 10                                         & 60,000                                   & 10,000                                  & $28\times28$                                & 1 (Grayscale)                              \\
+    {\textbf{Fashsion-MNIST}} & 26                                         &                                          &                                         &                                             &                                            \\
+    {\textbf{CIFAR-10}}       & 10                                         & 50,000                                   & 10,000                                  & $28\times28$                                & 3 (RGB)                                    \\
+    {\textbf{CIFAR100}}       & 100                                        &                                          &                                         &                                             &                                            \\ \hline
   \end{tabular}
   \caption{Structure and organization of the datasets.}
 \end{table}
@@ -134,7 +134,7 @@ blablabla
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Neural Network %%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Neural Network}
+\chapter{Preliminaries}
 \section{Introduction}
 \section{Convolutional Neural Network}
 \section{Overffiting}
@@ -213,10 +213,10 @@ This method as same as previously introduced methods uses predetermined families
 In other words, we enlarge our dataset artificially with the aid of well-known classical computer
 vision transformations. This method notwithstanding of non-heavy complexity accomplished desirable
 results even on medical purposes \cite{stroke_tumor}. The ideas of this Methode raised from Tangent
-Dist and Tangent Prop \cite{stroke_idea_1992} and \cite{stroke_idea_1993} works. 
+Dist and Tangent Prop \cite{stroke_idea_1992} and \cite{stroke_idea_1993} works.
 
 In this method, we perform small changes in images to augment our data.  That means we augment our
-images with skewing, rotating and shearing them \cite{storke_warping_1997_source}. As same as the
+images with skewing, rotating and shearing (scaling) them \cite{storke_warping_1997_source}. As same as the
 label preserving transformation and elastic distortion the augmentation will be started before the
 training phase and the training will be performed on enlarged data. In figure
 \ref{fig:stroke_warping_transforamtions} represents each mentioned translation to make them visually
@@ -226,18 +226,127 @@ understandable.
   \centering
   \label{fig:stroke_warping_transforamtions}
   \includegraphics[width=1\textwidth]{fig/stroke_warping_transforamtions}
-  \caption{An exmaple of rotation, skew, shear, and scale translations for stroke warping respectively from left to right. The first image from left is the orginal image \cite{TODO-Augmentaion}}
+  \caption{An exmaple of rotation, skew, and shear (scale) translations for stroke warping respectively from left to right. The first image from left is the orginal image \cite{TODO-Augmentaion}}
 \end{figure}
 
 
 \section{Bayesian Approach}
 \label{tit:bayesian-approach}
-As you may until now realized, all introduced classes of techniques in this work for data augmentation were pre-defined families of statistical transformations. In other words, we generated synthetic images with computer vision techniques statistically before the training phase and we didn't change our augmented data until the end of the learning. In fact, the basic idea of each of them is known as “poor man’s” data augmentation (PMDA) \cite{poor_man_data_augmentation}. The point is if neural networks, in general, can learn such complex relations and patterns in images, therefore they should be able to learn latent variables to improve data augmentation dynamically. Put the matter another way, in this method, we focus not only on the classification task and learning patterns of images but also on learning how to improve our image augmentation dynamically and iteratively during the training and classification. 
+As you may until now realized, all introduced classes of techniques in this work for data
+augmentation were pre-defined families of statistical transformations. In other words, we generated
+synthetic images with computer vision techniques statistically before the training phase and our
+augmented data generated once and during the learning process we didn't change them. In fact, the basic idea of each of
+them is known as “poor man’s” data augmentation (PMDA) \cite{poor_man_data_augmentation}. The point
+is if neural networks, in general, can learn such complex relations and patterns in images,
+therefore they should be able to learn latent variables to improve data augmentation dynamically.
+Put the matter another way, in this method, we focus not only on the classification task and
+learning patterns of images but also on learning how to improve our image augmentation dynamically
+and iteratively during the training and classification.
+
+Before we start with the description of the Bayesian approach, it would be necessary to introduce
+generative models or more especially Generative Adversarial Networks (GANs). One of the remarkable
+works on GANs proposed by Goodfellow et al. \cite{TODO}. In the below first, we
+will introduce GANs and after that and in the Bayesian approach description we will explain how this
+approach uses the main idea of GANs and extend it to improve data augmentation.
+
+\subsection{Generative Adversarial Network (GAN)}
+\label{tit:Generative-Adversarial-Network}
+A Generative Adversarial Network (GAN), in general, consists of two parts:
+\begin{itemize}
+  \item \textbf{Generator}: As the name cleared itself, it tries to generate new data and simultaneously learns how to generate the data more plausible.
+  \item \textbf{Discriminator}: The discriminator learns to distinguish generated fake data from the generator and real data. Besides, it helps and teaches the generator like a kind teacher to generate more plausible data and close to real.
+\end{itemize}
+
+Indeed the generator and the discriminator play a minimax game. In other words, the generator
+tries to fool the discriminator with fake data and the discriminator tries to distinguish this
+matter and tell the generator that he failed to fool and helps the generator to generate data
+closer to real ones. In the beginning, the discriminator can simply distinguish the real data and
+the generator's fake data. But after each iteration, the generator becomes more intelligent and
+generates more plausible data.  In the end, the generator becomes so intelligent so that it can
+almost fool the discriminator. This means, that the discriminator's accuracy reduces to about
+$50\%$. In effect, the discriminator predicts almost randomly while it predicts between $2$ labels
+(real or fake). Sometimes it is even hard for humans to distinguish the
+generator's fake data and real data.
+
+The generator will be fed by random\footnote{noise}
+input to generate synthetic data. In general, GANs try to replicate a probability distribution. For this matter, they use loss function to measure the distance between the distribution of the generator's data and the distribution of the real data. As we mentioned Goodfellow el al. \cite{Same} suggest minimax loss in their work. The minimax loss defined as:
+
+\begin{equation} \label{eq:minimax_loss}
+  Minimax\ Loss = E_{x}[\log (D(x))]+E_{z}[\log (1-D(G(z)))]
+\end{equation}
 
 
-\section{Manifold Approach}
-\label{tit:manifold-approach}
+where $D(x)$  denotes the discriminator's estimate of the probability that real data instance x is
+real and $D(G(z))$ denotes the discriminator's estimate of the probability that a fake instance is
+real. It is clear that the Generator tries to minimize the (\ref{eq:minimax_loss}) and the
+discriminator tries to maximize it. Figure \ref{fig:gan_architecture} shows a basic architecture of a
+GAN.
+
+\begin{figure}
+  \centering
+  \label{fig:gan_architecture}
+  \includegraphics[width=1\textwidth]{fig/gan_architectur}
+  \caption{GAN architecture
+   \cite{TODO-google-reference}}
+\end{figure}
+
+Now and after briefly introduction of GANs we can start with the \textbf{Bayesian Approach}. One of
+the noteworthy work for data augmentation with the aid of the bayesian model proposed by Toan Tran
+et al. \cite{bayesian_approach}. In this approach, our deep learning model tries to estimate the
+distributions of labeled data and with aid of the estimated distributions optimizes the latent
+variable used for data augmentation. The approach uses the GANs architecture skeleton to generate
+synthetic data with the difference that the optimization of latent derived from the Bayesian model.
+The principle idea for data augmentation using latent variables proposed by the statistical learning
+community \cite{Statistical_data_augmentation}. Nevertheless applying the idea, directly into deep
+learning seeks a massive computational effort. Therefore we talked before about the estimation. To
+be more precise, the
+approach uses a novel Bayesian data augmenation algorithm, called Generalized Monte Carlo Expectation Maximization
+(GMCEM). This algorithm augments training data and mutually optimizes the network parameters. The
+algorithm successively generates synthetic data and use Monte Carlo to estimate the expected value
+of the network parameters given the previous estimate instead of calculating loss function. After
+the estimation of the expected value, the parameter values will be updated with stochastic gradient
+descent (SGD). In the end, the algorithm and approach turned in to reality with the aid of GANs. The
+proposed GAN consists of one generator and $2$ discriminators. As we in the GANs section
+(\ref{tit:Generative-Adversarial-Network}) discussed the generator is responsible to generate
+synthetic data and one of our discriminators distinguishes fake and real data. However, the second
+discriminator discriminates between the classes of data. Figure
+\ref{fig:bayesian-approach-gan-architecture} represents the utilized netwok architecture in this
+approach visually. This proposed architecture is nearly similar to the Auxiliary classifier GANs
+(AC-GANs) \cite{AC-GANS}. Nevertheless, in the AC-GANs discriminator responsible for both
+classification real-or-fake data and data labels (classes) and in our network we utilized $2$
+discriminators separately for this matter. 
+
+\begin{figure}
+  \centering
+  \label{fig:bayesian-approach-gan-architecture}
+  \includegraphics[width=0.5\textwidth]{fig/bayesian-approach-gan-architecture}
+  \caption{The network architecture of Bayesian data augmentaion approch \cite{bayesian_approach}. G: Generator, A: Authenticator, C: Classifier.}
+\end{figure}
+
+In the following, we will explain the utilized algorithm formally from the Toan Tran el al. \cite{bayesian_approach} work. As we mentioned the goal is to estimate the parameters of the neural networks using labeled data. The training process is defined by the following optimization problem: 
+
+\begin{equation} \label{eq:optimization-problem}
+  \theta^{*}=\arg \max \log p(\theta | \mathbf{y})
+\end{equation}
+Where training set denoted as $\mathcal{Y}=\left\{\mathbf{y}_{n}\right\}_{n=1}^{N}$ with $y=(t,x)$
+and $t\in\{1, ..., K\}$ (Classes-Set) and data samples $\mathbb{R}^D$ and $\theta$ denoted as
+model (network) parameters and observed posterior defined as:
+\begin{equation} \label{eq:observed-posterior}
+  p(\theta | \mathbf{y})=p(\theta | t, \mathbf{x}) \propto p(t | \mathbf{x}, \theta) p(\mathbf{x} | \theta) p(\theta)
+\end{equation}
+Now if we assume that the data samples $\mathcal{Y}$ are conditionaly independent, we can define the
+following loss function which maximize the (\ref{eq:optimization-problem}).
+
+\begin{equation} \label{eq:loss-function}
+  \log p(\theta | \mathbf{y}) \approx \log p(\theta)+\frac{1}{N} \sum_{l}^{N}\left(\log p\left(t_{n} | \mathbf{x}_{n}, \theta\right)+\log p\left(\mathbf{x}_{n} | \theta\right)\right)
+\end{equation}
+where $p(\theta)$ denotes a prior on the distribution of the deep learning model parameters, $p(t_n|x_n, \theta)$ 
+represents the conditional likelihood of label $t_n$, and $p(x_n|\theta)$ is the likelihood of the data $x$. 
+%\section{Manifold Approach}
+%\label{tit:manifold-approach}
+
+\chapter{Expriments \& Results}
 
 \chapter{Comprehensive Comparison}
 
-\chapter{Mthodes Combination and new method}
+\chapter{Contribution Of Work}
