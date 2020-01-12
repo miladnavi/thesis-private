@@ -52,7 +52,7 @@ methods to compare their efficiency and capability. These methods are as follow:
   \item \textbf{Elastic Distrotion} \ref{tit:elastic-distrotion}
   \item \textbf{Stroke Warping} \ref{tit:stroke-warping}
   \item \textbf{Bayesian Approach} \ref{tit:bayesian-approach}
-  \item \textbf{Manifold Approach} \ref{tit:manifold-approach}
+  %\item \textbf{Manifold Approach} \ref{tit:manifold-approach}
         %\item GANs
 \end{itemize}
 
@@ -85,7 +85,7 @@ find the information about the dataset at table
 \end{figure}
 
 
-\section{EMNIST}
+\section{Fashsion-MNIST}
 blablabla
 
 
@@ -121,11 +121,11 @@ blablabla
       c
       c}
     \hline
-    {\textbf{Dataset}}  & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
-    {\textbf{MNIST}}    & 10                                         & 60,000                                   & 10,000                                  & $28\times28$                                & 1 (Grayscale)                              \\
-    {\textbf{EMNIST}}   & 26                                         &                                          &                                         &                                             &                                            \\
-    {\textbf{CIFAR-10}} & 10                                         & 50,000                                   & 10,000                                  & $28\times28$                                & 3 (RGB)                                    \\
-    {\textbf{CIFAR100}} & 100                                        &                                          &                                         &                                             &                                            \\ \hline
+    {\textbf{Dataset}}        & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
+    {\textbf{MNIST}}          & 10                                         & 60,000                                   & 10,000                                  & $28\times28$                                & 1 (Grayscale)                              \\
+    {\textbf{Fashsion-MNIST}} & 26                                         &                                          &                                         &                                             &                                            \\
+    {\textbf{CIFAR-10}}       & 10                                         & 50,000                                   & 10,000                                  & $28\times28$                                & 3 (RGB)                                    \\
+    {\textbf{CIFAR100}}       & 100                                        &                                          &                                         &                                             &                                            \\ \hline
   \end{tabular}
   \caption{Structure and organization of the datasets.}
 \end{table}
@@ -250,6 +250,7 @@ will introduce GANs and after that and in the Bayesian approach description we w
 approach uses the main idea of GANs and extend it to improve data augmentation.
 
 \subsection{Generative Adversarial Network (GAN)}
+\label{tit:Generative-Adversarial-Network}
 A Generative Adversarial Network (GAN), in general, consists of two parts:
 \begin{itemize}
   \item \textbf{Generator}: As the name cleared itself, it tries to generate new data and simultaneously learns how to generate the data more plausible.
@@ -268,7 +269,7 @@ $50\%$. In effect, the discriminator predicts almost randomly while it predicts 
 generator's fake data and real data.
 
 The generator will be fed by random\footnote{noise}
- input to generate synthetic data. In general, GANs try to replicate a probability distribution. For this matter, they use loss function to measure the distance between the distribution of the generator's data and the distribution of the real data. As we mentioned Goodfellow el al. \cite{Same} suggest minimax loss in their work. The minimax loss defined as: 
+input to generate synthetic data. In general, GANs try to replicate a probability distribution. For this matter, they use loss function to measure the distance between the distribution of the generator's data and the distribution of the real data. As we mentioned Goodfellow el al. \cite{Same} suggest minimax loss in their work. The minimax loss defined as:
 
 \begin{equation} \label{eq:minimax_loss}
   Minimax\ Loss = E_{x}[\log (D(x))]+E_{z}[\log (1-D(G(z)))]
@@ -278,22 +279,71 @@ The generator will be fed by random\footnote{noise}
 where $D(x)$  denotes the discriminator's estimate of the probability that real data instance x is
 real and $D(G(z))$ denotes the discriminator's estimate of the probability that a fake instance is
 real. It is clear that the Generator tries to minimize the (\ref{eq:minimax_loss}) and the
-discriminator tries to maximize it. Figure \ref{fig:gan_architectur} shows a basic architectur of a
-GAN. 
+discriminator tries to maximize it. Figure \ref{fig:gan_architecture} shows a basic architecture of a
+GAN.
 
 \begin{figure}
   \centering
-  \label{fig:gan_architectur}
+  \label{fig:gan_architecture}
   \includegraphics[width=1\textwidth]{fig/gan_architectur}
-  \caption{GAN architectur \cite{TODO-google-reference}}
+  \caption{GAN architecture
+   \cite{TODO-google-reference}}
 \end{figure}
 
+Now and after briefly introduction of GANs we can start with the \textbf{Bayesian Approach}. One of
+the noteworthy work for data augmentation with the aid of the bayesian model proposed by Toan Tran
+et al. \cite{bayesian_approach}. In this approach, our deep learning model tries to estimate the
+distributions of labeled data and with aid of the estimated distributions optimizes the latent
+variable used for data augmentation. The approach uses the GANs architecture skeleton to generate
+synthetic data with the difference that the optimization of latent derived from the Bayesian model.
+The principle idea for data augmentation using latent variables proposed by the statistical learning
+community \cite{Statistical_data_augmentation}. Nevertheless applying the idea, directly into deep
+learning seeks a massive computational effort. Therefore we talked before about the estimation. To
+be more precise, the
+approach uses a novel Bayesian data augmenation algorithm, called Generalized Monte Carlo Expectation Maximization
+(GMCEM). This algorithm augments training data and mutually optimizes the network parameters. The
+algorithm successively generates synthetic data and use Monte Carlo to estimate the expected value
+of the network parameters given the previous estimate instead of calculating loss function. After
+the estimation of the expected value, the parameter values will be updated with stochastic gradient
+descent (SGD). In the end, the algorithm and approach turned in to reality with the aid of GANs. The
+proposed GAN consists of one generator and $2$ discriminators. As we in the GANs section
+(\ref{tit:Generative-Adversarial-Network}) discussed the generator is responsible to generate
+synthetic data and one of our discriminators distinguishes fake and real data. However, the second
+discriminator discriminates between the classes of data. Figure
+\ref{fig:bayesian-approach-gan-architecture} represents the utilized netwok architecture in this
+approach visually. This proposed architecture is nearly similar to the Auxiliary classifier GANs
+(AC-GANs) \cite{AC-GANS}. Nevertheless, in the AC-GANs discriminator responsible for both
+classification real-or-fake data and data labels (classes) and in our network we utilized $2$
+discriminators separately for this matter. 
 
+\begin{figure}
+  \centering
+  \label{fig:bayesian-approach-gan-architecture}
+  \includegraphics[width=0.5\textwidth]{fig/bayesian-approach-gan-architecture}
+  \caption{The network architecture of Bayesian data augmentaion approch \cite{bayesian_approach}. G: Generator, A: Authenticator, C: Classifier.}
+\end{figure}
 
-Now and after briefly introduction of GANs we can start with the \textbf{Bayesian Approach}.
+In the following, we will explain the utilized algorithm formally from the Toan Tran el al. \cite{bayesian_approach} work. As we mentioned the goal is to estimate the parameters of the neural networks using labeled data. The training process is defined by the following optimization problem: 
 
+\begin{equation} \label{eq:optimization-problem}
+  \theta^{*}=\arg \max \log p(\theta | \mathbf{y})
+\end{equation}
+Where training set denoted as $\mathcal{Y}=\left\{\mathbf{y}_{n}\right\}_{n=1}^{N}$ with $y=(t,x)$
+and $t\in\{1, ..., K\}$ (Classes-Set) and data samples $\mathbb{R}^D$ and $\theta$ denoted as
+model (network) parameters and observed posterior defined as:
+\begin{equation} \label{eq:observed-posterior}
+  p(\theta | \mathbf{y})=p(\theta | t, \mathbf{x}) \propto p(t | \mathbf{x}, \theta) p(\mathbf{x} | \theta) p(\theta)
+\end{equation}
+Now if we assume that the data samples $\mathcal{Y}$ are conditionaly independent, we can define the
+following loss function which maximize the (\ref{eq:optimization-problem}).
+
+\begin{equation} \label{eq:loss-function}
+  \log p(\theta | \mathbf{y}) \approx \log p(\theta)+\frac{1}{N} \sum_{l}^{N}\left(\log p\left(t_{n} | \mathbf{x}_{n}, \theta\right)+\log p\left(\mathbf{x}_{n} | \theta\right)\right)
+\end{equation}
+where $p(\theta)$ denotes a prior on the distribution of the deep learning model parameters, $p(t_n|x_n, \theta)$ 
+represents the conditional likelihood of label $t_n$, and $p(x_n|\theta)$ is the likelihood of the data $x$. 
 %\section{Manifold Approach}
-\label{tit:manifold-approach}
+%\label{tit:manifold-approach}
 
 \chapter{Expriments \& Results}
 

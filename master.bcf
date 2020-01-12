@@ -2017,6 +2017,12 @@
     <bcf:citekey order="19">Same</bcf:citekey>
     <bcf:citekey order="20">TODO-google-reference</bcf:citekey>
     <bcf:citekey order="21">TODO-google-reference</bcf:citekey>
+    <bcf:citekey order="22">bayesian_approach</bcf:citekey>
+    <bcf:citekey order="23">Statistical_data_augmentation</bcf:citekey>
+    <bcf:citekey order="24">AC-GANS</bcf:citekey>
+    <bcf:citekey order="25">bayesian_approach</bcf:citekey>
+    <bcf:citekey order="26">bayesian_approach</bcf:citekey>
+    <bcf:citekey order="27">bayesian_approach</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
