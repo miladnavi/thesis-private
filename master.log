@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  12 JAN 2020 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  13 JAN 2020 17:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2033,13 +2033,13 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 50.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkposn/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-)
+ [2
+
+])
 \tf@toc=\write8
 \openout8 = `master.toc'.
 
- [2
-
-]
+ [3]
 Package hyperref Info: Option `pageanchor' set `true' on input line 72.
  (./content.tex
 chapter 1.
@@ -2068,7 +2068,7 @@ chapter 2.
 
 ]
 chapter 3.
-<fig/mnist.jpeg, id=99, 481.8pt x 361.35pt>
+<fig/mnist.jpeg, id=122, 481.8pt x 361.35pt>
 File: fig/mnist.jpeg Graphic file (type jpg)
 <use fig/mnist.jpeg>
 Package pdftex.def Info: fig/mnist.jpeg  used on input line 83.
@@ -2080,7 +2080,7 @@ Package microtype Info: Character `029' is missing
 
 
  <./fig/mnist.jpeg>]
-<fig/cifar-10.png, id=119, 466.74374pt x 361.35pt>
+<fig/cifar-10.png, id=143, 466.74374pt x 361.35pt>
 File: fig/cifar-10.png Graphic file (type png)
 <use fig/cifar-10.png>
 Package pdftex.def Info: fig/cifar-10.png  used on input line 105.
@@ -2106,59 +2106,64 @@ chapter 5.
 
 
 ]
-<fig/label-preserving-transformation.png, id=145, 763.85374pt x 590.205pt>
+<fig/label-preserving-transformation.png, id=169, 763.85374pt x 590.205pt>
 File: fig/label-preserving-transformation.png Graphic file (type png)
 <use fig/label-preserving-transformation.png>
-Package pdftex.def Info: fig/label-preserving-transformation.png  used on input line 172.
+Package pdftex.def Info: fig/label-preserving-transformation.png  used on input line 173.
 (pdftex.def)             Requested size: 429.89502pt x 332.1606pt.
  [7 <./fig/label-preserving-transformation.png>] [8]
-<fig/stroke_warping_transforamtions.jpg, id=163, 2778.38pt x 712.6625pt>
+<fig/stroke_warping_transforamtions.jpg, id=187, 522.95375pt x 154.5775pt>
 File: fig/stroke_warping_transforamtions.jpg Graphic file (type jpg)
 <use fig/stroke_warping_transforamtions.jpg>
-Package pdftex.def Info: fig/stroke_warping_transforamtions.jpg  used on input line 228.
-(pdftex.def)             Requested size: 429.89502pt x 110.26581pt.
+Package pdftex.def Info: fig/stroke_warping_transforamtions.jpg  used on input line 229.
+(pdftex.def)             Requested size: 429.89502pt x 127.07277pt.
  [9 <./fig/stroke_warping_transforamtions.jpg>] [10]
-<fig/gan_architectur.png, id=186, 828.09375pt x 384.43625pt>
+<fig/gan_architectur.png, id=209, 828.09375pt x 384.43625pt>
 File: fig/gan_architectur.png Graphic file (type png)
 <use fig/gan_architectur.png>
-Package pdftex.def Info: fig/gan_architectur.png  used on input line 288.
+Package pdftex.def Info: fig/gan_architectur.png  used on input line 289.
 (pdftex.def)             Requested size: 429.89502pt x 199.5795pt.
  [11 <./fig/gan_architectur.png>]
-<fig/bayesian-approach-gan-architecture.png, id=200, 205.76875pt x 209.78375pt>
+<fig/bayesian-approach-gan-architecture.png, id=223, 205.76875pt x 209.78375pt>
 File: fig/bayesian-approach-gan-architecture.png Graphic file (type png)
 <use fig/bayesian-approach-gan-architecture.png>
-Package pdftex.def Info: fig/bayesian-approach-gan-architecture.png  used on input line 322.
+Package pdftex.def Info: fig/bayesian-approach-gan-architecture.png  used on input line 323.
 (pdftex.def)             Requested size: 214.94751pt x 219.14305pt.
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 332.
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 333.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [12 <./fig/bayesian-approach-gan-architecture.png>] [13]
+) [12 <./fig/bayesian-approach-gan-architecture.png>]
+Overfull \hbox (28.39665pt too wide) detected at line 387
+[][][]
+ []
+
+[13] [14]
 chapter 6.
-[14
-
-
-]
-chapter 7.
 [15
 
 
 ]
+chapter 7.
+[16
+
+
+]
 chapter 8.
-) [16
+) [17
 
 
 ]
 chapter 9.
-[17
+[18
 
 
-] [18]
+] [19]
 Package tocbasic Info: character protrusion at lof deactivated on input line 102.
  (./master.lof)
 \tf@lof=\write9
 \openout9 = `master.lof'.
 
- [19
+ [20
 
 
 
@@ -2168,11 +2173,11 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 102
 \tf@lot=\write10
 \openout10 = `master.lot'.
 
- [20
+ [21
 
 
 
-] (./tpl/declaration.tex) [21
+] (./tpl/declaration.tex) [22
 
 
 
@@ -2189,18 +2194,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51533 strings out of 492616
- 990523 string characters out of 6129482
- 1559907 words of memory out of 5000000
- 54231 multiletter control sequences out of 15000+600000
- 783291 words of font info for 520 fonts, out of 8000000 for 9000
+ 51559 strings out of 492616
+ 990815 string characters out of 6129482
+ 1562059 words of memory out of 5000000
+ 54243 multiletter control sequences out of 15000+600000
+ 783729 words of font info for 519 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,120p,9178b,1758s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmitc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmite.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb>
-Output written on master.pdf (24 pages, 1570262 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmitc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmite.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on master.pdf (26 pages, 1489391 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 90344 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 508 PDF objects out of 1000 (max. 8388607)
+ 442 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 90424 words of extra memory for PDF output out of 106986 (max. 10000000)
 
