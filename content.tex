@@ -62,6 +62,8 @@ methods to compare their efficiency and capability. These methods are as follow:
 %%%%% Data Representation %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Data Representation}
+\label{tit:data-representation}
+
 Here should be an Introdution of chapter and introduce the data
 
 \section{MNIST}
@@ -398,8 +400,29 @@ As we made it clear the above formal explanations and equations are derived from
 
 \chapter{Expriments \& Results}
 \section{CNNs Architecture}
+In this section, we will introduce our classifiers (CNNs) architecture for various datasets which we
+introduced in the chapter (\ref{tit:data-representation}). We picked our CNNs architecture from
+different sources regarding their non-heavy complexity and desirable accuracy.  Maybe our chosen
+CNNs architecture doesn't provide the best-reported accuracies on datasets, but while we use the
+same CNN-architecture for each dataset and we aim to compare various data augmentation approaches on
+each dataset, it would not affect our results. Moreover, as we will report in section (\ref{tit:results})
+our accuracies are not so far away from best-reported accuracies.
 
 \subsection{MNIST}
+For the MNIST dataset, we have chosen a semi-simple CNN architecture from \cite{MNIST_CNN_Architecture} with $2$
+convolutional layers and $2$ fully connected layers. ReLU function is utilized as the activation
+function. For training and to calculate the loss function, \textbf{CrossEntropyLoss} \ref{TODO} and
+to optimize the network's parameters \textbf{Adam optimizer} \ref{TODO} from the Pytorch have been
+chosen. The learining rate for the Adam optimizer is set to $0.001$. To reduce overffiting, a
+drop-out layer is placed at end of seconde convolutional layer. Figure \ref{fig:MNIST_CNN_Architecture} represents the explained CNN architecture visually. 
+
+\begin{figure}
+  \centering
+  \label{fig:MNIST_CNN_Architecture}
+  \includegraphics[width=1\textwidth]{fig/MNIST-CNN-Architecture}
+  \caption{CNN Architecture for training the EMNIST dataset \cite{MNIST_CNN_Architecture_Image}}
+\end{figure}
+
 \subsection{Fashsion-MNIST}
 \subsection{CIFAR-10}
 
@@ -412,7 +435,7 @@ As we made it clear the above formal explanations and equations are derived from
 \subsection{Bayesian Approach}
 
 \section{Results}
-
+\label{tit:results}
 
 
 \chapter{Comprehensive Comparison}

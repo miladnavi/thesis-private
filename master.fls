@@ -628,6 +628,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/kpfonts/jkpbn7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/kpfonts/jkpbn7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/kpfonts/jkpbne.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/kpfonts/jkpbn8r.tfm
+INPUT fig/MNIST-CNN-Architecture.png
+INPUT ./fig/MNIST-CNN-Architecture.png
+INPUT ./fig/MNIST-CNN-Architecture.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/kpfonts/jkpbn7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/kpfonts/jkpbn7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/kpfonts/jkpbn7t.tfm

@@ -2024,6 +2024,9 @@
     <bcf:citekey order="26">bayesian_approach</bcf:citekey>
     <bcf:citekey order="27">bayesian_approach</bcf:citekey>
     <bcf:citekey order="28">bayesian_approach</bcf:citekey>
+    <bcf:citekey order="29">MNIST_CNN_Architecture</bcf:citekey>
+    <bcf:citekey order="30">MNIST_CNN_Architecture_Image</bcf:citekey>
+    <bcf:citekey order="31">MNIST_CNN_Architecture_Image</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
