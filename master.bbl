@@ -596,6 +596,28 @@
       \verb http://papers.nips.cc/paper/1250-effective-training-of-a-neural-network-character-classifier-for-word-recognition.pdf
       \endverb
     \endentry
+    \entry{CIFAR_CNN_Architecture}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e6bcafe2aefdf05950cb5ad67e87fa1f}{%
+           family={Zhenye},
+           familyi={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \strng{fullhash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \strng{bibnamehash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \strng{authorbibnamehash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \strng{authornamehash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \strng{authorfullhash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \field{labelalpha}{Zhe18}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://zhenye-na.github.io/2018/09/28/pytorch-cnn-cifar10.html}}
+      \field{note}{Accessed: 2020-01-15}
+      \field{title}{Deep Learning with Pytorch on CIFAR10 Dataset}
+      \field{year}{2018}
+    \endentry
   \enddatalist
   \missing{Same}
   \missing{TODO}

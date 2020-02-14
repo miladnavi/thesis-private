@@ -125,8 +125,8 @@ blablabla
     \hline
     {\textbf{Dataset}}        & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
     {\textbf{MNIST}}          & 10                                         & 60,000                                   & 10,000                                  & $28\times28$                                & 1 (Grayscale)                              \\
-    {\textbf{Fashsion-MNIST}} & 26                                         &                                          &                                         &                                             &                                            \\
-    {\textbf{CIFAR-10}}       & 10                                         & 50,000                                   & 10,000                                  & $28\times28$                                & 3 (RGB)                                    \\
+    {\textbf{Fashsion-MNIST}} & 10                                         &                                          &                                         &                                             &                                            \\
+    {\textbf{CIFAR-10}}       & 10                                         & 50,000                                   & 10,000                                  & $32\times32$                                & 3 (RGB)                                    \\
     {\textbf{CIFAR100}}       & 100                                        &                                          &                                         &                                             &                                            \\ \hline
   \end{tabular}
   \caption{Structure and organization of the datasets.}
@@ -413,18 +413,35 @@ For the MNIST dataset, we have chosen a semi-simple CNN architecture from \cite{
 convolutional layers and $2$ fully connected layers. ReLU function is utilized as the activation
 function. For training and to calculate the loss function, \textbf{CrossEntropyLoss} \ref{TODO} and
 to optimize the network's parameters \textbf{Adam optimizer} \ref{TODO} from the Pytorch have been
-chosen. The learining rate for the Adam optimizer is set to $0.001$. To reduce overffiting, a
-drop-out layer is placed at end of seconde convolutional layer. Figure \ref{fig:MNIST_CNN_Architecture} represents the explained CNN architecture visually. 
+chosen. The learning rate for Adam optimizer is set to $0.001$. To reduce overfitting, a
+drop-out layer is placed at the end of the second convolutional layer. Figure \ref{fig:MNIST_CNN_Architecture} represents the explained CNN architecture visually.
 
 \begin{figure}
   \centering
   \label{fig:MNIST_CNN_Architecture}
   \includegraphics[width=1\textwidth]{fig/MNIST-CNN-Architecture}
-  \caption{CNN Architecture for training the EMNIST dataset \cite{MNIST_CNN_Architecture_Image}}
+  \caption{CNN Architecture for training the CIFAR-10 dataset \cite{MNIST_CNN_Architecture_Image}}
 \end{figure}
 
+
 \subsection{Fashsion-MNIST}
+
 \subsection{CIFAR-10}
+
+\begin{figure}
+  \centering
+  \label{fig:CIFAR_CNN_Architecture}
+  \includegraphics[width=1\textwidth]{fig/CIFAR-CNN-Architecture}
+  \caption{CNN Architecture for training the CIFAR-10 dataset}
+\end{figure}
+
+For the CIFAR-10 dataset, we have chosen a bit more complex CNN architecture from \cite{CIFAR_CNN_Architecture} with $6$
+convolutional layers and $3$ fully connected layers. ReLU function is utilized as the activation
+function. For training and to calculate the loss function, \textbf{CrossEntropyLoss} and
+to optimize the network's parameters \textbf{Adam optimizer} as same as $2$ previous CNNs architecture have been
+chosen. The learning rate for Adam optimizer is set again to $0.001$. To reduce overfitting, a
+drop-out layer is placed at the end of the fourth convolutional layer. Figure \ref{fig:CIFAR_CNN_Architecture} represents the explained CNN architecture visually. 
+
 
 
 \section{Implementaions}

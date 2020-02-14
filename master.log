@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  15 JAN 2020 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  15 JAN 2020 17:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2150,17 +2150,25 @@ File: fig/MNIST-CNN-Architecture.png Graphic file (type png)
 <use fig/MNIST-CNN-Architecture.png>
 Package pdftex.def Info: fig/MNIST-CNN-Architecture.png  used on input line 422.
 (pdftex.def)             Requested size: 429.89502pt x 145.78918pt.
+<fig/CIFAR-CNN-Architecture.png, id=260, 785.93625pt x 1217.54875pt>
+File: fig/CIFAR-CNN-Architecture.png Graphic file (type png)
+<use fig/CIFAR-CNN-Architecture.png>
+Package pdftex.def Info: fig/CIFAR-CNN-Architecture.png  used on input line 434.
+(pdftex.def)             Requested size: 429.89502pt x 665.99397pt.
+
+LaTeX Warning: Float too large for page by 28.1339pt on input line 436.
+
 [15
 
 
-] [16 <./fig/MNIST-CNN-Architecture.png>]
+] [16 <./fig/MNIST-CNN-Architecture.png>] [17 <./fig/CIFAR-CNN-Architecture.png>]
 chapter 7.
-[17
+[18
 
 
 ]
 chapter 8.
-) [18
+) [19
 
 
 ]
@@ -2170,16 +2178,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--82
 []\T1/jkposn/m/it/10 (+20) Convolutional Neu-ral Net-works Tu-to-rial in Py-Torch\T1/jkposn/m/n/10 (+20) . [][]$\T1/zi4/m/n/10 https : / /
  []
 
-[19
+[20
 
 
-] [20]
+] [21]
 Package tocbasic Info: character protrusion at lof deactivated on input line 102.
  (./master.lof)
 \tf@lof=\write9
 \openout9 = `master.lof'.
 
- [21
+ [22
 
 
 
@@ -2189,11 +2197,11 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 102
 \tf@lot=\write10
 \openout10 = `master.lot'.
 
- [22
+ [23
 
 
 
-] (./tpl/declaration.tex) [23
+] (./tpl/declaration.tex) [24
 
 
 
@@ -2214,18 +2222,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51576 strings out of 492616
- 991365 string characters out of 6129482
- 1561355 words of memory out of 5000000
- 54255 multiletter control sequences out of 15000+600000
- 783729 words of font info for 519 fonts, out of 8000000 for 9000
+ 51592 strings out of 492616
+ 991768 string characters out of 6129482
+ 1561462 words of memory out of 5000000
+ 54262 multiletter control sequences out of 15000+600000
+ 784221 words of font info for 523 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,120p,9178b,1758s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmitc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmite.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on master.pdf (27 pages, 1947064 bytes).
+Output written on master.pdf (28 pages, 2034268 bytes).
 PDF statistics:
- 531 PDF objects out of 1000 (max. 8388607)
- 461 compressed objects within 5 object streams
- 97 named destinations out of 1000 (max. 500000)
- 90429 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 544 PDF objects out of 1000 (max. 8388607)
+ 471 compressed objects within 5 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 90434 words of extra memory for PDF output out of 106986 (max. 10000000)
 
