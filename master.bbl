@@ -19,6 +19,16 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{MNIST_CNN_Architecture_Image}{misc}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-in-pytorch/}}
+      \field{note}{Accessed: 2020-01-15}
+      \field{title}{Convolutional Neural Networks Tutorial in PyTorch}
+      \field{year}{2017}
+    \endentry
     \entry{AC-GANS}{misc}{}
       \name{author}{2}{}{%
         {{hash=e7f99f5a6446b361517d6011546d8f8c}{%
@@ -254,6 +264,30 @@
       \field{note}{Accessed: 2019-12-16}
       \field{title}{{exdb} THE MNIST DATABASE of handwritten digits}
       \warn{\item Datamodel: Entry 'MNIST_data_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
+    \entry{MNIST_CNN_Architecture}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=861ed2412d202dabb109802db3e84cb7}{%
+           family={repository},
+           familyi={r\bibinitperiod},
+           given={GitHub},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{861ed2412d202dabb109802db3e84cb7}
+      \strng{fullhash}{861ed2412d202dabb109802db3e84cb7}
+      \strng{bibnamehash}{861ed2412d202dabb109802db3e84cb7}
+      \strng{authorbibnamehash}{861ed2412d202dabb109802db3e84cb7}
+      \strng{authornamehash}{861ed2412d202dabb109802db3e84cb7}
+      \strng{authorfullhash}{861ed2412d202dabb109802db3e84cb7}
+      \field{labelalpha}{rep17}
+      \field{sortinit}{r}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/adventuresinML/adventures-in-ml-code}}
+      \field{note}{Accessed: 2020-01-15}
+      \field{title}{adventures-in-ml-code}
+      \field{year}{2017}
     \endentry
     \entry{stroke_idea_1992}{incollection}{}
       \name{author}{4}{}{%
@@ -561,6 +595,28 @@
       \verb{url}
       \verb http://papers.nips.cc/paper/1250-effective-training-of-a-neural-network-character-classifier-for-word-recognition.pdf
       \endverb
+    \endentry
+    \entry{CIFAR_CNN_Architecture}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e6bcafe2aefdf05950cb5ad67e87fa1f}{%
+           family={Zhenye},
+           familyi={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \strng{fullhash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \strng{bibnamehash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \strng{authorbibnamehash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \strng{authornamehash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \strng{authorfullhash}{e6bcafe2aefdf05950cb5ad67e87fa1f}
+      \field{labelalpha}{Zhe18}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://zhenye-na.github.io/2018/09/28/pytorch-cnn-cifar10.html}}
+      \field{note}{Accessed: 2020-01-15}
+      \field{title}{Deep Learning with Pytorch on CIFAR10 Dataset}
+      \field{year}{2018}
     \endentry
   \enddatalist
   \missing{Same}

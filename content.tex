@@ -52,7 +52,7 @@ methods to compare their efficiency and capability. These methods are as follow:
   \item \textbf{Elastic Distrotion} \ref{tit:elastic-distrotion}
   \item \textbf{Stroke Warping} \ref{tit:stroke-warping}
   \item \textbf{Bayesian Approach} \ref{tit:bayesian-approach}
-  %\item \textbf{Manifold Approach} \ref{tit:manifold-approach}
+        %\item \textbf{Manifold Approach} \ref{tit:manifold-approach}
         %\item GANs
 \end{itemize}
 
@@ -62,6 +62,8 @@ methods to compare their efficiency and capability. These methods are as follow:
 %%%%% Data Representation %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Data Representation}
+\label{tit:data-representation}
+
 Here should be an Introdution of chapter and introduce the data
 
 \section{MNIST}
@@ -123,8 +125,8 @@ blablabla
     \hline
     {\textbf{Dataset}}        & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
     {\textbf{MNIST}}          & 10                                         & 60,000                                   & 10,000                                  & $28\times28$                                & 1 (Grayscale)                              \\
-    {\textbf{Fashsion-MNIST}} & 26                                         &                                          &                                         &                                             &                                            \\
-    {\textbf{CIFAR-10}}       & 10                                         & 50,000                                   & 10,000                                  & $28\times28$                                & 3 (RGB)                                    \\
+    {\textbf{Fashsion-MNIST}} & 10                                         &                                          &                                         &                                             &                                            \\
+    {\textbf{CIFAR-10}}       & 10                                         & 50,000                                   & 10,000                                  & $32\times32$                                & 3 (RGB)                                    \\
     {\textbf{CIFAR100}}       & 100                                        &                                          &                                         &                                             &                                            \\ \hline
   \end{tabular}
   \caption{Structure and organization of the datasets.}
@@ -158,7 +160,8 @@ clear, this method aims to generate new data from a single data with the same la
 
 This method consists of generating image translations and horizontal reflectins. Image translations mean, random patches from the original images. The size of the patches are smaller than the
 size of the original images. We will extract all pssobile translations (all possible patches which fit in the image) from our image.
-These extracted translations (extracted random patches) and their horizontal reflection will be used for training our network. Given a single channel (gray) n$\times$n image and the translation
+These extracted translations (extracted random patches) and their horizontal reflection will be used
+for training our network. Given a single channel (grayscale) n$\times$n image and the translation
 pathce with size of m$\times$m and $n>m$ then the training dataset will increase by a factor: $$2\times(n-m+1)\times(n-m+1)$$ In the figur \ref{fig:label-preserving-trasformation} is the process of the translations
 and reflections of a small image presented.
 
@@ -212,21 +215,21 @@ $\sigma$. The values of $\sigma$ and $\alpha$ depends on the image size and the 
 This method as same as previously introduced methods uses predetermined families of transformations.
 In other words, we enlarge our dataset artificially with the aid of well-known classical computer
 vision transformations. This method notwithstanding of non-heavy complexity accomplished desirable
-results even on medical purposes \cite{stroke_tumor}. The ideas of this Methode raised from Tangent
-Dist and Tangent Prop \cite{stroke_idea_1992} and \cite{stroke_idea_1993} works.
+results even on medical purposes \cite{stroke_tumor}. The ideas of this methode raised from Tangent
+Dist \cite{stroke_idea_1992} and Tangent Prop \cite{stroke_idea_1993} works.
 
 In this method, we perform small changes in images to augment our data.  That means we augment our
 images with skewing, rotating and shearing (scaling) them \cite{storke_warping_1997_source}. As same as the
 label preserving transformation and elastic distortion the augmentation will be started before the
-training phase and the training will be performed on enlarged data. In figure
-\ref{fig:stroke_warping_transforamtions} represents each mentioned translation to make them visually
+training phase and the training will be performed on enlarged data. Figure
+\ref{fig:stroke_warping_transforamtions} represents each mentioned transformation to make them visually
 understandable.
 
 \begin{figure}
   \centering
   \label{fig:stroke_warping_transforamtions}
   \includegraphics[width=1\textwidth]{fig/stroke_warping_transforamtions}
-  \caption{An exmaple of rotation, skew, and shear (scale) translations for stroke warping respectively from left to right. The first image from left is the orginal image \cite{TODO-Augmentaion}}
+  \caption{An exmaple of rotation, skew, and shear (scale) transforamtions for stroke warping respectively from left to right \cite{TODO-Augmentaion}}
 \end{figure}
 
 
@@ -287,7 +290,7 @@ GAN.
   \label{fig:gan_architecture}
   \includegraphics[width=1\textwidth]{fig/gan_architectur}
   \caption{GAN architecture
-   \cite{TODO-google-reference}}
+    \cite{TODO-google-reference}}
 \end{figure}
 
 Now and after briefly introduction of GANs we can start with the \textbf{Bayesian Approach}. One of
@@ -314,7 +317,7 @@ discriminator discriminates between the classes of data. Figure
 approach visually. This proposed architecture is nearly similar to the Auxiliary classifier GANs
 (AC-GANs) \cite{AC-GANS}. Nevertheless, in the AC-GANs discriminator responsible for both
 classification real-or-fake data and data labels (classes) and in our network we utilized $2$
-discriminators separately for this matter. 
+discriminators separately for this matter.
 
 \begin{figure}
   \centering
@@ -323,7 +326,7 @@ discriminators separately for this matter.
   \caption{The network architecture of Bayesian data augmentaion approch \cite{bayesian_approach}. G: Generator, A: Authenticator, C: Classifier.}
 \end{figure}
 
-In the following, we will explain the utilized algorithm formally from the Toan Tran el al. \cite{bayesian_approach} work. As we mentioned the goal is to estimate the parameters of the neural networks using labeled data. The training process is defined by the following optimization problem: 
+In the following, we will explain the utilized algorithm formally from the Toan Tran el al. work \cite{bayesian_approach}. As we mentioned the goal is to estimate the parameters of the neural networks using labeled data. The training process is defined by the following optimization problem:
 
 \begin{equation} \label{eq:optimization-problem}
   \theta^{*}=\arg \max \log p(\theta | \mathbf{y})
@@ -340,12 +343,117 @@ following loss function which maximize the (\ref{eq:optimization-problem}).
 \begin{equation} \label{eq:loss-function}
   \log p(\theta | \mathbf{y}) \approx \log p(\theta)+\frac{1}{N} \sum_{l}^{N}\left(\log p\left(t_{n} | \mathbf{x}_{n}, \theta\right)+\log p\left(\mathbf{x}_{n} | \theta\right)\right)
 \end{equation}
-where $p(\theta)$ denotes a prior on the distribution of the deep learning model parameters, $p(t_n|x_n, \theta)$ 
-represents the conditional likelihood of label $t_n$, and $p(x_n|\theta)$ is the likelihood of the data $x$. 
+where $p(\theta)$ denotes a prior on the distribution of the deep learning model parameters, $p(t_n|x_n, \theta)$
+represents the conditional likelihood of label $t_n$, and $p(x_n|\theta)$ is the likelihood of the
+data $x$.
+
+After estimation and optimization the $\theta$ on our training set, it is the time to generate
+synthetic data from $y$ using latent variable $z$. Therefore the augmented $p(\theta | y,z)$ can be
+estimated. The latent variable $z$ as same as $y$ defined as $z = (t^{\alpha}, x^{\alpha})$ where
+$t^{\alpha} \in \{1,...,K\}$ denotes associated label and $x^{\alpha} \in   \mathbb{R}^D$ is
+synthesized sample. As we mentioned to avoid a heavy and most likely interminable computation,
+instead of the Expectation-Maximization (EM) algorithm we will use Generalized Monte Carlo EM
+Algorithm to estimate the expected value and maximize it.Hence the augmented posterior $p(\theta|y,
+  z)$ for latent variable $z$ will be as follow:
+
+\begin{equation} \label{eq:latent-variable}
+  p(\theta | \mathbf{y}, \mathbf{z})=\frac{p(\mathbf{y}, \mathbf{z}, \theta)}{p(\mathbf{y}, \mathbf{z})}=\frac{p(\mathbf{z} | \mathbf{y}, \theta) p(\theta | \mathbf{y}) p(\mathbf{y})}{p(\mathbf{z} | \mathbf{y}) p(\mathbf{y})}=\frac{p(\mathbf{z} | \mathbf{y}, \theta) p(\theta | \mathbf{y})}{p(\mathbf{z} | \mathbf{y})}
+\end{equation}
+where the expectation step will be defined as follow:
+\begin{equation} \label{eq:expectation-latent-variable}
+  p(\theta | \mathbf{y}, \mathbf{z})=\frac{p(\mathbf{y}, \mathbf{z}, \theta)}{p(\mathbf{y}, \mathbf{z})}=\frac{p(\mathbf{z} | \mathbf{y}, \theta) p(\theta | \mathbf{y}) p(\mathbf{y})}{p(\mathbf{z} | \mathbf{y}) p(\mathbf{y})}=\frac{p(\mathbf{z} | \mathbf{y}, \theta) p(\theta | \mathbf{y})}{p(\mathbf{z} | \mathbf{y})}
+\end{equation}
+where \(\mathbf{z}_{m} \sim p\left(\mathbf{z} | \mathbf{y}, \theta^{i}\right),\) for \(m \in\{1,
+\ldots, M\} .\) In \((6),\) if the label \(t_{m}^{a}\) of the \(m^{t h}\) synthesized sample
+\(\mathbf{z}_{\mathbf{m}}\) is known, then \(\mathbf{x}_{m}^{a}\) can be sampled from the
+distribution \(p\left(\mathbf{x}_{m}^{a} | \theta, \mathbf{y}, t_{m}^{a}\right) .\) Hence, the
+conditional distribution \(p(\mathbf{z} | \mathbf{y}, \theta)\) can be decomposed as:
+
+\begin{equation}
+  p(\mathbf{z} | \mathbf{y}, \theta)=p\left(t^{a}, \mathbf{x}^{a} | \mathbf{y}, \theta\right)=p\left(t^{a} | \mathbf{x}^{a}, \mathbf{y}, \theta\right) p\left(\mathbf{x}^{a} | \mathbf{y}, \theta\right)
+\end{equation}
+where \(\left(t^{a}, \mathbf{x}^{a}\right)\) are conditionally independent of y given that all the
+information from the training set y is summarized in \(\theta\) this means that \(p\left(t^{a} |
+\mathbf{x}^{a}, \mathbf{y}, \theta\right)=p\left(t^{a} | \mathbf{x}^{a}, \theta\right),\) and
+\(p\left(\mathbf{x}^{a} | \mathbf{y}, \theta\right)=p\left(\mathbf{x}^{a} | \theta\right)\).
+Now with respect to the $\theta$ for the maximization step with concern of removing the independent terms
+for $\theta$ will derived the maximization of $\hat{Q}\left(\theta, \theta^{i}\right)$ as follow:
+
+\begin{equation}
+  \begin{aligned}
+     & \hat{Q}\left(\theta, \theta^{i}\right)=\log p(\theta)+\frac{1}{N} \sum_{n=1}^{N}\left(\log p\left(t_{n} | \mathbf{x}_{n}, \theta\right)+\log p\left(\mathbf{x}_{n} | \theta\right)\right)+\frac{1}{M} \sum_{m=1}^{m} \log p\left(\mathbf{z}_{m} | \mathbf{y}, \theta\right) \\
+     & =                                                                                                                                                                                                                                                                           \\
+     & \log p(\theta)+\frac{1}{N} \sum_{n=1}^{N}\left(\log p\left(t_{n} | \mathbf{x}_{n}, \theta\right)+\log p\left(\mathbf{x}_{n} | \theta\right)\right)+\frac{1}{M}
+    \sum_{m=1}^{n}\left(\log p\left(t_{m}^{a} | \mathbf{x}_{m}^{a}, \theta\right)+\log p\left(\mathbf{x}_{m}^{a} | \theta\right)\right)
+  \end{aligned}
+\end{equation}
+
+After all, we estimate the $\theta^{i +1}$ so that $\hat{Q}(\theta^{i +1}, \theta^{i}) >
+\hat{Q}(\theta^{i}, \theta^{i})$. To reduce the computation complexity as we mentioned instead of
+gradient descent, stochastic gradient decent (SGD) utilized for estimating the $\theta^{i +1}$. The
+iteration will be continued until $|\theta^{i +1} - \theta^{i}|$ get sufficiently small. 
+
+As we made it clear the above formal explanations and equations are derived from \cite{bayesian_approach} and in some points are matched one-to-one.  
+
 %\section{Manifold Approach}
 %\label{tit:manifold-approach}
 
 \chapter{Expriments \& Results}
+\section{CNNs Architecture}
+In this section, we will introduce our classifiers (CNNs) architecture for various datasets which we
+introduced in the chapter (\ref{tit:data-representation}). We picked our CNNs architecture from
+different sources regarding their non-heavy complexity and desirable accuracy.  Maybe our chosen
+CNNs architecture doesn't provide the best-reported accuracies on datasets, but while we use the
+same CNN-architecture for each dataset and we aim to compare various data augmentation approaches on
+each dataset, it would not affect our results. Moreover, as we will report in section (\ref{tit:results})
+our accuracies are not so far away from best-reported accuracies.
+
+\subsection{MNIST}
+For the MNIST dataset, we have chosen a semi-simple CNN architecture from \cite{MNIST_CNN_Architecture} with $2$
+convolutional layers and $2$ fully connected layers. ReLU function is utilized as the activation
+function. For training and to calculate the loss function, \textbf{CrossEntropyLoss} \ref{TODO} and
+to optimize the network's parameters \textbf{Adam optimizer} \ref{TODO} from the Pytorch have been
+chosen. The learning rate for Adam optimizer is set to $0.001$. To reduce overfitting, a
+drop-out layer is placed at the end of the second convolutional layer. Figure \ref{fig:MNIST_CNN_Architecture} represents the explained CNN architecture visually.
+
+\begin{figure}
+  \centering
+  \label{fig:MNIST_CNN_Architecture}
+  \includegraphics[width=1\textwidth]{fig/MNIST-CNN-Architecture}
+  \caption{CNN Architecture for training the CIFAR-10 dataset \cite{MNIST_CNN_Architecture_Image}}
+\end{figure}
+
+
+\subsection{Fashsion-MNIST}
+
+\subsection{CIFAR-10}
+
+\begin{figure}
+  \centering
+  \label{fig:CIFAR_CNN_Architecture}
+  \includegraphics[width=1\textwidth]{fig/CIFAR-CNN-Architecture}
+  \caption{CNN Architecture for training the CIFAR-10 dataset}
+\end{figure}
+
+For the CIFAR-10 dataset, we have chosen a bit more complex CNN architecture from \cite{CIFAR_CNN_Architecture} with $6$
+convolutional layers and $3$ fully connected layers. ReLU function is utilized as the activation
+function. For training and to calculate the loss function, \textbf{CrossEntropyLoss} and
+to optimize the network's parameters \textbf{Adam optimizer} as same as $2$ previous CNNs architecture have been
+chosen. The learning rate for Adam optimizer is set again to $0.001$. To reduce overfitting, a
+drop-out layer is placed at the end of the fourth convolutional layer. Figure \ref{fig:CIFAR_CNN_Architecture} represents the explained CNN architecture visually. 
+
+
+
+\section{Implementaions}
+
+\subsection{Label Preserving Transformations}
+\subsection{Elastic Distortion}
+\subsection{Stroke Warping}
+\subsection{Bayesian Approach}
+
+\section{Results}
+\label{tit:results}
+
 
 \chapter{Comprehensive Comparison}
 
