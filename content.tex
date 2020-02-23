@@ -109,8 +109,6 @@ find the information about the dataset at table
 \end{figure}
 
 
-\section{CIFAR100}
-blablabla
 
 
 \begin{table}[]
@@ -126,8 +124,9 @@ blablabla
     {\textbf{Dataset}}        & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
     {\textbf{MNIST}}          & 10                                         & 60,000                                   & 10,000                                  & $28\times28$                                & 1 (Grayscale)                              \\
     {\textbf{Fashsion-MNIST}} & 10                                         &                                          &                                         &                                             &                                            \\
-    {\textbf{CIFAR-10}}       & 10                                         & 50,000                                   & 10,000                                  & $32\times32$                                & 3 (RGB)                                    \\
-    {\textbf{CIFAR100}}       & 100                                        &                                          &                                         &                                             &                                            \\ \hline
+    {\textbf{CIFAR-10}}       & 10                                         & 50,000
+    & 10,000                                  & $32\times32$                                & 3
+    (RGB)                                         \\ \hline
   \end{tabular}
   \caption{Structure and organization of the datasets.}
 \end{table}
@@ -146,28 +145,44 @@ blablabla
 %%%%%%% Data Augmentaion %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Data Augmentaion}
-Here should be Introdution for data augmenation
 
+In this chapter, we will introduce a few noteworthy related works in this field which are mainly consist of $2$ approaches and several techniques.
+In what follows, we solely focus on image data.  While some techniques might be applicable to other
+types of data as well, we shall explore them when used on image datasets.
 
-\section{Label Preserving Transformation}
+As the name clears itself, we looking for enlarging datasets artificially and generate synthetic
+data based on the obtainable few samples to increase the accuracy of the prediction.
+
+\section{Label Preserving Transformations}
 \label{tit:label-preserving}
+When training neural networks, label preserving transformations are a commonly used approach with classes of
+techniques for enlarging datasets by generating generic data. The advantage of using this approach
+and its techniques, when available, is twofold. The first benefit is the low space complexity of these
+methods since one does not necessarily need to save the generated data on storage. Also, these
+transformations are usually of relatively smaller time complexity compared to other approaches,
+which makes them desirable in many instances in practice.
 
-One of the most in common method to enlarge the dataset artificially is the label preserving transformation. This method provides the possibility to generate artificial data with
-non-heavy computation. The advantage of a very little computation aids us to save storage. In other
-words, it wouldn't be required to save the generated data on a storage and the data can always be
-enlarged artificially in a short time and with a little computation. As the method's name makes it
-clear, this method aims to generate new data from a single data with the same label. We explain the method and its approach for image datasets because as we mentioned our focus is image datasets.
+As the name may suggest, the ultimate goal when using these techniques is to generate synthetic data points after applying a set of suitable transformations to a real data point.
 
-This method consists of generating image translations and horizontal reflectins. Image translations mean, random patches from the original images. The size of the patches are smaller than the
-size of the original images. We will extract all pssobile translations (all possible patches which fit in the image) from our image.
-These extracted translations (extracted random patches) and their horizontal reflection will be used
-for training our network. Given a single channel (grayscale) n$\times$n image and the translation
-pathce with size of m$\times$m and $n>m$ then the training dataset will increase by a factor: $$2\times(n-m+1)\times(n-m+1)$$ In the figur \ref{fig:label-preserving-trasformation} is the process of the translations
-and reflections of a small image presented.
+\subsection{Image Translations}
+Image translations is one of the simplest and meanwhile applicable well-known technique of the lable
+preserving transformations approach. As the research by Krizhevsky et al.
+\cite{image_translation_paper} proposes, we extract
+image translations and their horizontal reflections to generate the synthetic data and augment the
+dataset. Image translation consists of extracting patches that are smaller in size than original
+images. Given a single channel (grayscale) $n \times n$ image and a translation patch of the size
+$m$ for some $m<n$, one can produce $(n-m+1) \times (n-m+1) $ synthetic instances of the datapoint. Also, taking
+the horizontal reflections of each newly generated data point into account, one can enlarge the
+dataset by a factor of 2, therefore finally dataset can be enlarged by factor: $$2\times(n-m+1)\times(n-m+1)$$ 
 
-At test time, the method extracts the patches with the same size. This time the patches will be extracted from 4 corners and center of the original image. The network predicts on these
+Figure \ref{fig:label-preserving-trasformation} is an illustration of the translations and horizontal
+reflections of a $4 \times 4$ image, using all
+possible patches of the size $3 \times 3$, which results in $8$ new data points.
+
+At test (prediction) time, the method extracts the patches with the same size ($m < n$), however this time the
+patches will be extracted from 4 corners and center of the test image. The network predicts on these
 five patches and their horizontal reflections (10 patches altogether). In the end, the average
-of the predictions will be our network's prediction.
+on the softmax layer will be determined the final prediction.
 
 \begin{figure}
   \centering
@@ -177,21 +192,24 @@ of the predictions will be our network's prediction.
 \end{figure}
 
 
-\section{Elastic Distrotion}
+\subsection{Elastic Distortion}
 \label{tit:elastic-distrotion}
-Another well-known method for data augmentation is elastic distortion. This method as the same as label preserving transformation generates artificial data (images) from a single data (image) but with
-this difference that this time instead of resizing the image (translation) the pixels inside of the image will be moved and displaced. The intensity of pixels also will be changed with respect to
-their new places and their neighbors' intensity and their old places and their origin intensity.
+Another well-known technique for data augmentation is elastic distortion. Quite similar to the image
+translations, the ultimate goal is to generate synthetic data set from a single data point. However, instead of
+taking patches which are smaller than the original image, the synthetically produced data points are
+of the same size as the original image as proposed by \cite{elastic_distortion_paper} . This is done by moving pixels and modifying pixel intensity
+according to both their former and new position.  To this end, a few interpolation schemes such as
+the nearest neighbor, bicubic, spline, and bilinear are available. Due to their practical
+effectiveness and simplicity, we use the bilinear interpolation scheme in this work, which we
+discuss in detail below. 
 
-As it cleared elastic distortions concerns itself with a displacement of the pixels and an adjustment of the pixels intensity. This approach is known as interpolation. There are a few schemes like
-(nearest neighbor-, bicubic-,  spline- and bilinear interpolation) to reach the goal. Bilinear interpolation is one of the simplest with a desirable result. Hence we use bilinear interpolation. We
-will explain the process below.
-
-We will start with pixels displacement. For instance if $\Delta x(x,y)= \alpha x$ and $\Delta y(x,y)= \alpha y$, this means that each pixels will be moved $\alpha x$ in the direction of x-axis and
-$\alpha y$ in the direction of y-axis. $\alpha$ would be our scale parameter and since $\alpha$ can be a non-integer value, interpolation is necessary and as we mentioned we use the bilinear
-interpolation.  In the next step after pixels displacement, the intensity of the pixels in the new locations should be adjusted concerning the intensity of the neighbors' pixels in the original image
-(origin square). Hence bilinear interpolation aids us to reach this target. The bilinear interpolation interpolates the moved pixel horizontally. Then it interpolates the pixel vertically with respect
-to yielded values from horizontal interpolations. We will show and summarize the process formally in below.
+Let $\alpha \in \mathbb{R}$, and let $\Delta x(x,  y) = \alpha x$ and $\Delta y(x,  y) = \alpha y$
+denote the horizontal and the vertical displacement of a point $(x, y)$ of an image respectively.
+Since the scaling parameter $\alpha$ could take a non-integer value, the interpolation task is
+necessary for adjusting the intensity of pixels. Utilizing the bilinear interpolation, we adjust the
+intensity of a shifted pixel according to its former location and intensity of its neighbors
+therein. A formal description of the procedure is as follows. In what follow we will show and summarize the
+process formally.
 
 \begin{definition}{}
   Given $p'$ the pixel which we want to dispalacment it with $\Delta x(x,y)= \alpha x$ and $\Delta y(x,y)= \alpha y$ and $p_{(x,y)}, p_{(x+1,y)}, p_{(x,y-1)}, p_{(x+1,y-1)}$ are the neighbors (on
@@ -204,15 +222,15 @@ to yielded values from horizontal interpolations. We will show and summarize the
   $$I(p') = V_1 + \big( \Delta y(p', p_{(x,y-1)}) \times V_2) \big)$$
 \end{definition}
 
-To reach elastic deformation or elastic distrotion we approach to generate $\Delta x(x,y)= \alpha x$ and $\Delta y(x,y)= \alpha y$ with $\alpha \times rand(-1,+1)$ since $\alpha$ is image-scale parameter
-and $rand(-1,+1)$ generate a number between $-1$ and $+1$ with uniform distribution. After all, the
-fields $\Delta x$ and $\Delta y$ are convolved with a Gaussian filter with standard deviation of
-$\sigma$. The values of $\sigma$ and $\alpha$ depends on the image size and the image entropy. This process will generate elastic deformed image from orginal image which called elastic distrotion.
+In practice, usually, one picks the scaling parameter $\alpha$ from the interval $[-1, 1]$ uniformly at random. At the final stage of the procedure, the fields  $\Delta x(x,  y)$ and $\Delta y(x,  y)$ are convolved with a Gaussian filter with a standard deviation of $\sigma$, value of which depends on the size and the entropy of the image. Observe that this technique is called the elastic distortion mainly because the procedure described above results in an elastically deformed instance of the original image.
 
+As same as image translations, at test (prediction) time, image will be augmented by factor $10$
+with elastic distortion. Finally, avrage on softmax layer for this enlarged $10$ images determined
+the prediction (lable).
 
-\section{Stroke Warping}
+\subsection{Stroke Warping}
 \label{tit:stroke-warping}
-This method as same as previously introduced methods uses predetermined families of transformations.
+This teqnique as same as previously introduced teqniques uses predetermined families of transformations.
 In other words, we enlarge our dataset artificially with the aid of well-known classical computer
 vision transformations. This method notwithstanding of non-heavy complexity accomplished desirable
 results even on medical purposes \cite{stroke_tumor}. The ideas of this methode raised from Tangent
@@ -220,59 +238,59 @@ Dist \cite{stroke_idea_1992} and Tangent Prop \cite{stroke_idea_1993} works.
 
 In this method, we perform small changes in images to augment our data.  That means we augment our
 images with skewing, rotating and shearing (scaling) them \cite{storke_warping_1997_source}. As same as the
-label preserving transformation and elastic distortion the augmentation will be started before the
+image translations and elastic distortion the augmentation will be started before the
 training phase and the training will be performed on enlarged data. Figure
 \ref{fig:stroke_warping_transforamtions} represents each mentioned transformation to make them visually
 understandable.
+
+At test (prediction) time, image will be enlarged by factor $10$ and prediction will be preformed on
+avraging of softmax layer of this $10$ images, as same as previous teqniques.
 
 \begin{figure}
   \centering
   \label{fig:stroke_warping_transforamtions}
   \includegraphics[width=1\textwidth]{fig/stroke_warping_transforamtions}
-  \caption{An exmaple of rotation, skew, and shear (scale) transforamtions for stroke warping respectively from left to right \cite{TODO-Augmentaion}}
+  \caption{An exmaple of rotation, skew, and shear (scale) transforamtions for stroke warping respectively from left to right \cite{stroke_warping_github_picture}}
 \end{figure}
 
 
 \section{Bayesian Approach}
 \label{tit:bayesian-approach}
-As you may until now realized, all introduced classes of techniques in this work for data
-augmentation were pre-defined families of statistical transformations. In other words, we generated
-synthetic images with computer vision techniques statistically before the training phase and our
-augmented data generated once and during the learning process we didn't change them. In fact, the basic idea of each of
-them is known as “poor man’s” data augmentation (PMDA) \cite{poor_man_data_augmentation}. The point
-is if neural networks, in general, can learn such complex relations and patterns in images,
-therefore they should be able to learn latent variables to improve data augmentation dynamically.
-Put the matter another way, in this method, we focus not only on the classification task and
-learning patterns of images but also on learning how to improve our image augmentation dynamically
-and iteratively during the training and classification.
-
-Before we start with the description of the Bayesian approach, it would be necessary to introduce
-generative models or more especially Generative Adversarial Networks (GANs). One of the remarkable
-works on GANs proposed by Goodfellow et al. \cite{TODO}. In the below first, we
+The astute reader should have noticed that, although quite different, all the introduced teqniques so far share a fundamental aspect. Precisely speaking, in all these teqniques, one obtains new training samples by applying a set of predefined random transformations on the annotated training data, and the augmentation procedure ends before the training phase starts. This widely used process is called the poor man's data augmentation (PMDA) \cite{poor_man_data_augmentation}. However, to the best of our knowledge, this is not the furthest that one can go. Indeed, the fact that neural networks are generally capable of learning complicated patterns and nonlinear relationships in images suggests that they should also be able to learn the latent variables so that they can enhance the data augmentation process dynamically.
+In direct contrast to PMDA, in Bayesian data augmentation, the training set evolves dynamically and
+in an iterative fashion during the training phase, which could considerably enhance the
+generalization ability of a neural network. This approach uses class of teqniques to achieve this
+matter as such as maximum a posterior probability (MAP) \cite{MAP_Bayesian} in Bayesian statistics and Generative
+Adversarial Networks (GANs) . Before diving directly into technical details about the
+Bayesian data augmentation, we need to briefly introduce generative models. Specifically, first, we
+present the Generative Adversarial Networks (GANs) proposed initially by Goodfellow et al.
+\cite{goodflew_bayesian_approach}. In what follow, we
 will introduce GANs and after that and in the Bayesian approach description we will explain how this
 approach uses the main idea of GANs and extend it to improve data augmentation.
 
-\subsection{Generative Adversarial Network (GAN)}
+\subsection{Generative Adversarial Networks (GANs)}
 \label{tit:Generative-Adversarial-Network}
-A Generative Adversarial Network (GAN), in general, consists of two parts:
+Generally, a Generative Adversarial Net is made up of two parts:
 \begin{itemize}
-  \item \textbf{Generator}: As the name cleared itself, it tries to generate new data and simultaneously learns how to generate the data more plausible.
-  \item \textbf{Discriminator}: The discriminator learns to distinguish generated fake data from the generator and real data. Besides, it helps and teaches the generator like a kind teacher to generate more plausible data and close to real.
+\item{\textbf{Generator:}} As the name suggests, the generator in a GAN is responsible for generating new data and, at the same time, learns how to generate more plausible data. 
+\item{\textbf{Discriminator:}} The discriminator portion of a GAN learns to distinguish real data from the synthetic data generated 
+by the generator in the GAN and with this matter helps the generator to generate more plausible data.
 \end{itemize}
 
-Indeed the generator and the discriminator play a minimax game. In other words, the generator
-tries to fool the discriminator with fake data and the discriminator tries to distinguish this
-matter and tell the generator that he failed to fool and helps the generator to generate data
-closer to real ones. In the beginning, the discriminator can simply distinguish the real data and
-the generator's fake data. But after each iteration, the generator becomes more intelligent and
-generates more plausible data.  In the end, the generator becomes so intelligent so that it can
-almost fool the discriminator. This means, that the discriminator's accuracy reduces to about
-$50\%$. In effect, the discriminator predicts almost randomly while it predicts between $2$ labels
-(real or fake). Sometimes it is even hard for humans to distinguish the
-generator's fake data and real data.
+Indeed, one can view the interaction between the generator and the discriminator of a GAN as a
+minimax two-player game. Throughout the game, the generator's goal is to trick the discriminator
+with synthetically generated data. The discriminator's goal, however, is to detect the model data
+and to distinguish it from the real data. In the beginning, the discriminator may easily detect the
+model data. However, after some iterations, the generator becomes sufficiently intelligent so that
+it can produce synthetic data that is indistinguishable from the real data. Notice that, this means,
+eventually, the discriminator's accuracy of classifying the real and fake data reduces to $50\%$,
+where the classification is effectively random (predicts between $2$ classes
+real or fake), and therefore the game is over. In some instances,
+competition in this game enhances the generator's performance up to a point where detecting the
+model data is impossible even for human eyes.
+Technically speaking,  a GAN's task is to replicate a probability distribution.
 
-The generator will be fed by random\footnote{noise}
-input to generate synthetic data. In general, GANs try to replicate a probability distribution. For this matter, they use loss function to measure the distance between the distribution of the generator's data and the distribution of the real data. As we mentioned Goodfellow el al. \cite{Same} suggest minimax loss in their work. The minimax loss defined as:
+The generator will be fed by random input \footnote{noise} to generate synthetic data. In general, GANs try to replicate a probability distribution. For this matter, they use loss function to measure the distance between the distribution of the generator's data and the distribution of the real data. As we mentioned Goodfellow el al. \cite{goodflew_bayesian_approach} suggest minimax loss in their work. The minimax loss defined as:
 
 \begin{equation} \label{eq:minimax_loss}
   Minimax\ Loss = E_{x}[\log (D(x))]+E_{z}[\log (1-D(G(z)))]
@@ -290,7 +308,7 @@ GAN.
   \label{fig:gan_architecture}
   \includegraphics[width=1\textwidth]{fig/gan_architectur}
   \caption{GAN architecture
-    \cite{TODO-google-reference}}
+    \cite{google_bayesian_approach}}
 \end{figure}
 
 Now and after briefly introduction of GANs we can start with the \textbf{Bayesian Approach}. One of
@@ -393,7 +411,7 @@ After all, we estimate the $\theta^{i +1}$ so that $\hat{Q}(\theta^{i +1}, \thet
 gradient descent, stochastic gradient decent (SGD) utilized for estimating the $\theta^{i +1}$. The
 iteration will be continued until $|\theta^{i +1} - \theta^{i}|$ get sufficiently small. 
 
-As we made it clear the above formal explanations and equations are derived from \cite{bayesian_approach} and in some points are matched one-to-one.  
+As we made it clear, the above formal explanations and equations are derived from \cite{bayesian_approach} and in some points are matched one-to-one.  
 
 %\section{Manifold Approach}
 %\label{tit:manifold-approach}

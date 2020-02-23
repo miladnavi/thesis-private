@@ -140,6 +140,35 @@
       \warn{\item Datamodel: Entry 'stroke_tumor' (bibliography.bib): Invalid field 'publisher' for entrytype 'article'}
       \warn{\item Datamodel: Entry 'stroke_tumor' (bibliography.bib): Missing mandatory field 'journaltitle'}
     \endentry
+    \entry{stroke_warping_github_picture}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1c1af9e39b273d8922a5536fd52d34cd}{%
+           family={Bloice},
+           familyi={B\bibinitperiod},
+           given={Marcus\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \strng{fullhash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \strng{bibnamehash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \strng{authorbibnamehash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \strng{authornamehash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \strng{authorfullhash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \field{labelalpha}{Blo17}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Augmentor}}
+      \field{version}{0.2.8}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://github.com/mdbloice/Augmentor
+      \endverb
+      \verb{url}
+      \verb https://github.com/mdbloice/Augmentor
+      \endverb
+    \endentry
     \entry{MNIST_best_result_reference}{misc}{}
       \name{author}{3}{}{%
         {{hash=b44d52b65e72fd8ceb4f0fe71c2d13b5}{%
@@ -217,6 +246,135 @@
       \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
       \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'}
     \endentry
+    \entry{google_bayesian_approach}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{labelalpha}{Goo}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://developers.google.com/machine-learning/gan/generator}}
+      \field{note}{Accessed: 2020-01-15}
+      \field{title}{{Generative Adversarial Networks}}
+      \warn{\item Datamodel: Entry 'google_bayesian_approach' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
+    \entry{goodflew_bayesian_approach}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=d4f74ef4c79f3bb1e51e378184d8850e}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian\bibnamedelima J.},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a341d25f80a8118cdbb90b272adc8b4f}{%
+           family={Pouget-Abadie},
+           familyi={P\bibinithyphendelim A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9e80f4779b032f68a6106e1424345450}{%
+           family={Mirza},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=743dd6cdaa6639320289d219d351d7b7}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e8151f1b8f85a048cacb34f374ec922b}{%
+           family={Warde-Farley},
+           familyi={W\bibinithyphendelim F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9ca00ffd7cc35f7cfb8f698aa9239c76}{%
+           family={Ozair},
+           familyi={O\bibinitperiod},
+           given={Sherjil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{fullhash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{bibnamehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{authorbibnamehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{authornamehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{authorfullhash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \field{labelalpha}{Goo+14}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Generative Adversarial Networks}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1406.2661
+      \endverb
+    \endentry
+    \entry{MAP_Bayesian}{book}{}
+      \name{author}{3}{}{%
+        {{hash=2aa6c4e63254f275b1f874accec16dd5}{%
+           family={Greig},
+           familyi={G\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ae44cd61e7e570a6cdf559e5e89698ea}{%
+           family={Porteous},
+           familyi={P\bibinitperiod},
+           given={B.\bibnamedelimi T.},
+           giveni={B\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=57748d95189f16d1f3bd789802eea9b3}{%
+           family={Seheult},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Journal of the Royal Statistical Society: Series B (Methodological)}%
+      }
+      \strng{namehash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \strng{fullhash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \strng{bibnamehash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \strng{authorbibnamehash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \strng{authornamehash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \strng{authorfullhash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \field{labelalpha}{GPS89}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{{Exact Maximum A Posteriori Estimation for Binary Images}}
+      \field{volume}{51}
+      \field{year}{1989}
+      \field{pages}{271\bibrangedash 279}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1989.tb01764.x
+      \endverb
+      \verb{url}
+      \verb https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1989.tb01764.x
+      \endverb
+    \endentry
     \entry{CIFAR-10_dataset_reference}{misc}{}
       \name{author}{1}{}{%
         {{hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
@@ -240,6 +398,52 @@
       \field{note}{Accessed: 2019-12-16}
       \field{title}{The CIFAR-10 dataset (Canadian Institute for Advanced Research)}
       \warn{\item Datamodel: Entry 'CIFAR-10_dataset_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
+    \entry{image_translation_paper}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=a98c6ee140cff383b5deb40f1bbadc4a}{%
+           family={Krizhevsky},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a3cfbe74042f3457db587a42603e1509}{%
+           family={Sutskever},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=9c5f7dcfa6f8cfad7a98e00d2c3b338d}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={G.\bibnamedelimi E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Commun. ACM}%
+      }
+      \strng{namehash}{723eb41c5b040b12b8b4380943619007}
+      \strng{fullhash}{723eb41c5b040b12b8b4380943619007}
+      \strng{bibnamehash}{723eb41c5b040b12b8b4380943619007}
+      \strng{authorbibnamehash}{723eb41c5b040b12b8b4380943619007}
+      \strng{authornamehash}{723eb41c5b040b12b8b4380943619007}
+      \strng{authorfullhash}{723eb41c5b040b12b8b4380943619007}
+      \field{labelalpha}{KSH17}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Imagenet classification with deep convolutional neural networks}
+      \field{volume}{60}
+      \field{year}{2017}
+      \field{pages}{84\bibrangedash 90}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/ICDAR.2003.1227801
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/ICDAR.2003.1227801
+      \endverb
+      \warn{\item Datamodel: Entry 'image_translation_paper' (bibliography.bib): Missing mandatory field 'editor'}
+      \warn{\item Datamodel: Entry 'image_translation_paper' (bibliography.bib): Missing mandatory field 'booktitle'}
     \endentry
     \entry{MNIST_data_reference}{misc}{}
       \name{author}{1}{}{%
@@ -371,6 +575,53 @@
       \field{pages}{50\bibrangedash 58}
       \range{pages}{9}
       \warn{\item Datamodel: Entry 'stroke_idea_1993' (bibliography.bib): Missing mandatory field 'editor'}
+    \endentry
+    \entry{elastic_distortion_paper}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=f87cb5ca5bb69474ce4c6750c54016bc}{%
+           family={Simard},
+           familyi={S\bibinitperiod},
+           given={P.\bibnamedelimi Y.},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=bf668391e6e420548511fc8c77fcd621}{%
+           family={Steinkraus},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=544ae8100f35e3afea8c1d8178268645}{%
+           family={Platt},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Seventh International Conference on Document Analysis}%
+        {Recognition (ICDAR 2003)}%
+      }
+      \strng{namehash}{64d80b398151894decee5e3fe7acc66c}
+      \strng{fullhash}{64d80b398151894decee5e3fe7acc66c}
+      \strng{bibnamehash}{64d80b398151894decee5e3fe7acc66c}
+      \strng{authorbibnamehash}{64d80b398151894decee5e3fe7acc66c}
+      \strng{authornamehash}{64d80b398151894decee5e3fe7acc66c}
+      \strng{authorfullhash}{64d80b398151894decee5e3fe7acc66c}
+      \field{labelalpha}{SSPUK}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Best practices for convolutional neural networks applied to visual document analysis}
+      \field{volume}{2}
+      \field{year}{Edinburgh, Scotland, UK,}
+      \field{pages}{958\bibrangedash 963}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/1227801
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/1227801
+      \endverb
+      \warn{\item Datamodel: Entry 'elastic_distortion_paper' (bibliography.bib): Missing mandatory field 'editor'}
+      \warn{\item Datamodel: Entry 'elastic_distortion_paper' (bibliography.bib): Missing mandatory field 'booktitle'}
     \endentry
     \entry{NIST}{misc}{}
       \name{author}{1}{}{%
@@ -619,10 +870,6 @@
       \field{year}{2018}
     \endentry
   \enddatalist
-  \missing{Same}
-  \missing{TODO}
-  \missing{TODO-Augmentaion}
-  \missing{TODO-google-reference}
 \endrefsection
 \endinput
 

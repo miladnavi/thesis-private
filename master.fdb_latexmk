@@ -1,26 +1,14 @@
 # Fdb version 3
-<<<<<<< HEAD
-["biber master"] 1578849787 "master.bcf" "master.bbl" "master" 1578851076
-  "bibliography.bib" 1578847784 7675 12a2b0cbb81afbfa4f03c327c3e45981 ""
-  "master.bcf" 1578850709 93213 f0add68e81b002c76a95f6af95f3a886 "pdflatex"
-=======
-["biber master"] 1579103876 "master.bcf" "master.bbl" "master" 1579107484
-  "bibliography.bib" 1579103845 8416 fe6ca37c7623daf53435858ec0556249 ""
-  "master.bcf" 1579107483 93545 d14facc599e13619c1601131031e7255 "pdflatex"
->>>>>>> master
+["biber master"] 1582458226 "master.bcf" "master.bbl" "master" 1582458553
+  "bibliography.bib" 1582458187 10389 6525d27e42632db0564912d6421c4b45 ""
+  "master.bcf" 1582458552 93809 1bcf375f9337284ef70495009954bc6d "pdflatex"
   "tpl/rfc.bib" 1574845342 2719964 83113b772bd674bfb89875a0aed57f35 ""
   (generated)
   "master.blg"
-<<<<<<< HEAD
   "master.bbl"
-["pdflatex"] 1578850706 "/Users/mobilabmilad/Documents/Uni/WS-19:20/bachelor-thesis/thesis/master.tex" "master.pdf" "master" 1578851076
+["pdflatex"] 1582458549 "/Users/mobilabmilad/Documents/Uni/WS-19:20/bachelor-thesis/thesis/master.tex" "master.pdf" "master" 1582458553
   "/Users/mobilabmilad/Documents/Uni/WS-19:20/bachelor-thesis/thesis/master.tex" 1576521469 3060 e8e6e7f1a93e61efda73802f5f94b01d ""
-  "/dev/null" 1578851067 0 d41d8cd98f00b204e9800998ecf8427e ""
-=======
-["pdflatex"] 1579107480 "/Users/mobilabmilad/Documents/Uni/WS-19:20/bachelor-thesis/thesis/master.tex" "master.pdf" "master" 1579107484
-  "/Users/mobilabmilad/Documents/Uni/WS-19:20/bachelor-thesis/thesis/master.tex" 1576521469 3060 e8e6e7f1a93e61efda73802f5f94b01d ""
-  "/dev/null" 1579107481 0 d41d8cd98f00b204e9800998ecf8427e ""
->>>>>>> master
+  "/dev/null" 1582458553 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc" 1455236391 7307 8f544a778f53cb535460674c7875f737 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc" 1240420913 2639 b7bbeb66c016cde6fdcad9263fe54a4a ""
@@ -294,49 +282,37 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1565302489 4259635 07063cefb6a980af8d515a8a95c864dc ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "bibliography.bib" 1579103845 8416 fe6ca37c7623daf53435858ec0556249 ""
+  "bibliography.bib" 1582458187 10389 6525d27e42632db0564912d6421c4b45 ""
   "cfg.tex" 1578851269 2724 85e1a14716c81da42336c41fab6024e8 ""
-  "content.tex" 1579107478 30780 78b182824cfa87794536952a82b23851 ""
-  "fig/CIFAR-CNN-Architecture.png" 1579104064 143411 14ab7190d121485a1c3ec422f984bc54 ""
-  "fig/MNIST-CNN-Architecture.png" 1579084290 605854 e038a428f5cb92e8648f548b13cd612b ""
+  "content.tex" 1582458546 31796 34de8e9e266277df3c8dc6796bea2c65 ""
+  "fig/CIFAR-CNN-Architecture.png" 1581683544 143411 14ab7190d121485a1c3ec422f984bc54 ""
+  "fig/MNIST-CNN-Architecture.png" 1581683544 605854 e038a428f5cb92e8648f548b13cd612b ""
   "fig/bayesian-approach-gan-architecture.png" 1578851269 58535 f3ed6030af5429fe0cd0f7acb39f6eda ""
   "fig/cifar-10.png" 1576597717 962604 6223fd76ed23b3b504289ef796002d31 ""
   "fig/gan_architectur.png" 1578851269 107645 e007a89d3b792dc3e6051b859fac9e63 ""
   "fig/label-preserving-transformation.png" 1569862577 51566 7c9dd7506cc6ea071b45801cc89d5013 ""
   "fig/mnist.jpeg" 1576531745 34739 41d1f3f2e9ab4fcdcd2d9a40548dd1a1 ""
-  "fig/stroke_warping_transforamtions.jpg" 1578933449 20348 7540fd4185ceb723a6ccd7d76f03feb9 ""
-  "master.aux" 1579107483 26594 29d559d96a3e453507ece6b4b41aeeb7 "pdflatex"
-  "master.bbl" 1579103893 27138 e463412e3396f3d986ce579e9a2c2383 "biber master"
-  "master.lof" 1579107483 2349 00fe8293110ae67e9b04fae1e030c13a "pdflatex"
-  "master.lot" 1579107483 795 8a110c2daf7cdf90fffcd357923349d0 "pdflatex"
-  "master.out" 1579107481 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "master.run.xml" 1579107483 2358 8ec3cd419e4fa2dbcd19b78aabf2fe55 "pdflatex"
+  "fig/stroke_warping_transforamtions.jpg" 1581683544 20348 7540fd4185ceb723a6ccd7d76f03feb9 ""
+  "master.aux" 1582458552 27667 0a6b6ab733e437814eb0af82455feaef "pdflatex"
+  "master.bbl" 1582458243 37617 426de7795f4da2f8e25a0cda57efa831 "biber master"
+  "master.lof" 1582458552 2366 4cdb4222f42e180db164d5f5876892c4 "pdflatex"
+  "master.lot" 1582458552 795 8a110c2daf7cdf90fffcd357923349d0 "pdflatex"
+  "master.out" 1582458551 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "master.run.xml" 1582458552 2358 8ec3cd419e4fa2dbcd19b78aabf2fe55 "pdflatex"
   "master.tex" 1576521469 3060 e8e6e7f1a93e61efda73802f5f94b01d ""
-  "master.toc" 1579107483 3867 480862f9ee730a49a7489c6ea8c23ea6 "pdflatex"
+  "master.toc" 1582458552 3911 d045d888225152a4f0ac7c93d96ff30b "pdflatex"
   "thanks.tex" 1564995072 346 f5db428d7fde7303052b1eb6accfdd14 ""
   "tpl/declaration.tex" 1574845342 1584 de662436c113450abf4c36b665661ad8 ""
   "tpl/pkg.tex" 1576522273 10186 bf0c0dd17dda49a058515e2af780a452 ""
   "tpl/titlepage.tex" 1574845342 4819 024d466852b0d0ebfd1a83907417b953 ""
   "tpl/unilogo.pdf" 1574845342 3225 1aaeacbe1ddbd7d63aa45913102675fd ""
   (generated)
-<<<<<<< HEAD
-  "master.aux"
-  "master.lof"
-  "master.run.xml"
-  "master.log"
-  "master.pdf"
-  "master.lot"
-  "master.toc"
-  "master.bcf"
-  "master.out"
-=======
-  "master.lof"
-  "master.aux"
-  "master.log"
-  "master.pdf"
-  "master.lot"
-  "master.bcf"
   "master.run.xml"
   "master.out"
+  "master.bcf"
+  "master.pdf"
+  "master.aux"
+  "master.lot"
+  "master.log"
+  "master.lof"
   "master.toc"
->>>>>>> master
