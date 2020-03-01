@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  1 MAR 2020 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  1 MAR 2020 17:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2198,21 +2198,21 @@ Package pdftex.def Info: fig/CIFAR-CNN-Architecture.png  used on input line 495.
 (pdftex.def)             Requested size: 429.89502pt x 194.68549pt.
  [18 <./fig/MNIST-CNN-Architecture.png> <./fig/Fashion-MNIST-CNN-Architecture.png>] [19 <./fig/CIFAR-CNN-Architecture.png>]
 chapter 7.
-<fig/result/mnist-result.png, id=334, 1353.055pt x 513.92pt>
+<fig/result/mnist-result.png, id=334, 1362.08875pt x 546.04pt>
 File: fig/result/mnist-result.png Graphic file (type png)
 <use fig/result/mnist-result.png>
 Package pdftex.def Info: fig/result/mnist-result.png  used on input line 552.
-(pdftex.def)             Requested size: 429.89502pt x 163.28148pt.
+(pdftex.def)             Requested size: 429.89502pt x 172.33678pt.
 <fig/result/fashion-mnist-result.png, id=335, 1362.08875pt x 546.04pt>
 File: fig/result/fashion-mnist-result.png Graphic file (type png)
 <use fig/result/fashion-mnist-result.png>
 Package pdftex.def Info: fig/result/fashion-mnist-result.png  used on input line 560.
 (pdftex.def)             Requested size: 429.89502pt x 172.33678pt.
-<fig/result/cifar-10-result.png, id=336, 1362.08875pt x 509.905pt>
+<fig/result/cifar-10-result.png, id=336, 1362.08875pt x 546.04pt>
 File: fig/result/cifar-10-result.png Graphic file (type png)
 <use fig/result/cifar-10-result.png>
 Package pdftex.def Info: fig/result/cifar-10-result.png  used on input line 568.
-(pdftex.def)             Requested size: 429.89502pt x 160.93214pt.
+(pdftex.def)             Requested size: 429.89502pt x 172.33678pt.
 [20
 
 
@@ -2270,13 +2270,13 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 Here is how much of TeX's memory you used:
  51752 strings out of 492616
  995284 string characters out of 6129482
- 1563373 words of memory out of 5000000
+ 1564373 words of memory out of 5000000
  54316 multiletter control sequences out of 15000+600000
  799051 words of font info for 591 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,120p,9178b,1758s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmitc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmite.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on master.pdf (32 pages, 3074638 bytes).
+Output written on master.pdf (32 pages, 3077267 bytes).
 PDF statistics:
  640 PDF objects out of 1000 (max. 8388607)
  550 compressed objects within 6 object streams
