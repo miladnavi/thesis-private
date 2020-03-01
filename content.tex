@@ -52,8 +52,6 @@ methods to compare their efficiency and capability. These methods are as follow:
   \item \textbf{Elastic Distrotion} \ref{tit:elastic-distrotion}
   \item \textbf{Stroke Warping} \ref{tit:stroke-warping}
   \item \textbf{Bayesian Approach} \ref{tit:bayesian-approach}
-        %\item \textbf{Manifold Approach} \ref{tit:manifold-approach}
-        %\item GANs
 \end{itemize}
 
 
@@ -63,8 +61,13 @@ methods to compare their efficiency and capability. These methods are as follow:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Data Representation}
 \label{tit:data-representation}
-
-Here should be an Introdution of chapter and introduce the data
+In this chapter, we will briefly introduce the datasets which we use in this work to evaluate the
+performance of each data augmentation approach pragmatically. There are mainly $2$ reasons that we
+have chosen these datasets. First, they are well-know datasets and there are many researchers on
+them and many reported results. Additionally, they are simple enough to learn and append non-complex
+classifiers to classify them with desirable accuracy. The second reason is that all these $3$
+datasets have $10$ classes with small differences. All of these aids us to have a better and more
+realistic benchmark. 
 
 \section{MNIST}
 The MNIST dataset (Modified National Institute of Standards and Technology) is a large handwritten
@@ -76,8 +79,8 @@ splitted between classes \cite{MNIST_data_reference}. MNIST is one of the most p
 deep learning because of the not too high complexity and compatibility with almost all deep learning
 models. Hence many papers attempted to reach a low error-rate on this dataset. One of them manages
 to reduce the error-rate on the MNIST by up to $0.23\%$ \cite{MNIST_best_result_reference}. You can
-find the information about the dataset at table
-\ref{dataset_table} and figure \ref{fig:mnist_dataset_example} shows an example of the dataset.
+find the information about the dataset at the table
+\ref{dataset_table} and the figure \ref{fig:mnist_dataset_example} shows an example of the dataset.
 
 \begin{figure}
   \centering
@@ -88,8 +91,24 @@ find the information about the dataset at table
 
 
 \section{Fashsion-MNIST}
-blablabla
+The Fashsion-MNIST is a dataset of Zalando's \footnote{\url{https://jobs.zalando.com/de/tech/}}
+article images provided by Han Xiao et al. \cite{Fashion_MNIST_reference} for benchmarking machine learning algorithms. 
 
+The Fashsion-MNIST dataset as same as MNIST dataset consists of $60,000$ train- and $10,000$ test-images and each image is grayscale
+with $28 \times 28$ pixels. It has $10$ classes ([T-Shirt, Trouser, Pullover, Dress, Coat,
+Sandal, Shirt, Sneaker, Bag, Ankle Boot]) and the data is fairly
+splitted between these classes. One the best reported accuracy on this dataset with convolutional neural
+network \footnote{\url{https://github.com/zalandoresearch/fashion-mnist\#benchmark/}} is $91.90\%$. You can
+find the information about the dataset at the table
+\ref{dataset_table} and the figure \ref{fig:fashion_mnist_dataset_example} shows an example of the dataset.
+
+
+\begin{figure}
+  \centering
+  \label{fig:fashion_mnist_dataset_example}
+  \includegraphics[width=0.5\textwidth]{fig/fashion-mnist-dataset_example}
+  \caption{Examples of Fashion-MNIST dataset, merged in one image}
+\end{figure}
 
 \section{CIFAR-10}
 The CIFAR-10 (Canadian Institute for Advanced Research)
@@ -98,8 +117,8 @@ images dataset \cite{CIFAR-10_origin_dataset}.
 
 The dataset consists of $60,000$  RGB with $32 \times 32$ pixels images, which are divided to the $50,000$ train and $10,000$ test datasets. As the name makes it clear the CIFAR-10 contains 10 classes ([plane, car, bird, cat, deer, dog, frog, horse, ship, truck]) \cite{CIFAR-10_dataset_reference}.
 One of the lowest reported error-rate with a convolutional neural network managed to achieve $2.56\%$ \cite{CIFAR-10_best_result_reference}.  You can
-find the information about the dataset at table
-\ref{dataset_table} and figure \ref{fig:cifar-10_dataset_example} shows an example of the dataset.
+find the information about the dataset at the table
+\ref{dataset_table} and the figure \ref{fig:cifar-10_dataset_example} shows an example of the dataset.
 
 \begin{figure}
   \centering
@@ -122,13 +141,17 @@ find the information about the dataset at table
       c}
     \hline
     {\textbf{Dataset}}        & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
-    {\textbf{MNIST}}          & 10                                         & 60,000                                   & 10,000                                  & $28\times28$                                & 1 (Grayscale)                              \\
-    {\textbf{Fashsion-MNIST}} & 10                                         &                                          &                                         &                                             &                                            \\
+    {\textbf{MNIST}}          & 10                                         & 60,000
+    & 10,000                                  & $28\times28$                                & 1
+    (Grayscale)                              \\
+    {\textbf{Fashsion-MNIST}} & 10                                         & 60,000
+    &10,000                                         &  $28\times28$
+    &  1 (Grayscale)                                         \\
     {\textbf{CIFAR-10}}       & 10                                         & 50,000
     & 10,000                                  & $32\times32$                                & 3
     (RGB)                                         \\ \hline
   \end{tabular}
-  \caption{Structure and organization of the datasets.}
+  \caption{Structure of datasets.}
 \end{table}
 
 
@@ -313,7 +336,7 @@ GAN.
 
 Now and after briefly introduction of GANs we can start with the \textbf{Bayesian Approach}. One of
 the noteworthy work for data augmentation with the aid of the bayesian model proposed by Toan Tran
-et al. \cite{bayesian_approach}. In this approach, our deep learning model tries to estimate the
+et al. \cite{refrence_bayesian_approach}. In this approach, our deep learning model tries to estimate the
 distributions of labeled data and with aid of the estimated distributions optimizes the latent
 variable used for data augmentation. The approach uses the GANs architecture skeleton to generate
 synthetic data with the difference that the optimization of latent derived from the Bayesian model.
@@ -341,10 +364,10 @@ discriminators separately for this matter.
   \centering
   \label{fig:bayesian-approach-gan-architecture}
   \includegraphics[width=0.5\textwidth]{fig/bayesian-approach-gan-architecture}
-  \caption{The network architecture of Bayesian data augmentaion approch \cite{bayesian_approach}. G: Generator, A: Authenticator, C: Classifier.}
+  \caption{The network architecture of Bayesian data augmentaion approch \cite{refrence_bayesian_approach}. G: Generator, A: Authenticator, C: Classifier.}
 \end{figure}
 
-In the following, we will explain the utilized algorithm formally from the Toan Tran el al. work \cite{bayesian_approach}. As we mentioned the goal is to estimate the parameters of the neural networks using labeled data. The training process is defined by the following optimization problem:
+In the following, we will explain the utilized algorithm formally from the Toan Tran el al. work \cite{refrence_bayesian_approach}. As we mentioned the goal is to estimate the parameters of the neural networks using labeled data. The training process is defined by the following optimization problem:
 
 \begin{equation} \label{eq:optimization-problem}
   \theta^{*}=\arg \max \log p(\theta | \mathbf{y})
@@ -411,26 +434,28 @@ After all, we estimate the $\theta^{i +1}$ so that $\hat{Q}(\theta^{i +1}, \thet
 gradient descent, stochastic gradient decent (SGD) utilized for estimating the $\theta^{i +1}$. The
 iteration will be continued until $|\theta^{i +1} - \theta^{i}|$ get sufficiently small. 
 
-As we made it clear, the above formal explanations and equations are derived from \cite{bayesian_approach} and in some points are matched one-to-one.  
+As we made it clear, the above formal explanations and equations are derived from \cite{refrence_bayesian_approach} and in some points are matched one-to-one.  
 
 %\section{Manifold Approach}
 %\label{tit:manifold-approach}
 
-\chapter{Expriments \& Results}
+\chapter{Pragmatic Expriments}
+in this Chapter 
+
 \section{CNNs Architecture}
 In this section, we will introduce our classifiers (CNNs) architecture for various datasets which we
 introduced in the chapter (\ref{tit:data-representation}). We picked our CNNs architecture from
 different sources regarding their non-heavy complexity and desirable accuracy.  Maybe our chosen
-CNNs architecture doesn't provide the best-reported accuracies on datasets, but while we use the
+CNNs architecture doesn't provide the best-reported accuracy on datasets, but while we use the
 same CNN-architecture for each dataset and we aim to compare various data augmentation approaches on
-each dataset, it would not affect our results. Moreover, as we will report in section (\ref{tit:results})
-our accuracies are not so far away from best-reported accuracies.
+each dataset, it would not affect our results. Moreover, as we will report in chapter (\ref{tit:results})
+our result are not so far away from best-reported accuracy on the orginal dataset.
 
 \subsection{MNIST}
 For the MNIST dataset, we have chosen a semi-simple CNN architecture from \cite{MNIST_CNN_Architecture} with $2$
 convolutional layers and $2$ fully connected layers. ReLU function is utilized as the activation
-function. For training and to calculate the loss function, \textbf{CrossEntropyLoss} \ref{TODO} and
-to optimize the network's parameters \textbf{Adam optimizer} \ref{TODO} from the Pytorch have been
+function. For training and to calculate the loss function, \textbf{CrossEntropyLoss} and
+to optimize the network's parameters \textbf{Adam optimizer} \cite{adam-optimizer} from the Pytorch have been
 chosen. The learning rate for Adam optimizer is set to $0.001$. To reduce overfitting, a
 drop-out layer is placed at the end of the second convolutional layer. Figure \ref{fig:MNIST_CNN_Architecture} represents the explained CNN architecture visually.
 
@@ -438,21 +463,24 @@ drop-out layer is placed at the end of the second convolutional layer. Figure \r
   \centering
   \label{fig:MNIST_CNN_Architecture}
   \includegraphics[width=1\textwidth]{fig/MNIST-CNN-Architecture}
-  \caption{CNN Architecture for training the CIFAR-10 dataset \cite{MNIST_CNN_Architecture_Image}}
+  \caption{CNN Architecture for training the MNIST dataset \cite{MNIST_CNN_Architecture_Image}}
 \end{figure}
 
 
 \subsection{Fashsion-MNIST}
-
-\subsection{CIFAR-10}
+The Fashion-MNIST dataset use CNN architectur deriven form \cite{TODO} with $2$
+convolutional layers and $2$ fully connected layers as same as MNIST dataset just with this
+different of up- and downsampling and kernels sizes. ReLU function is utilized as the activation
+function. The learning rate for Adam optimizer is set to $0.001$. Figure \ref{fig:Fashion_MNIST_CNN_Architecture} represents the explained CNN architecture visually.
 
 \begin{figure}
   \centering
-  \label{fig:CIFAR_CNN_Architecture}
-  \includegraphics[width=1\textwidth]{fig/CIFAR-CNN-Architecture}
-  \caption{CNN Architecture for training the CIFAR-10 dataset}
+  \label{fig:Fashion_MNIST_CNN_Architecture}
+  \includegraphics[width=1\textwidth]{fig/Fashion-MNIST-CNN-Architecture}
+  \caption{CNN Architecture for training the Fashion-MNIST dataset}
 \end{figure}
 
+\subsection{CIFAR-10}
 For the CIFAR-10 dataset, we have chosen a bit more complex CNN architecture from \cite{CIFAR_CNN_Architecture} with $6$
 convolutional layers and $3$ fully connected layers. ReLU function is utilized as the activation
 function. For training and to calculate the loss function, \textbf{CrossEntropyLoss} and
@@ -461,18 +489,93 @@ chosen. The learning rate for Adam optimizer is set again to $0.001$. To reduce 
 drop-out layer is placed at the end of the fourth convolutional layer. Figure \ref{fig:CIFAR_CNN_Architecture} represents the explained CNN architecture visually. 
 
 
+\begin{figure}
+  \centering
+  \label{fig:CIFAR_CNN_Architecture}
+  \includegraphics[width=1\textwidth]{fig/CIFAR-CNN-Architecture}
+  \caption{CNN Architecture for training the CIFAR-10 dataset}
+\end{figure}
 
 \section{Implementaions}
+In what follow, we will point out shortened to the manner of proceed and implementation of each
+approach and technique. 
 
-\subsection{Label Preserving Transformations}
+In general to put the idea of label preserving transformations and their techniques
+into practice, we utilized an external library in Python for data augmentation called Augmentor \footnote{\url{https://github.com/mdbloice/Augmentor}}. As
+we mentioned the main part (Machine Learning) carried out with a powerful library form Facebook
+called Pytorch \footnote{\url{https://pytorch.org/}}. 
+
+\subsection{Image Translations}
 \subsection{Elastic Distortion}
 \subsection{Stroke Warping}
 \subsection{Bayesian Approach}
 
-\section{Results}
+
+\chapter{Result \& Comparison}
 \label{tit:results}
+In this chapter, we will publish the results of our pragmatic experiments on each introduced
+approach and dataset and following that we will discuss and compare the advantage and disadvantages
+of each approach and their behavior on different datasets. These results and comparisons do not only
+provide a good insight into each approach but also is a preface of the next chapter and the manner
+of genesis the idea of new approaches. 
+
+To have a good and comprehensive comparison, we tried the approaches and techniques in different
+environments. To be more precise, we considered the accuracy of the original datasets (with all
+train and test samples) and accuracy of learning without augmentation on the few-shot dataset to
+keep tracking of the differences between accuracy of them with augmentation on the few-shot dataset.
+Due to the comprehensive comparison, we tried various of the k-shot datasets: 
+
+\begin{equation}
+  k=
+  \begin{cases}
+    \{1, 5, 10\}  & \text{if}\ dataset= 
+    \ MNIST \ or \ Fashion-MNIST \\
+    \{10, 20, 30\} & \text{if}\ dataset= \ CIFAR-10
+  \end{cases}
+\end{equation}
+
+Additionally, to compare the result in fair circumstances we augmented the data by factor 100 (100X)
+for the training and by factor 10 (10X) with each augmentation technique. In the end and to provide
+a more realistic result we used 10-cross validation \cite{cross_validation}. That means for each k-shot learning, we
+derived 10 different and random k-shot datasets to calculate more realistic accuracy for each
+technique.
+
+The figures \ref{fig:MNIST_result}, \ref{fig:Fashion_MNIST_result}, and
+\ref{fig:CIFAR_10_result} represent these results and accuracy for each approach and technique
+respectively for
+MNIST, Fashion-MNIST, and CIFAR-10 datasets.
 
 
-\chapter{Comprehensive Comparison}
+\begin{figure}
+  \centering
+  \label{fig:MNIST_result}
+  \includegraphics[width=1\textwidth]{fig/result/mnist-result}
+  \caption{Result of augmentation techniques on MNIST dataset}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \label{fig:Fashion_MNIST_result}
+  \includegraphics[width=1\textwidth]{fig/result/fashion-mnist-result}
+  \caption{Result of augmentation techniques on Fashion-MNIST dataset}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \label{fig:CIFAR_10_result}
+  \includegraphics[width=1\textwidth]{fig/result/cifar-10-result}
+  \caption{Result of augmentation techniques on CIFAR-10 dataset}
+\end{figure}
+
+The first look to the figures \ref{fig:MNIST_result} and \ref{fig:Fashion_MNIST_result} expose, that there is
+a significant gap between the accuracy of 10 and 5-shot learning and 1-shot learning without augmentation. Besides,
+it shows that k-shot learning is not linearly correlated with accuracy for each technique. As there is
+just one sample for each class, the CNN involves pretty soon with overfitting. Nevertheless, the
+accuracy is about $30\%$ and that means that the prediction is not randomly even for 1-shot
+learning on MNIST and Fashion-MNIST. 
+
+Another impression of the first look to the figure \ref{fig:CIFAR_10_result} is the considerable gap between accuracy on original data and few-shot learning on CIFAR-10. This matter exposes the major role of color (RGB images) in learning and accuracy. As long as this gap is not observable on MNIST and Fashion-MNIST. 
 
 \chapter{Contribution Of Work}

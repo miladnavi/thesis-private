@@ -8,29 +8,39 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces 7 examples per class of MNIST dataset, merged in one image \cite {MNIST_dataset_example}}}{3}{figure.3.1}% 
+\contentsline {figure}{\numberline {1}{\ignorespaces 7 examples per class of MNIST dataset, merged in one image \cite {MNIST_dataset_example}}}{4}{figure.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces 10 examples per class of CIFAR-10 dataset, merged in one image \cite {CIFAR-10_dataset_reference}}}{4}{figure.3.2}% 
+\contentsline {figure}{\numberline {2}{\ignorespaces Examples of Fashion-MNIST dataset, merged in one image}}{4}{figure.3.2}% 
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces An example of single channel image with size of $4\times 4$ with its translations with size of $3\times 3$ patches and their horizontal reflections. The numbers determinate the pixels intensity}}{8}{figure.5.3}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces An exmaple of rotation, skew, and shear (scale) transforamtions for stroke warping respectively from left to right \cite {stroke_warping_github_picture}}}{10}{figure.5.4}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces GAN architecture \cite {google_bayesian_approach}}}{12}{figure.5.5}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces The network architecture of Bayesian data augmentaion approch \cite {bayesian_approach}. G: Generator, A: Authenticator, C: Classifier.}}{13}{figure.5.6}% 
+\contentsline {figure}{\numberline {3}{\ignorespaces 10 examples per class of CIFAR-10 dataset, merged in one image \cite {CIFAR-10_dataset_reference}}}{5}{figure.3.3}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces CNN Architecture for training the CIFAR-10 dataset \cite {MNIST_CNN_Architecture_Image}}}{17}{figure.6.7}% 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces CNN Architecture for training the CIFAR-10 dataset}}{18}{figure.6.8}% 
+\contentsline {figure}{\numberline {4}{\ignorespaces An example of single channel image with size of $4\times 4$ with its translations with size of $3\times 3$ patches and their horizontal reflections. The numbers determinate the pixels intensity}}{9}{figure.5.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5}{\ignorespaces An exmaple of rotation, skew, and shear (scale) transforamtions for stroke warping respectively from left to right \cite {stroke_warping_github_picture}}}{11}{figure.5.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6}{\ignorespaces GAN architecture \cite {google_bayesian_approach}}}{13}{figure.5.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7}{\ignorespaces The network architecture of Bayesian data augmentaion approch \cite {refrence_bayesian_approach}. G: Generator, A: Authenticator, C: Classifier.}}{14}{figure.5.7}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8}{\ignorespaces CNN Architecture for training the MNIST dataset \cite {MNIST_CNN_Architecture_Image}}}{18}{figure.6.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9}{\ignorespaces CNN Architecture for training the Fashion-MNIST dataset}}{18}{figure.6.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10}{\ignorespaces CNN Architecture for training the CIFAR-10 dataset}}{19}{figure.6.10}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11}{\ignorespaces Result of augmentation techniques on MNIST dataset}}{21}{figure.7.11}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12}{\ignorespaces Result of augmentation techniques on Fashion-MNIST dataset}}{21}{figure.7.12}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {13}{\ignorespaces Result of augmentation techniques on CIFAR-10 dataset}}{21}{figure.7.13}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
