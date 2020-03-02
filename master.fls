@@ -657,6 +657,12 @@ INPUT ./fig/result/fashion-mnist-result.png
 INPUT fig/result/cifar-10-result.png
 INPUT ./fig/result/cifar-10-result.png
 INPUT ./fig/result/cifar-10-result.png
+INPUT fig/result/Image_translations_mnist.png
+INPUT ./fig/result/Image_translations_mnist.png
+INPUT ./fig/result/Image_translations_mnist.png
+INPUT fig/result/Elastic-Distortions-Example.png
+INPUT ./fig/result/Elastic-Distortions-Example.png
+INPUT ./fig/result/Elastic-Distortions-Example.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/kpfonts/jkpbn7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/kpfonts/jkpbn7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
