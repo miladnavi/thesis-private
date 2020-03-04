@@ -10,7 +10,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces 7 examples per class of MNIST dataset, merged in one image \cite {MNIST_dataset_example}}}{4}{figure.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Examples of Fashion-MNIST dataset, merged in one image}}{4}{figure.3.2}% 
+\contentsline {figure}{\numberline {2}{\ignorespaces Examples of Fashion-MNIST dataset, merged in one image}}{5}{figure.3.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3}{\ignorespaces 10 examples per class of CIFAR-10 dataset, merged in one image \cite {CIFAR-10_dataset_reference}}}{5}{figure.3.3}% 
 \defcounter {refsection}{0}\relax 
@@ -45,5 +45,15 @@
 \contentsline {figure}{\numberline {15}{\ignorespaces Example of Elastic Distortions on one of the MNIST data}}{23}{figure.6.15}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16}{\ignorespaces Prediction accuracy of each class on Fashion-MNIST for Lable Preserving Transformations techniques}}{26}{figure.7.16}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {17}{\ignorespaces Comparative result between Ensamble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on MNIST dataset}}{28}{figure.7.17}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {18}{\ignorespaces Comparative result between Ensamble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on Fashion-MNIST dataset}}{29}{figure.7.18}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {19}{\ignorespaces Comparative result between Ensamble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on CIFAR-10 dataset}}{29}{figure.7.19}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {20}{\ignorespaces Prediction accuracy of each class on Fashion-MNIST for Ensamble Learning \& Lable Preserving Transformations}}{30}{figure.7.20}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

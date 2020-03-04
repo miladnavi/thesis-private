@@ -19,6 +19,16 @@
 \pagenumbering{gobble}
 \pagenumbering{roman}
 
+% --------------------------------------------------------------------- Abstract
+\ifthenelse{\equal{\thesisthankyou}{true}}{
+    \cleardoublepage
+    \chapter*{\ifthenelse{\equal{\thesislanguage}{german}}%
+        {Zusammenfassung}%
+        {Abstract}}
+    \input{abstract.tex}}
+\cleardoublepage
+{}%
+
 % ----------------------------------------------------------------------- Thanks
 \ifthenelse{\equal{\thesisthankyou}{true}}{
     \cleardoublepage
@@ -29,17 +39,16 @@
 \cleardoublepage
 {}%
 
-% --------------------------------------------------------------------- Abstract
-\ifthenelse{\equal{\thesisabstract}{true}}{
+
+% --------------------------------------------------------------------- Content Empty Page
+\ifthenelse{\equal{\thesisthankyou}{true}}{
     \cleardoublepage
     \chapter*{\ifthenelse{\equal{\thesislanguage}{german}}%
-        {Kurzfassung}%
-        {Abstract}}
-    \input{abstract.tex}
-    %\vspace*{\fill}
-    %\thispagestyle{empty}
-}{}
-\clearpage
+        {}%
+        {}}
+    \input{empty.tex}}
+\cleardoublepage
+{}%
 
 % ----------------------------------------------------------------------- Tables
 \addtocontents{toc}{\vskip -2em}

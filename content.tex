@@ -61,13 +61,15 @@ methods to compare their efficiency and capability. These methods are as follow:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Data Representation}
 \label{tit:data-representation}
-In this chapter, we will briefly introduce the datasets which we use in this work to evaluate the
-performance of each data augmentation approach pragmatically. There are mainly $2$ reasons that we
-have chosen these datasets. First, they are well-know datasets and there are many researchers on
-them and many reported results. Additionally, they are simple enough to learn and append non-complex
-classifiers to classify them with desirable accuracy. The second reason is that all these $3$
-datasets have $10$ classes with small differences. All of these aids us to have a better and more
-realistic benchmark.
+In this section, we briefly introduce the datasets that we use to evaluate the goodness of each data
+augmentation approach in practice. The reason behind our choice of datasets here is twofold. First,
+they are well-known and widely used datasets. Many researchers already carried out numerous
+experiments on them and reported results, and therefore a lot of baseline results are available for
+the sake of comparison. Additionally, they are simple enough in their structure so that one can
+relatively effortlessly learn and append non-complex classifiers, which can classify them with
+desirable accuracy. The second reason is that all these $3$ datasets have $10$ classes with small
+differences and they are balanced datasets and that means each class consists of the same number of
+samples. All of these aids us to have a better and more realistic benchmark.
 
 \section{MNIST}
 The MNIST dataset (Modified National Institute of Standards and Technology) is a large handwritten
@@ -75,7 +77,7 @@ digits dataset, provided by Yann Le Cun, derived from NIST Special Database 19 \
 
 The MSNIT dataset consists of $60,000$ train- and $10,000$ test-images and each image is grayscale
 with $28 \times 28$ pixels. It has $10$ classes that represent $0-9$ digits and data is fairly
-splitted between classes \cite{MNIST_data_reference}. MNIST is one of the most popular datasets for
+splitted between classes \cite{MNIST_data_reference}. The MNIST is one of the most popular datasets for
 deep learning because of the not too high complexity and compatibility with almost all deep learning
 models. Hence many papers attempted to reach a low error-rate on this dataset. One of them manages
 to reduce the error-rate on the MNIST by up to $0.23\%$ \cite{MNIST_best_result_reference}. You can
@@ -94,7 +96,7 @@ find the information about the dataset at the table
 The Fashsion-MNIST is a dataset of Zalando's \footnote{\url{https://jobs.zalando.com/de/tech/}}
 article images provided by Han Xiao et al. \cite{Fashion_MNIST_reference} for benchmarking machine learning algorithms.
 
-The Fashsion-MNIST dataset as same as MNIST dataset consists of $60,000$ train- and $10,000$ test-images and each image is grayscale
+Pretty much similar to the MNIST dataset, the Fashsion-MNIST dataset consists of $60,000$ train- and $10,000$ test-images and each image is grayscale
 with $28 \times 28$ pixels. It has $10$ classes ([T-Shirt, Trouser, Pullover, Dress, Coat,
     Sandal, Shirt, Sneaker, Bag, Ankle Boot]) and the data is fairly
 splitted between these classes. One the best reported accuracy on this dataset with convolutional neural
@@ -168,7 +170,7 @@ find the information about the dataset at the table
 %%%%%%% Data Augmentaion %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Data Augmentaion}
-
+\label{tit:data-augmentation}
 In this chapter, we will introduce a few noteworthy related works in this field which are mainly consist of $2$ approaches and several techniques.
 In what follows, we solely focus on image data.  While some techniques might be applicable to other
 types of data as well, we shall explore them when used on image datasets.
@@ -585,7 +587,7 @@ and Fashion-MNIST.
 \section{Comparison}
 
 A deep look at the table \ref{tb:result_table} derived from the figures \ref{fig:MNIST_result}, \ref{fig:Fashion_MNIST_result}, and
-\ref{fig:CIFAR_10_result} for 10-shot datasets determines that the augmentation approaches and techniques behave the same on MNIST and Fashion-MNIST datasets. That means the improvement rate of accuracy is almost the same for each technique. On the other hand, some techniques behave differently on CIFAR-10 in comparison to MNIST and Fashion-MNIST datasets. In what follows we will discuss each technique behave and the reasons for this behavior on the datasets. 
+\ref{fig:CIFAR_10_result} for 10-shot datasets determines that the augmentation approaches and techniques behave the same on MNIST and Fashion-MNIST datasets. That means the improvement rate of accuracy is almost the same for each technique. On the other hand, some techniques behave differently on CIFAR-10 in comparison to MNIST and Fashion-MNIST datasets. In what follows we will discuss each technique behave and the reasons for this behavior on the datasets.
 
 \begin{table}[]
   \label{tb:result_table}
@@ -593,9 +595,9 @@ A deep look at the table \ref{tb:result_table} derived from the figures \ref{fig
     \begin{tabular}{l|ccccc}
       \hline
       \textbf{Dataset\textbackslash{}Augmentation} & \multicolumn{1}{l}{\textbf{Without Augmentation}} & \multicolumn{1}{l}{\textbf{Image Translations}} & \multicolumn{1}{l}{\textbf{Elastic Distortions}} & \multicolumn{1}{l}{\textbf{Stroke Warping}} & \multicolumn{1}{l}{\textbf{Bayesian Approach}} \\ \hline
-      \textbf{MNIST}                               & $74.36\%$                                         & $84.33\%$                                       & $88.26\%$                                       & $87.61\%$                                   & $86.89\%$                                      \\
-      \textbf{Fashion-MNIST}                       & $71.92\%$                                         & $74.34\%$                                       & $80.24\%$                                       & $78.34\%$                                   & $76.28\%$                                      \\
-      \textbf{CIFAR-10}                            & $13.03\%$                                         & $33.28\%$                                       & $30.35\%$                                       & $32.05\%$                                   & $34.13\%$                                      \\ \hline
+      \textbf{MNIST}                               & $74.36\%$                                         & $84.33\%$                                       & $88.26\%$                                        & $87.61\%$                                   & $86.89\%$                                      \\
+      \textbf{Fashion-MNIST}                       & $71.92\%$                                         & $74.34\%$                                       & $80.24\%$                                        & $78.34\%$                                   & $76.28\%$                                      \\
+      \textbf{CIFAR-10}                            & $13.03\%$                                         & $33.28\%$                                       & $30.35\%$                                        & $32.05\%$                                   & $34.13\%$                                      \\ \hline
     \end{tabular}%
   }
   \caption{Accuracy of augmentation techniques on 10-shot datasets.}
@@ -612,7 +614,7 @@ image gets the same as an image in another class. For example figure \ref{fig:im
 digit $9$ from the MNIST dataset which looks like a $0$ or on the Fashion-MNIST dataset some patches
 of a shirt image can get similar to a T-shirt image, etc. But the image translations on the CIFAR-10
 dataset won't map the synthetic images to another class. It means a patch of e.g. airplane won't get
-similar to another class. 
+similar to another class in the CIFAR-10 dataset.
 \begin{figure}
   \centering
   \label{fig:image_translation_example_bad_accuracy}
@@ -631,7 +633,7 @@ As it represents at the table \ref{tb:result_table}, Elastic Distortions has the
 \end{figure}
 
 \subsection{Stroke Warping}
-A short look at the table \ref{tb:result_table} makes this matter visible that Stroke Warping is the most robust technique between other mentioned techniques in the Lable Preserving Transformation approach. It means the accuracy improvement is almost the same for all $3$ datasets. The reason is that Stroke Warping makes small changes in the whole image and not part of that. These small changes help to improve the accuracy but this technique always stays in the middle of accuracy. 
+A short look at the table \ref{tb:result_table} makes this matter visible that Stroke Warping is the most robust technique between other mentioned techniques in the Lable Preserving Transformation approach. It means the accuracy improvement is almost the same for all $3$ datasets. The reason is that Stroke Warping makes small changes in the whole image and not part of that. These small changes help to improve the accuracy but this technique always stays in the middle of accuracy.
 
 
 \subsection{Bayesian Approach}
@@ -639,6 +641,122 @@ Again with a look at the table \ref{tb:result_table}  it will be clear that the 
 another robust approach and class of techniques on different datasets. Since we learn during the
 augmentation how to generate the synthetic data and unlikely of the Lable Preserving Transformations
 the data won't be generated with some pre-defined transformations, this approach improves the
-accuracy with the factor independent to the dataset. However, this approach improves the accuracy relatively good and is robust on different datasets but in comparison to the other techniques seeks a long time in generating and training phase. Additionally, since this approach working with statistical models and distributions (Max-A-Posterior probability) accuracy stays almost constant in 1-shot learning. In another hand, if the number of samples will be increased the accuracy will be increased more than other techniques.
+accuracy with the factor independent to the dataset. However, this approach improves the accuracy
+relatively good and is robust on different datasets but in comparison to the other techniques seeks
+a long time in generating and training phase. Additionally, since this approach working with
+statistical models and distributions (Max-A-Posterior probability) accuracy stays almost constant in
+1-shot learning. In another hand, if the number of samples will be increased the accuracy will be
+increased more than other techniques.
+
+\section{Conclusion}
+Between Label Preserving Transformations techniques, Image Translations, and Elastic Distortions are highly dependent on datasets and even classes which means they can provide a desirable accuracy on some classes and some classes are not suitable for such an augmentation. This matter makes them strong with a considerable improvement in accuracy on compatible datasets and not so strong on incompatible ones. This based on the number of suitable classes for such an augmentation.
+
+Stroke Warping is the most robust technique of the Label Preserving Transformations which means they improve the accuracy with almost the same factor independent on datasets. This technique is suitable for almost all datasets but the improvement of accuracy is always less than the best case of Image Translations and Elastic Distortions.
+
+Bayesian Approach is another class of techniques which provides robust result and accuracy on all datasets. The advantage is that it learns how to augment the data and generate the synthetic data based on each dataset and obtainable samples. In another hand, high time-complexity in comparison with other techniques is a disadvantage of this kind of augmentation. Additionally, as it works with statistical models and distributions the number of samples at the beginning playing a significant role in the final result.
 
 \chapter{Contribution Of Work}
+In this chapter, we will introduce $3$ new techniques of data augmentation, developed in this work. We studied some of the existing techniques and experimented pragmatically on $3$ different datasets and compared them comprehensively in previous chapters. Based on all these studies and the aid and inspiration of other existing works and researches, we aim to propose new techniques for data augmentation to rectify the disadvantage of existing ones to reach better results and accuracy. In what follows, we focus on each approach (Lable Preserving Transformations and Bayesian Approach) separately and propose an improvement for each approach and their techniques.
+
+\section{Ensamble Learning \& Label Preserving Transformations}
+As we precisely cleared in the previous chapter (\ref{tit:results}) that Label Preserving
+Transformations techniques are highly dependent on datasets or even on each class (at least Image
+Translations and Elastic Distortions). This matter makes them perform completely differently on
+datasets specifically in detail in each class. Put the matter in another way, they can have highly
+good accuracy and prediction in one class, while having extremely accuracy and prediction in another
+class from the same dataset. Figure \ref{fig:Fashion_MNIST_Heatmaps} represents an example of this matter of predicted class
+and the actual class of the 10-shot learning on the Fashion-MNIST dataset for different  Label
+Preserving Transformations techniques.
+
+\begin{figure}
+  \centering
+  \label{fig:Fashion_MNIST_Heatmaps}
+  \includegraphics[width=1.1\textwidth]{fig/contribution/Fashion_MNIST_Heatmap}
+  \caption{Prediction accuracy of each class on Fashion-MNIST for Lable Preserving Transformations techniques}
+\end{figure}
+
+As the astute readers most likely can guess in this technique we will propose a combination of Image
+Translations, Elastic Distortions, and Stroke Warping. However, the combination will be accompanied
+by learning from the performance of each technique in each class and try to choose the best
+technique for each class. In this technique and for such learning we inspired from a well-know
+approach called Ensemble Learning introduced by Robi Polikar \cite{TODO}. This technique begins with the
+augmentations and learning for each $3$ Lable Preserving Transformations techniques ( Image
+Translations, Elastic Distortions, and Stroke Warping) separately. After training and with testing
+dataset a heatmap ($10 \times 10$ prediction matrix) for accuracy on each class will be generated
+for each technique as like as figure \ref{fig:Fashion_MNIST_Heatmaps}. These matrices expose the
+performance and accuracy of each augmentation technique for each class. Based on these matrices, a
+matrix will be generated which represents the probability of correct prediction for each class with
+each augmentation technique. In the end, we augment again our few-shot dataset, but this time with
+the highest correct prediction probability technique for each class and train the CNN with this
+augmented dataset. This is how we augment each class with the best techniques and improve the whole
+accuracy on dataset. The following equation shows the manner of generation of correct prediction probability formally:
+
+Where IT, ED, and SW be the $10 \times 10$ prediction matrices respectively for Image Translations,
+Elastic Distortions, and Stroke Warping and each element of them denoted by $it_{ij}$, $ed_{ij}$,
+and $sw_{ij}$ respectively for $i,j \in \{1,2,...,10\}$ and $i=j$, than correct prediction probability
+matrix denoted by CPP and each element by $cpp_{kj}$ will be generated as follow:
+\begin{equation}
+  \begin{aligned}
+    cpp_{kj} =
+    \begin{cases}
+      \dfrac{it_{ij}}{it_{ij} + ed_{ij} + sw_{ij}} & \text{if}\ k=1 \\ \\
+      \dfrac{ed_{ij}}{it_{ij} + ed_{ij} + sw_{ij}} & \text{if}\ k=2 \\ \\
+      \dfrac{sw_{ij}}{it_{ij} + ed_{ij} + sw_{ij}} & \text{if}\ k=3
+    \end{cases}
+  \end{aligned}
+\end{equation}
+
+Where $j \in \{1,2,...,10\}$, then augmenation technique for each class will be determined by:
+\begin{equation}
+  \begin{aligned}
+    Augmentation \ Technique_{j} = max(cpp_{kj}) \ \ \ \ , \ \forall k \in \{1,2,3\}
+  \end{aligned}
+\end{equation}
+
+At the end and in the test and prediction time, we augment the data by factor 10 with all 3
+techniques. Again and as same as each technique we average on the softmax layers for 10 augmented
+images for each technique separately. If $2$ or more ($3$) predicts the same class that would be the
+final prediction of our model. If each of the softmax layers predict different classes (labels) the
+final prediction would be the prediction of the softmax layer with maximum probability.  If we come
+to the edge case that the softmax layers predict different classes with the exact same probability
+first we check if there is one predicted class which augmentation technique for prediction and
+augmentation technique for learning match. If there is just one prediction (class) that satisfies
+that case that class would be the final prediction. Otherwise, we augment again the data and repeat
+these steps until get the unique prediction. 
+
+Figures \ref{fig:MNIST_ensamble_result}, \ref{fig:Fashion_MNIST_ensamble_result}, and \ref{fig:Cifar_10_ensamble_result} represent the results of this technique besides other introduced techniques in
+chapter \ref{tit:data-augmentation} for datasets MNIST, Fashion-MNIST, and CIFAR-10 respectively. These results are
+proving that this technique does not only seem better theoretical and in words than other ones but
+also in application. Additionally, figure \ref{fig:Fashion_MNIST_Ensamble_Heatmaps} represent the
+prediction accuracy for each class for this technique. The comparison between this figure and figure
+\ref{fig:Fashion_MNIST_Heatmaps} profs our statement and shows that accuracy for almost every class is better than the best of the previous techniques. 
+
+\begin{figure}
+  \centering
+  \label{fig:MNIST_ensamble_result}
+  \includegraphics[width=1\textwidth]{fig/contribution/mnist-ensamble-result}
+  \caption{Comparative result between Ensamble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on MNIST dataset}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \label{fig:Fashion_MNIST_ensamble_result}
+  \includegraphics[width=1\textwidth]{fig/contribution/fashion-mnist-ensamble-result}
+  \caption{Comparative result between Ensamble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on Fashion-MNIST dataset}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \label{fig:Cifar_10_ensamble_result}
+  \includegraphics[width=1\textwidth]{fig/contribution/cifar-10-ensamble-result}
+  \caption{Comparative result between Ensamble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on CIFAR-10 dataset}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \label{fig:Fashion_MNIST_Ensamble_Heatmaps}
+  \includegraphics[width=1\textwidth]{fig/contribution/Fashion_MNIST_Ensamble}
+  \caption{Prediction accuracy of each class on Fashion-MNIST for Ensamble Learning \& Lable Preserving Transformations}
+\end{figure}
