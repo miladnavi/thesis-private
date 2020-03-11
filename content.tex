@@ -55,117 +55,6 @@ methods to compare their efficiency and capability. These methods are as follow:
 \end{itemize}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Data Representation %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Data Representation}
-\label{tit:data-representation}
-In this section, we briefly introduce the datasets that we use to evaluate the goodness of each data
-augmentation approach in practice. The reason behind our choice of datasets here is twofold. First,
-they are well-known and widely used datasets. Many researchers already carried out numerous
-experiments on them and reported results, and therefore a lot of baseline results are available for
-the sake of comparison. Additionally, they are simple enough in their structure so that one can
-relatively effortlessly learn and append non-complex classifiers, which can classify them with
-desirable accuracy. The second reason is that all these $3$ datasets have $10$ classes with small
-differences and they are balanced datasets and that means each class consists of the same number of
-samples. All of these aids us to have a better and more realistic benchmark.
-
-\section{MNIST}
-The MNIST dataset (Modified National Institute of Standards and Technology) is a large handwritten
-digits dataset, provided by Yann Le Cun, derived from NIST Special Database 19 \cite{NIST}.
-
-The MSNIT dataset consists of $60,000$ train- and $10,000$ test-images and each image is grayscale
-with $28 \times 28$ pixels. It has $10$ classes that represent $0-9$ digits and data is fairly
-splitted between classes \cite{MNIST_data_reference}. The MNIST is one of the most popular datasets for
-deep learning because of the not too high complexity and compatibility with almost all deep learning
-models. Hence many papers attempted to reach a low error-rate on this dataset. One of them manages
-to reduce the error-rate on the MNIST by up to $0.23\%$ \cite{MNIST_best_result_reference}. You can
-find the information about the dataset at the table
-\ref{dataset_table} and the figure \ref{fig:mnist_dataset_example} shows an example of the dataset.
-
-\begin{figure}
-  \centering
-  \label{fig:mnist_dataset_example}
-  \includegraphics[width=0.5\textwidth]{fig/mnist}
-  \caption{7 examples per class of MNIST dataset, merged in one image \cite{MNIST_dataset_example}}
-\end{figure}
-
-
-\section{Fashsion-MNIST}
-The Fashsion-MNIST is a dataset of Zalando's \footnote{\url{https://jobs.zalando.com/de/tech/}}
-article images provided by Han Xiao et al. \cite{Fashion_MNIST_reference} for benchmarking machine learning algorithms.
-
-Pretty much similar to the MNIST dataset, the Fashsion-MNIST dataset consists of $60,000$ train- and $10,000$ test-images and each image is grayscale
-with $28 \times 28$ pixels. It has $10$ classes ([T-Shirt, Trouser, Pullover, Dress, Coat,
-    Sandal, Shirt, Sneaker, Bag, Ankle Boot]) and the data is fairly
-splitted between these classes. One the best reported accuracy on this dataset with convolutional neural
-network \footnote{\url{https://github.com/zalandoresearch/fashion-mnist\#benchmark/}} is $91.90\%$. You can
-find the information about the dataset at the table
-\ref{dataset_table} and the figure \ref{fig:fashion_mnist_dataset_example} shows an example of the dataset.
-
-
-\begin{figure}
-  \centering
-  \label{fig:fashion_mnist_dataset_example}
-  \includegraphics[width=0.5\textwidth]{fig/fashion-mnist-dataset_example}
-  \caption{Examples of Fashion-MNIST dataset, merged in one image}
-\end{figure}
-
-\section{CIFAR-10}
-The CIFAR-10 (Canadian Institute for Advanced Research)
-, collected by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton is a subset from 80 million tiny
-images dataset \cite{CIFAR-10_origin_dataset}.
-
-The dataset consists of $60,000$  RGB with $32 \times 32$ pixels images, which are divided to the $50,000$ train and $10,000$ test datasets. As the name makes it clear the CIFAR-10 contains 10 classes ([plane, car, bird, cat, deer, dog, frog, horse, ship, truck]) \cite{CIFAR-10_dataset_reference}.
-One of the lowest reported error-rate with a convolutional neural network managed to achieve $2.56\%$ \cite{CIFAR-10_best_result_reference}.  You can
-find the information about the dataset at the table
-\ref{dataset_table} and the figure \ref{fig:cifar-10_dataset_example} shows an example of the dataset.
-
-\begin{figure}
-  \centering
-  \label{fig:cifar-10_dataset_example}
-  \includegraphics[width=0.5\textwidth]{fig/cifar-10}
-  \caption{10 examples per class of CIFAR-10 dataset, merged in one image \cite{CIFAR-10_dataset_reference}}
-\end{figure}
-
-
-
-
-\begin{table}[]
-  \label{dataset_table}
-  \begin{tabular}{
-      l |
-      c
-      c
-      c
-      c
-      c}
-    \hline
-    {\textbf{Dataset}}        & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
-    {\textbf{MNIST}}          & 10                                         & 60,000
-                              & 10,000                                     & $28\times28$                             & 1
-    (Grayscale)                                                                                                                                                                                                                                            \\
-    {\textbf{Fashsion-MNIST}} & 10                                         & 60,000
-                              & 10,000                                     & $28\times28$
-                              & 1 (Grayscale)                                                                                                                                                                                                              \\
-    {\textbf{CIFAR-10}}       & 10                                         & 50,000
-                              & 10,000                                     & $32\times32$                             & 3
-    (RGB)                                                                                                                                                                                                                                                  \\ \hline
-  \end{tabular}
-  \caption{Structure of datasets.}
-\end{table}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Neural Network %%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\chapter{Preliminaries}
-%\section{Introduction}
-%\section{Convolutional Neural Network}
-%\section{Overffiting}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% Data Augmentaion %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -438,20 +327,121 @@ iteration will be continued until $|\theta^{i +1} - \theta^{i}|$ get sufficientl
 
 As we made it clear, the above formal explanations and equations are derived from \cite{refrence_bayesian_approach} and in some points are matched one-to-one.
 
-%\section{Manifold Approach}
-%\label{tit:manifold-approach}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Data Representation %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Data Representation}
+\label{tit:data-representation}
+In this section, we briefly introduce the datasets that we use to evaluate the goodness of each data
+augmentation approach in practice. The reason behind our choice of datasets here is twofold. First,
+they are well-known and widely used datasets. Many researchers already carried out numerous
+experiments on them and reported results, and therefore a lot of baseline results are available for
+the sake of comparison. Additionally, they are simple enough in their structure so that one can
+relatively effortlessly learn and append non-complex classifiers, which can classify them with
+desirable accuracy. The second reason is that all these $3$ datasets have $10$ classes with small
+differences and they are balanced datasets and that means each class consists of the same number of
+samples. All of these aids us to have a better and more realistic benchmark.
 
-\chapter{Pragmatic Expriments}
-in this Chapter
+\section{MNIST}
+The MNIST dataset (Modified National Institute of Standards and Technology) is a large handwritten
+digits dataset, provided by Yann Le Cun, derived from NIST Special Database 19 \cite{NIST}.
+
+The MSNIT dataset consists of $60,000$ train- and $10,000$ test-images and each image is grayscale
+with $28 \times 28$ pixels. It has $10$ classes that represent $0-9$ digits and data is fairly
+splitted between classes \cite{MNIST_data_reference}. The MNIST is one of the most popular datasets for
+deep learning because of the not too high complexity and compatibility with almost all deep learning
+models. Hence many papers attempted to reach a low error-rate on this dataset. One of them manages
+to reduce the error-rate on the MNIST by up to $0.23\%$ \cite{MNIST_best_result_reference}. You can
+find the information about the dataset at the table
+\ref{dataset_table} and the figure \ref{fig:mnist_dataset_example} shows an example of the dataset.
+
+\begin{figure}
+  \centering
+  \label{fig:mnist_dataset_example}
+  \includegraphics[width=0.5\textwidth]{fig/mnist}
+  \caption{7 examples per class of MNIST dataset, merged in one image \cite{MNIST_dataset_example}}
+\end{figure}
+
+
+\section{Fashsion-MNIST}
+The Fashsion-MNIST is a dataset of Zalando's \footnote{\url{https://jobs.zalando.com/de/tech/}}
+article images provided by Han Xiao et al. \cite{Fashion_MNIST_reference} for benchmarking machine learning algorithms.
+
+Pretty much similar to the MNIST dataset, the Fashsion-MNIST dataset consists of $60,000$ train- and $10,000$ test-images and each image is grayscale
+with $28 \times 28$ pixels. It has $10$ classes ([T-Shirt, Trouser, Pullover, Dress, Coat,
+    Sandal, Shirt, Sneaker, Bag, Ankle Boot]) and the data is fairly
+splitted between these classes. One the best reported accuracy on this dataset with convolutional neural
+network \footnote{\url{https://github.com/zalandoresearch/fashion-mnist\#benchmark/}} is $91.90\%$. You can
+find the information about the dataset at the table
+\ref{dataset_table} and the figure \ref{fig:fashion_mnist_dataset_example} shows an example of the dataset.
+
+
+\begin{figure}
+  \centering
+  \label{fig:fashion_mnist_dataset_example}
+  \includegraphics[width=0.5\textwidth]{fig/fashion-mnist-dataset_example}
+  \caption{Examples of Fashion-MNIST dataset, merged in one image}
+\end{figure}
+
+\section{CIFAR-10}
+The CIFAR-10 (Canadian Institute for Advanced Research)
+, collected by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton is a subset from 80 million tiny
+images dataset \cite{CIFAR-10_origin_dataset}.
+
+The dataset consists of $60,000$  RGB with $32 \times 32$ pixels images, which are divided to the $50,000$ train and $10,000$ test datasets. As the name makes it clear the CIFAR-10 contains 10 classes ([plane, car, bird, cat, deer, dog, frog, horse, ship, truck]) \cite{CIFAR-10_dataset_reference}.
+One of the lowest reported error-rate with a convolutional neural network managed to achieve $2.56\%$ \cite{CIFAR-10_best_result_reference}.  You can
+find the information about the dataset at the table
+\ref{dataset_table} and the figure \ref{fig:cifar-10_dataset_example} shows an example of the dataset.
+
+\begin{figure}
+  \centering
+  \label{fig:cifar-10_dataset_example}
+  \includegraphics[width=0.5\textwidth]{fig/cifar-10}
+  \caption{10 examples per class of CIFAR-10 dataset, merged in one image \cite{CIFAR-10_dataset_reference}}
+\end{figure}
+
+
+
+
+\begin{table}[]
+  \label{dataset_table}
+  \begin{tabular}{
+      l |
+      c
+      c
+      c
+      c
+      c}
+    \hline
+    {\textbf{Dataset}}        & \multicolumn{1}{l}{{\textbf{NO. Classes}}} & \multicolumn{1}{l}{{\textbf{NO. Train}}} & \multicolumn{1}{r}{{\textbf{NO. Test}}} & \multicolumn{1}{l}{{\textbf{Size (pixel)}}} & \multicolumn{1}{l}{{\textbf{NO. Channel}}} \\ \hline
+    {\textbf{MNIST}}          & 10                                         & 60,000
+                              & 10,000                                     & $28\times28$                             & 1
+    (Grayscale)                                                                                                                                                                                                                                            \\
+    {\textbf{Fashsion-MNIST}} & 10                                         & 60,000
+                              & 10,000                                     & $28\times28$
+                              & 1 (Grayscale)                                                                                                                                                                                                              \\
+    {\textbf{CIFAR-10}}       & 10                                         & 50,000
+                              & 10,000                                     & $32\times32$                             & 3
+    (RGB)                                                                                                                                                                                                                                                  \\ \hline
+  \end{tabular}
+  \caption{Structure of datasets.}
+\end{table}
+
+
+\chapter{Experiments}
+In this chapter, we explain the manner of implementation of the classifiers, approaches, and
+techniques pragmatically. We introduce the architecture of the utilized
+classifiers\footnote{Convolutional Neural Networks (CNNs)} for each introduced datasets in chapter
+(\ref{tit:data-representation}). After that, we explain the procedure of implementation of each
+introduced approach and technique in chapter (\ref{tit:data-augmentation}).
 
 \section{CNNs Architecture}
-In this section, we will introduce our classifiers (CNNs) architecture for various datasets which we
-introduced in the chapter (\ref{tit:data-representation}). We picked our CNNs architecture from
+In this section, we will introduce our classifiers (CNNs) architecture. We picked our CNNs architecture from
 different sources regarding their non-heavy complexity and desirable accuracy.  Maybe our chosen
 CNNs architecture doesn't provide the best-reported accuracy on datasets, but while we use the
 same CNN-architecture for each dataset and we aim to compare various data augmentation approaches on
 each dataset, it would not affect our results. Moreover, as we will report in chapter (\ref{tit:results})
-our result are not so far away from best-reported accuracy on the orginal dataset.
+our result are not so far away from best-reported accuracy on the original dataset.
 
 \subsection{MNIST}
 For the MNIST dataset, we have chosen a semi-simple CNN architecture from \cite{MNIST_CNN_Architecture} with $2$
@@ -469,8 +459,8 @@ drop-out layer is placed at the end of the second convolutional layer. Figure \r
 \end{figure}
 
 
-\subsection{Fashsion-MNIST}
-The Fashion-MNIST dataset use CNN architectur deriven form \cite{TODO} with $2$
+\subsection{Fashion-MNIST}
+The Fashion-MNIST dataset use CNN architecture derived form \cite{TODO} with $2$
 convolutional layers and $2$ fully connected layers as same as MNIST dataset just with this
 different of up- and downsampling and kernels sizes. ReLU function is utilized as the activation
 function. The learning rate for Adam optimizer is set to $0.001$. Figure \ref{fig:Fashion_MNIST_CNN_Architecture} represents the explained CNN architecture visually.
@@ -498,7 +488,7 @@ drop-out layer is placed at the end of the fourth convolutional layer. Figure \r
   \caption{CNN Architecture for training the CIFAR-10 dataset}
 \end{figure}
 
-\section{Implementaions}
+\section{Implementations}
 In what follow, we will point out shortened to the manner of proceed and implementation of each
 approach and technique.
 
@@ -508,9 +498,38 @@ we mentioned the main part (Machine Learning) carried out with a powerful librar
 called Pytorch \footnote{\url{https://pytorch.org/}}.
 
 \subsection{Image Translations}
+To augment the data with image translations we picked patches smaller than original image size with
+factor approximately $0.8$. The patches are not only large enough to not loos the $80\%$ of the image but
+also allow to augment the dataset with factor close to $100$. The equation
+(\ref{eq:reproduce_image_translate_size}) reproduces equation (\ref{eq:image_translate_size}) with
+the MNIST dataset. After augmentation with translations and their horizontal reflections, we resized images with bilinear interpolation to the original image size in the dataset. This matter provides this possibility to be able to change the patches' size without putting any afford to modify CNN architecture.
+
+\begin{equation}
+  \label{eq:reproduce_image_translate_size}
+  2\times(28-(28 \times 0.8)+1)\times(28-(28 \times 0.8)+1) \approx 2 \times 7 \times 7 \approx 100
+\end{equation}
+
+For test and prediction, the image augmented with the same size of patches from corners and center
+with a factor of 10.
+
 \subsection{Elastic Distortions}
+To augment with this technique we picked $100$ different and random patches from the image with a
+size of $8 \times 8$ and displacement performed in these patches with $\alpha = 8$ to augment the
+data with factor $100$.  After displacement, the patches have been smoothed with the Gaussian filter
+with $\sigma = 4$. For test and prediction, we used the same parameters but this time augmented with
+a factor of ten instead of $100$.
+
 \subsection{Stroke Warping}
+For stroke warping, we augmented each image with skewing them horizontally and vertically with
+different magnitude, rotated them clockwise and counterclockwise with $-10^{\circ} \leq \alpha \leq
+  10^{\circ}$, and scaled with a factor f where $-6 \leq f \leq 6$  and sheared them. With different
+values for the mentioned parameters, we augmented the data with a factor of $100$. Similar to other
+for test and prediction data augmented with a factor of ten.
+
 \subsection{Bayesian Approach}
+Here we used same code\footnote{https://github.com/toantm/pytorch-bda}, implemented by Toan Tran et
+al. and introduced in their work \cite{refrence-bayesian-approach} with small modification for using
+it on few-shot dataset.
 
 
 \chapter{Result \& Comparison}
@@ -539,7 +558,7 @@ Due to the comprehensive comparison, we tried various of the k-shot datasets:
 
 Additionally, to compare the result in fair circumstances we augmented the data by factor 100 (100X)
 for the training and by factor 10 (10X) with each augmentation technique. In the end and to provide
-a more realistic result we used 10-fold cross-validation \cite{cross_validation}. That means for each k-shot learning, we
+a more realistic result we used 10-fold cross-validation \cite{cross-validation}. That means for each k-shot learning, we
 derived 10 different and random k-shot datasets to calculate more realistic accuracy for each
 technique.
 
@@ -633,13 +652,13 @@ As it represents at the table \ref{tb:result_table}, Elastic Distortions has the
 \end{figure}
 
 \subsection{Stroke Warping}
-A short look at the table \ref{tb:result_table} makes this matter visible that Stroke Warping is the most robust technique between other mentioned techniques in the Lable Preserving Transformation approach. It means the accuracy improvement is almost the same for all $3$ datasets. The reason is that Stroke Warping makes small changes in the whole image and not part of that. These small changes help to improve the accuracy but this technique always stays in the middle of accuracy.
+A short look at the table \ref{tb:result_table} makes this matter visible that Stroke Warping is the most robust technique between other mentioned techniques in the Label Preserving Transformation approach. It means the accuracy improvement is almost the same for all $3$ datasets. The reason is that Stroke Warping makes small changes in the whole image and not part of that. These small changes help to improve the accuracy but this technique always stays in the middle of accuracy.
 
 
 \subsection{Bayesian Approach}
 Again with a look at the table \ref{tb:result_table}  it will be clear that the Bayesian Approach is
 another robust approach and class of techniques on different datasets. Since we learn during the
-augmentation how to generate the synthetic data and unlikely of the Lable Preserving Transformations
+augmentation how to generate the synthetic data and unlikely of the Label Preserving Transformations
 the data won't be generated with some pre-defined transformations, this approach improves the
 accuracy with the factor independent to the dataset. However, this approach improves the accuracy
 relatively good and is robust on different datasets but in comparison to the other techniques seeks
@@ -656,9 +675,9 @@ Stroke Warping is the most robust technique of the Label Preserving Transformati
 Bayesian Approach is another class of techniques which provides robust result and accuracy on all datasets. The advantage is that it learns how to augment the data and generate the synthetic data based on each dataset and obtainable samples. In another hand, high time-complexity in comparison with other techniques is a disadvantage of this kind of augmentation. Additionally, as it works with statistical models and distributions the number of samples at the beginning playing a significant role in the final result.
 
 \chapter{Contribution Of Work}
-In this chapter, we will introduce $3$ new techniques of data augmentation, developed in this work. We studied some of the existing techniques and experimented pragmatically on $3$ different datasets and compared them comprehensively in previous chapters. Based on all these studies and the aid and inspiration of other existing works and researches, we aim to propose new techniques for data augmentation to rectify the disadvantage of existing ones to reach better results and accuracy. In what follows, we focus on each approach (Lable Preserving Transformations and Bayesian Approach) separately and propose an improvement for each approach and their techniques.
+In this chapter, we will introduce $3$ new techniques of data augmentation, developed in this work. We studied some of the existing techniques and experimented pragmatically on $3$ different datasets and compared them comprehensively in previous chapters. Based on all these studies and the aid and inspiration of other existing works and researches, we aim to propose new techniques for data augmentation to rectify the disadvantage of existing ones to reach better results and accuracy. In what follows, we focus on each approach (Label Preserving Transformations and Bayesian Approach) separately and propose an improvement for each approach and their techniques.
 
-\section{Ensamble Learning \& Label Preserving Transformations}
+\section{Ensemble Learning \& Label Preserving Transformations}
 As we precisely cleared in the previous chapter (\ref{tit:results}) that Label Preserving
 Transformations techniques are highly dependent on datasets or even on each class (at least Image
 Translations and Elastic Distortions). This matter makes them perform completely differently on
@@ -672,7 +691,7 @@ Preserving Transformations techniques.
   \centering
   \label{fig:Fashion_MNIST_Heatmaps}
   \includegraphics[width=1.1\textwidth]{fig/contribution/Fashion_MNIST_Heatmap}
-  \caption{Prediction accuracy of each class on Fashion-MNIST for Lable Preserving Transformations techniques}
+  \caption{Prediction accuracy of each class on Fashion-MNIST for Label Preserving Transformations techniques}
 \end{figure}
 
 As the astute readers most likely can guess in this technique we will propose a combination of Image
@@ -680,7 +699,7 @@ Translations, Elastic Distortions, and Stroke Warping. However, the combination 
 by learning from the performance of each technique in each class and try to choose the best
 technique for each class. In this technique and for such learning we inspired from a well-know
 approach called Ensemble Learning introduced by Robi Polikar \cite{TODO}. This technique begins with the
-augmentations and learning for each $3$ Lable Preserving Transformations techniques ( Image
+augmentations and learning for each $3$ Label Preserving Transformations techniques ( Image
 Translations, Elastic Distortions, and Stroke Warping) separately. After training and with testing
 dataset a heatmap ($10 \times 10$ prediction matrix) for accuracy on each class will be generated
 for each technique as like as figure \ref{fig:Fashion_MNIST_Heatmaps}. These matrices expose the
@@ -706,7 +725,7 @@ matrix denoted by CPP and each element by $cpp_{kj}$ will be generated as follow
   \end{aligned}
 \end{equation}
 
-Where $j \in \{1,2,...,10\}$, then augmenation technique for each class will be determined by:
+Where $j \in \{1,2,...,10\}$, then augmentation technique for each class will be determined by:
 \begin{equation}
   \begin{aligned}
     Augmentation \ Technique_{j} = max(cpp_{kj}) \ \ \ \ , \ \forall k \in \{1,2,3\}
@@ -722,20 +741,20 @@ to the edge case that the softmax layers predict different classes with the exac
 first we check if there is one predicted class which augmentation technique for prediction and
 augmentation technique for learning match. If there is just one prediction (class) that satisfies
 that case that class would be the final prediction. Otherwise, we augment again the data and repeat
-these steps until get the unique prediction. 
+these steps until get the unique prediction.
 
 Figures \ref{fig:MNIST_ensamble_result}, \ref{fig:Fashion_MNIST_ensamble_result}, and \ref{fig:Cifar_10_ensamble_result} represent the results of this technique besides other introduced techniques in
 chapter \ref{tit:data-augmentation} for datasets MNIST, Fashion-MNIST, and CIFAR-10 respectively. These results are
 proving that this technique does not only seem better theoretical and in words than other ones but
 also in application. Additionally, figure \ref{fig:Fashion_MNIST_Ensamble_Heatmaps} represent the
 prediction accuracy for each class for this technique. The comparison between this figure and figure
-\ref{fig:Fashion_MNIST_Heatmaps} profs our statement and shows that accuracy for almost every class is better than the best of the previous techniques. 
+\ref{fig:Fashion_MNIST_Heatmaps} profs our statement and shows that accuracy for almost every class is better than the best of the previous techniques.
 
 \begin{figure}
   \centering
   \label{fig:MNIST_ensamble_result}
   \includegraphics[width=1\textwidth]{fig/contribution/mnist-ensamble-result}
-  \caption{Comparative result between Ensamble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on MNIST dataset}
+  \caption{Comparative result between Ensemble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on MNIST dataset}
 \end{figure}
 
 
@@ -743,7 +762,7 @@ prediction accuracy for each class for this technique. The comparison between th
   \centering
   \label{fig:Fashion_MNIST_ensamble_result}
   \includegraphics[width=1\textwidth]{fig/contribution/fashion-mnist-ensamble-result}
-  \caption{Comparative result between Ensamble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on Fashion-MNIST dataset}
+  \caption{Comparative result between Ensemble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on Fashion-MNIST dataset}
 \end{figure}
 
 
@@ -751,12 +770,109 @@ prediction accuracy for each class for this technique. The comparison between th
   \centering
   \label{fig:Cifar_10_ensamble_result}
   \includegraphics[width=1\textwidth]{fig/contribution/cifar-10-ensamble-result}
-  \caption{Comparative result between Ensamble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on CIFAR-10 dataset}
+  \caption{Comparative result between Ensemble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on CIFAR-10 dataset}
 \end{figure}
 
 \begin{figure}
   \centering
   \label{fig:Fashion_MNIST_Ensamble_Heatmaps}
   \includegraphics[width=1\textwidth]{fig/contribution/Fashion_MNIST_Ensamble}
-  \caption{Prediction accuracy of each class on Fashion-MNIST for Ensamble Learning \& Lable Preserving Transformations}
+  \caption{Prediction accuracy of each class on Fashion-MNIST for Ensemble Learning \& Label Preserving Transformations}
+\end{figure}
+
+\section{Color Randomization \& Ensemble Learning}
+As the name clearly indicates, this technique tackles the datasets such as Cifar-10 with RGB images.
+As we have stated in Chapter (\ref{tit:results}) there is a significant gap between the accuracy of few-shot
+learning and learning on original data for the Cifar-10 dataset. Further investigation on this
+dataset made it obvious that the colors have been highly instrumental in learning. Figure \ref{fig:original_cifar_10}
+presents the detailed accuracy of classes' prediction on the original data of Cifar-10. As it
+demonstrates, for instance, many airplane samples mistakenly have been classified as a ship even on
+the original dataset. It is trivial that CNN learns the colors and classifies the samples based on
+that since there is no shape similarity between airplane and ship but they have almost the same
+background-color (blue\footnote{Airplanes are almost have sky and ships have sea background}). In this technique, we approach to prevent unnecessary color learning such as background-color in the classifier with augmentation of the data with a random color.
+
+\begin{figure}
+  \centering
+  \label{fig:original_cifar_10}
+  \includegraphics[width=1\textwidth]{fig/contribution/original_cifar_10}
+  \caption{Prediction accuracy of each class on the original CIFAR-10 dataset}
+\end{figure}
+
+In the first step, data will be augmented as same as the previous technique (Ensemble Learning \& Label Preserving Transformations). In the second step, images in the augmented dataset will be converted from the RGB color model to the HSI color model \cite{image-processing} as follow:
+
+\begin{equation}
+  \label{eq:hue}
+  h=\left\{\begin{array}{ll}
+    \theta \quad \quad \text { if } B \leq G & \text { with } \quad \theta=\cos ^{-1}\left\{\frac{1 /[(r-g)+(r-b)]}{\left[(r-g)^{2}+(r-b)(g-b)\right]^{1 / 2}}\right\} \\
+    2 \pi-\theta \quad \text { otherwise }   &
+  \end{array}\right\}
+\end{equation}
+
+Where $h$ represents hue and $r,g$ , and $b$ denoted as normalized RGB value:
+
+\begin{equation}
+  r = \frac{R}{R+B+G} \ , \quad \quad b = \frac{B}{R+B+G} \ , \quad \quad g = \frac{G}{R+B+G}
+\end{equation}
+
+
+$s$ which determines saturation of color (Chroma) defined as follow:
+\begin{equation}
+  s=1-3 \cdot \min (r, g, b) ; \quad \mathbf{s} \in[0,1] \quad (\text{with exception for black with} \ (s=0) )
+\end{equation}
+
+and $i$ which determines intensity defined as follow
+\begin{equation}
+  i=(R+G+B) /(3 \cdot 255) ; \quad i \in[0,1]
+\end{equation}
+
+After converting the images to the HSI model, we will enlarge the dataset by factor 4 for each
+image by randomizing the color of each sample. Color randomization accomplishes with adding a
+random value between $\pi$ and $- \pi$ to the hue of the pixel mentioned in equation
+(\ref{eq:hue}). Following equation presents new hue denoted as $h'$ formally:
+\begin{equation}
+  \label{eq:new_hue}
+  h'= h + random(\pi, - \pi)
+\end{equation}
+
+In the last step, we reconvert the augmented dataset to the RGB color model and start the learning phase as same as before. The test and prediction phase will be accomplished exactly like the previous technique.
+
+\begin{figure}
+  \centering
+  \label{fig:cifar_10_random_color_result}
+  \includegraphics[width=1\textwidth]{fig/contribution/cifar-10-random-color-result}
+  \caption{Comparative result between Color Randomization \& Ensemble Learning augmentation and other augmentation techniques on CIFAR-10 dataset}
+\end{figure}
+
+We selected the HSI color model to randomize the color without the disadvantageous effect on the
+pixel's intensity or chroma. As equation (\ref{eq:new_hue}) illustrate this matter that our
+technique changes only the hue of pixel. It ables us not only to prevent the model from
+unnecessarily color learning but also not losing important information such as interest points,
+edges, corners, and etc. in the picture. Figure \ref{fig:cifar_10_random_color_result} represents the result
+of this technique on Cifar-10 besides other introduced techniques. It demonstrates that this
+technique is even, more better, than the previous one.
+
+
+\section{Random Erasing \& Bayesian Approach}
+Finally and the last technique, we attempt to improve the Bayesian Approach with augmenting the
+dataset at the beginning. It means that we augment our few-shot dataset before the Bayesian Approach
+starts to generate synthetic data. The data augmentation will be carried out with an augmentation
+technique called random erasing which we inspired from an introduced work by Zhun Zhong et al.
+\cite{random_erasing}. In this technique for augmentation, we choose random patches smaller than
+original images size in the dataset and erase them. We erase $100$ random patches with size $5
+  \times 5$ from the images to augment our few-shot dataset with a factor by $100$. The influence of
+such an augmentation with random erasing is similar to the dropout layer in CNNs \cite{dropout_book}.
+Nevertheless, in the random erasing instead of disabling random nodes (random discrete pixels), an
+area will be erased (disabled). Considering this augmentation, some negligible objects can be erased
+from samples, therefore, it can improve accuracy and cause that the Bayesian Approach has a more
+realistic and better estimation of class's distribution and observed posterior introduced in
+equation (\ref{eq:observed-posterior}).
+
+Figure \ref{fig:random_erasiong_result} represents a comparison between the Bayesian Approach with and without random erasing. It demonstrates that this technique not only in theory but also pragmatically achieve better performance and accuracy on all introduced datasets.  
+
+
+\begin{figure}
+  \centering
+  \label{fig:random_erasiong_result}
+  \includegraphics[width=1\textwidth]{fig/contribution/random-erasing-result}
+  \caption{Comparative result between Bayesian Approach with and without random erasing}
 \end{figure}
