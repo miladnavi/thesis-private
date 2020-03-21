@@ -29,7 +29,7 @@
       \field{title}{Convolutional Neural Networks Tutorial in PyTorch}
       \field{year}{2017}
     \endentry
-    \entry{AC-GANS}{misc}{}
+    \entry{AC_GANS}{misc}{}
       \name{author}{1}{}{%
         {{hash=2e554d167ee0c899b92b2830c7b21744}{%
            family={A.\bibnamedelimi Odena},
@@ -264,6 +264,42 @@
       \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
       \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'}
     \endentry
+    \entry{cross_validation}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=5470455fc7dceb3ccf6db38cb22a113d}{%
+           family={Efron},
+           familyi={E\bibinitperiod},
+           given={Bradley},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Journal of the American Statistical Association}%
+      }
+      \strng{namehash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{fullhash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{bibnamehash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{authorbibnamehash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{authornamehash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{authorfullhash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \field{labelalpha}{Efr83}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Estimating the Error Rate of a Prediction Rule: Improvement on Cross-Validation}
+      \field{volume}{78}
+      \field{year}{1983}
+      \field{pages}{316\bibrangedash 331}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb https://amstat.tandfonline.com/doi/ref/10.1080/01621459.1983.10477973?scroll=top#.XlvbR5NKjOQ
+      \endverb
+      \verb{url}
+      \verb https://amstat.tandfonline.com/doi/ref/10.1080/01621459.1983.10477973?scroll=top#.XlvbR5NKjOQ
+      \endverb
+      \warn{\item Datamodel: Entry 'cross_validation' (bibliography.bib): Missing mandatory field 'editor'}
+      \warn{\item Datamodel: Entry 'cross_validation' (bibliography.bib): Missing mandatory field 'booktitle'}
+    \endentry
     \entry{goodflew_bayesian_approach}{misc}{}
       \name{author}{8}{}{%
         {{hash=d4f74ef4c79f3bb1e51e378184d8850e}{%
@@ -448,7 +484,7 @@
       \endverb
       \warn{\item Datamodel: Entry 'Fashion_MNIST_reference' (bibliography.bib): Missing mandatory field 'url'}
     \endentry
-    \entry{adam-optimizer}{misc}{}
+    \entry{adam_optimizer}{misc}{}
       \name{author}{2}{}{%
         {{hash=b6fbd171848aad4edf3925543f1f1522}{%
            family={Kingma},
@@ -482,7 +518,7 @@
       \verb{eprint}
       \verb 1412.6980
       \endverb
-      \warn{\item Datamodel: Entry 'adam-optimizer' (bibliography.bib): Invalid field 'publisher' for entrytype 'misc'}
+      \warn{\item Datamodel: Entry 'adam_optimizer' (bibliography.bib): Invalid field 'publisher' for entrytype 'misc'}
     \endentry
     \entry{CIFAR-10_dataset_reference}{misc}{}
       \name{author}{1}{}{%
@@ -1064,8 +1100,6 @@
     \endentry
   \enddatalist
   \missing{TODO}
-  \missing{cross-validation}
-  \missing{refrence-bayesian-approach}
 \endrefsection
 \endinput
 

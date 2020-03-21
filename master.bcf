@@ -2012,7 +2012,7 @@
     <bcf:citekey order="14">google_bayesian_approach</bcf:citekey>
     <bcf:citekey order="15">refrence_bayesian_approach</bcf:citekey>
     <bcf:citekey order="16">Statistical_data_augmentation</bcf:citekey>
-    <bcf:citekey order="17">AC-GANS</bcf:citekey>
+    <bcf:citekey order="17">AC_GANS</bcf:citekey>
     <bcf:citekey order="18">refrence_bayesian_approach</bcf:citekey>
     <bcf:citekey order="19">refrence_bayesian_approach</bcf:citekey>
     <bcf:citekey order="20">refrence_bayesian_approach</bcf:citekey>
@@ -2029,13 +2029,13 @@
     <bcf:citekey order="31">CIFAR-10_dataset_reference</bcf:citekey>
     <bcf:citekey order="32">CIFAR-10_dataset_reference</bcf:citekey>
     <bcf:citekey order="33">MNIST_CNN_Architecture</bcf:citekey>
-    <bcf:citekey order="34">adam-optimizer</bcf:citekey>
+    <bcf:citekey order="34">adam_optimizer</bcf:citekey>
     <bcf:citekey order="35">MNIST_CNN_Architecture_Image</bcf:citekey>
     <bcf:citekey order="36">MNIST_CNN_Architecture_Image</bcf:citekey>
     <bcf:citekey order="37">TODO</bcf:citekey>
     <bcf:citekey order="38">CIFAR_CNN_Architecture</bcf:citekey>
-    <bcf:citekey order="39">refrence-bayesian-approach</bcf:citekey>
-    <bcf:citekey order="40">cross-validation</bcf:citekey>
+    <bcf:citekey order="39">refrence_bayesian_approach</bcf:citekey>
+    <bcf:citekey order="40">cross_validation</bcf:citekey>
     <bcf:citekey order="41">TODO</bcf:citekey>
     <bcf:citekey order="42">image-processing</bcf:citekey>
     <bcf:citekey order="43">random_erasing</bcf:citekey>
