@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  15 JAN 2020 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  25 MAR 2020 14:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/mobilabmilad/Documents/Uni/WS-19:20/bachelor-thesis/thesis/master.tex
-(/Users/mobilabmilad/Documents/Uni/WS-19:20/bachelor-thesis/thesis/master.tex
+**/Users/mobilabmilad/Milad/code/thesis/master.tex
+(/Users/mobilabmilad/Milad/code/thesis/master.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrreprt.cls
 Document Class: scrreprt 2019/02/01 v3.26b KOMA-Script document class (report)
@@ -1801,6 +1801,16 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'FashionMNIST_dataset_example':
+(biblatex)                - Datamodel: Entry 'FashionMNIST_dataset_example' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'google_bayesian_approach':
+(biblatex)                - Datamodel: Entry 'google_bayesian_approach' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'MNIST_best_result_reference':
 (biblatex)                - Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'.
 
@@ -1821,8 +1831,48 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'cross_validation':
+(biblatex)                - Datamodel: Entry 'cross_validation' (bibliography.bib): Missing mandatory field 'editor'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'cross_validation':
+(biblatex)                - Datamodel: Entry 'cross_validation' (bibliography.bib): Missing mandatory field 'booktitle'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'image-processing':
+(biblatex)                - Datamodel: Entry 'image-processing' (bibliography.bib): Missing mandatory field 'editor'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'image-processing':
+(biblatex)                - Datamodel: Entry 'image-processing' (bibliography.bib): Missing mandatory field 'booktitle'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Fashion_MNIST_reference':
+(biblatex)                - Datamodel: Entry 'Fashion_MNIST_reference' (bibliography.bib): Missing mandatory field 'url'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'adam_optimizer':
+(biblatex)                - Datamodel: Entry 'adam_optimizer' (bibliography.bib): Invalid field 'publisher' for entrytype 'misc'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'CIFAR-10_dataset_reference':
 (biblatex)                - Datamodel: Entry 'CIFAR-10_dataset_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'image_translation_paper':
+(biblatex)                - Datamodel: Entry 'image_translation_paper' (bibliography.bib): Missing mandatory field 'editor'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'image_translation_paper':
+(biblatex)                - Datamodel: Entry 'image_translation_paper' (bibliography.bib): Missing mandatory field 'booktitle'.
 
 
 Package biblatex Warning: Biber reported the following issues
@@ -1841,13 +1891,23 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'elastic_distortion_paper':
+(biblatex)                - Datamodel: Entry 'elastic_distortion_paper' (bibliography.bib): Missing mandatory field 'editor'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'elastic_distortion_paper':
+(biblatex)                - Datamodel: Entry 'elastic_distortion_paper' (bibliography.bib): Missing mandatory field 'booktitle'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'NIST':
 (biblatex)                - Datamodel: Entry 'NIST' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
 
 
 Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'bayesian_approach':
-(biblatex)                - Datamodel: Entry 'bayesian_approach' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'.
+(biblatex)                with 'refrence_bayesian_approach':
+(biblatex)                - Datamodel: Entry 'refrence_bayesian_approach' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'.
 
 
 Package biblatex Warning: Biber reported the following issues
@@ -1855,32 +1915,9 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Datamodel: Entry 'CIFAR-10_origin_dataset' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined.
 
 
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Same
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                TODO
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                TODO-Augmentaion
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                TODO-google-reference
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'random_erasing':
+(biblatex)                - Datamodel: Entry 'random_erasing' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'.
 
 )
 Package biblatex Info: Reference section=0 on input line 7.
@@ -2005,42 +2042,33 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkpssosn' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./thanks.tex
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 1.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
-)
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `zi4' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `T1/zi4/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `T1/zi4/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-) [1
+ (./abstract.tex) [1
 
 
 
 
-]
-Package tocbasic Info: character protrusion at toc deactivated on input line 50.
+] (./thanks.tex) [2
+
+
+
+
+] (./empty.tex)
+Package tocbasic Info: character protrusion at toc deactivated on input line 59.
  (./master.toc
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkposn/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
- [2
+ [3
+
+
+
 
 ])
 \tf@toc=\write8
 \openout8 = `master.toc'.
 
- [3]
-Package hyperref Info: Option `pageanchor' set `true' on input line 72.
+ [4]
+Package hyperref Info: Option `pageanchor' set `true' on input line 81.
  (./content.tex
 chapter 1.
 
@@ -2051,7 +2079,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting typearea's option
 (scrlayer-scrpage)                `headheight=17.21992pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 34.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 32.
 
 
 Overfull \vbox (2.21992pt too high) has occurred while \output is active []
@@ -2068,172 +2096,273 @@ chapter 2.
 
 ]
 chapter 3.
-<fig/mnist.jpeg, id=122, 481.8pt x 361.35pt>
-File: fig/mnist.jpeg Graphic file (type jpg)
-<use fig/mnist.jpeg>
-Package pdftex.def Info: fig/mnist.jpeg  used on input line 85.
-(pdftex.def)             Requested size: 214.94751pt x 161.21101pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkposn/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 [3
 
 
- <./fig/mnist.jpeg>]
-<fig/cifar-10.png, id=143, 466.74374pt x 361.35pt>
+]
+<fig/label-preserving-transformation.png, id=139, 763.85374pt x 590.205pt>
+File: fig/label-preserving-transformation.png Graphic file (type png)
+<use fig/label-preserving-transformation.png>
+Package pdftex.def Info: fig/label-preserving-transformation.png  used on input line 109.
+(pdftex.def)             Requested size: 429.89502pt x 332.1606pt.
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 125.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+) [4] [5 <./fig/label-preserving-transformation.png>]
+<fig/stroke_warping_transforamtions.jpg, id=165, 522.95375pt x 154.5775pt>
+File: fig/stroke_warping_transforamtions.jpg Graphic file (type jpg)
+<use fig/stroke_warping_transforamtions.jpg>
+Package pdftex.def Info: fig/stroke_warping_transforamtions.jpg  used on input line 176.
+(pdftex.def)             Requested size: 429.89502pt x 127.07277pt.
+ [6] [7 <./fig/stroke_warping_transforamtions.jpg>]
+<fig/gan_architectur.png, id=194, 828.09375pt x 384.43625pt>
+File: fig/gan_architectur.png Graphic file (type png)
+<use fig/gan_architectur.png>
+Package pdftex.def Info: fig/gan_architectur.png  used on input line 236.
+(pdftex.def)             Requested size: 429.89502pt x 199.5795pt.
+ [8] [9 <./fig/gan_architectur.png>]
+<fig/bayesian-approach-gan-architecture.png, id=219, 205.76875pt x 209.78375pt>
+File: fig/bayesian-approach-gan-architecture.png Graphic file (type png)
+<use fig/bayesian-approach-gan-architecture.png>
+Package pdftex.def Info: fig/bayesian-approach-gan-architecture.png  used on input line 269.
+(pdftex.def)             Requested size: 214.94751pt x 219.14305pt.
+ [10 <./fig/bayesian-approach-gan-architecture.png>] [11] [12]
+chapter 4.
+<fig/mnist.jpeg, id=252, 481.8pt x 361.35pt>
+File: fig/mnist.jpeg Graphic file (type jpg)
+<use fig/mnist.jpeg>
+Package pdftex.def Info: fig/mnist.jpeg  used on input line 376.
+(pdftex.def)             Requested size: 214.94751pt x 161.21101pt.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 382.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
+)
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 8.0pt on input line 382.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zi4' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `T1/zi4/m/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `T1/zi4/m/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+ [13
+
+
+]
+<fig/fashion-mnist-dataset_example.png, id=271, 607.068pt x 607.068pt>
+File: fig/fashion-mnist-dataset_example.png Graphic file (type png)
+<use fig/fashion-mnist-dataset_example.png>
+Package pdftex.def Info: fig/fashion-mnist-dataset_example.png  used on input line 399.
+(pdftex.def)             Requested size: 214.94751pt x 214.94096pt.
+<fig/cifar-10.png, id=277, 466.74374pt x 361.35pt>
 File: fig/cifar-10.png Graphic file (type png)
 <use fig/cifar-10.png>
-Package pdftex.def Info: fig/cifar-10.png  used on input line 107.
+Package pdftex.def Info: fig/cifar-10.png  used on input line 416.
 (pdftex.def)             Requested size: 214.94751pt x 166.41048pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 116.
+               Default added (so using `tbp') on input line 423.
 
 
-Overfull \hbox (40.02466pt too wide) in paragraph at lines 118--132
+Overfull \hbox (34.67267pt too wide) in paragraph at lines 425--444
  [][] 
  []
 
-[4 <./fig/cifar-10.png>]
-chapter 4.
-[5
-
-
-]
+[14 <./fig/mnist.jpeg>] [15 <./fig/fashion-mnist-dataset_example.png> <./fig/cifar-10.png>]
 chapter 5.
-[6
-
-
-]
-<fig/label-preserving-transformation.png, id=169, 763.85374pt x 590.205pt>
-File: fig/label-preserving-transformation.png Graphic file (type png)
-<use fig/label-preserving-transformation.png>
-Package pdftex.def Info: fig/label-preserving-transformation.png  used on input line 175.
-(pdftex.def)             Requested size: 429.89502pt x 332.1606pt.
- [7 <./fig/label-preserving-transformation.png>] [8]
-<fig/stroke_warping_transforamtions.jpg, id=187, 522.95375pt x 154.5775pt>
-File: fig/stroke_warping_transforamtions.jpg Graphic file (type jpg)
-<use fig/stroke_warping_transforamtions.jpg>
-Package pdftex.def Info: fig/stroke_warping_transforamtions.jpg  used on input line 231.
-(pdftex.def)             Requested size: 429.89502pt x 127.07277pt.
- [9 <./fig/stroke_warping_transforamtions.jpg>] [10]
-<fig/gan_architectur.png, id=209, 828.09375pt x 384.43625pt>
-File: fig/gan_architectur.png Graphic file (type png)
-<use fig/gan_architectur.png>
-Package pdftex.def Info: fig/gan_architectur.png  used on input line 291.
-(pdftex.def)             Requested size: 429.89502pt x 199.5795pt.
- [11 <./fig/gan_architectur.png>]
-<fig/bayesian-approach-gan-architecture.png, id=223, 205.76875pt x 209.78375pt>
-File: fig/bayesian-approach-gan-architecture.png Graphic file (type png)
-<use fig/bayesian-approach-gan-architecture.png>
-Package pdftex.def Info: fig/bayesian-approach-gan-architecture.png  used on input line 325.
-(pdftex.def)             Requested size: 214.94751pt x 219.14305pt.
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 335.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
-File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [12 <./fig/bayesian-approach-gan-architecture.png>]
-Overfull \hbox (28.39665pt too wide) detected at line 389
-[][][]
- []
-
-[13] [14]
-chapter 6.
-
-LaTeX Warning: Reference `TODO' on page 15 undefined on input line 414.
-
-
-LaTeX Warning: Reference `TODO' on page 15 undefined on input line 415.
-
-<fig/MNIST-CNN-Architecture.png, id=257, 1038.88126pt x 352.31625pt>
+<fig/MNIST-CNN-Architecture.png, id=307, 1038.88126pt x 352.31625pt>
 File: fig/MNIST-CNN-Architecture.png Graphic file (type png)
 <use fig/MNIST-CNN-Architecture.png>
-Package pdftex.def Info: fig/MNIST-CNN-Architecture.png  used on input line 422.
+Package pdftex.def Info: fig/MNIST-CNN-Architecture.png  used on input line 476.
 (pdftex.def)             Requested size: 429.89502pt x 145.78918pt.
-<fig/CIFAR-CNN-Architecture.png, id=260, 785.93625pt x 1217.54875pt>
+[16
+
+
+]
+<fig/Fashion-MNIST-CNN-Architecture.png, id=321, 1210.5225pt x 361.35pt>
+File: fig/Fashion-MNIST-CNN-Architecture.png Graphic file (type png)
+<use fig/Fashion-MNIST-CNN-Architecture.png>
+Package pdftex.def Info: fig/Fashion-MNIST-CNN-Architecture.png  used on input line 490.
+(pdftex.def)             Requested size: 429.89502pt x 128.32701pt.
+<fig/CIFAR-CNN-Architecture.png, id=324, 1427.3325pt x 646.415pt>
 File: fig/CIFAR-CNN-Architecture.png Graphic file (type png)
 <use fig/CIFAR-CNN-Architecture.png>
-Package pdftex.def Info: fig/CIFAR-CNN-Architecture.png  used on input line 434.
-(pdftex.def)             Requested size: 429.89502pt x 665.99397pt.
-
-LaTeX Warning: Float too large for page by 28.1339pt on input line 436.
-
-[15
-
-
-] [16 <./fig/MNIST-CNN-Architecture.png>] [17 <./fig/CIFAR-CNN-Architecture.png>]
-chapter 7.
-[18
-
-
-]
-chapter 8.
-) [19
-
-
-]
-chapter 9.
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
-[]\T1/jkposn/m/it/10 (+20) Convolutional Neu-ral Net-works Tu-to-rial in Py-Torch\T1/jkposn/m/n/10 (+20) . [][]$\T1/zi4/m/n/10 https : / /
- []
-
+Package pdftex.def Info: fig/CIFAR-CNN-Architecture.png  used on input line 507.
+(pdftex.def)             Requested size: 429.89502pt x 194.68549pt.
+ [17 <./fig/MNIST-CNN-Architecture.png> <./fig/Fashion-MNIST-CNN-Architecture.png>] [18 <./fig/CIFAR-CNN-Architecture.png>] [19]
+chapter 6.
+<fig/result/mnist-result.png, id=362, 1362.08875pt x 520.94624pt>
+File: fig/result/mnist-result.png Graphic file (type png)
+<use fig/result/mnist-result.png>
+Package pdftex.def Info: fig/result/mnist-result.png  used on input line 594.
+(pdftex.def)             Requested size: 429.89502pt x 164.41689pt.
+<fig/result/fashion-mnist-result.png, id=363, 1358.07375pt x 557.08125pt>
+File: fig/result/fashion-mnist-result.png Graphic file (type png)
+<use fig/result/fashion-mnist-result.png>
+Package pdftex.def Info: fig/result/fashion-mnist-result.png  used on input line 602.
+(pdftex.def)             Requested size: 429.89502pt x 176.34006pt.
+<fig/result/cifar-10-result.png, id=364, 1362.08875pt x 520.94624pt>
+File: fig/result/cifar-10-result.png Graphic file (type png)
+<use fig/result/cifar-10-result.png>
+Package pdftex.def Info: fig/result/cifar-10-result.png  used on input line 610.
+(pdftex.def)             Requested size: 429.89502pt x 164.41689pt.
 [20
 
 
-] [21]
-Package tocbasic Info: character protrusion at lof deactivated on input line 102.
+] [21 <./fig/result/mnist-result.png> <./fig/result/fashion-mnist-result.png> <./fig/result/cifar-10-result.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 635.
+
+<fig/result/Image_translations_mnist.png, id=392, 28.105pt x 28.105pt>
+File: fig/result/Image_translations_mnist.png Graphic file (type png)
+<use fig/result/Image_translations_mnist.png>
+Package pdftex.def Info: fig/result/Image_translations_mnist.png  used on input line 664.
+(pdftex.def)             Requested size: 214.94751pt x 215.0329pt.
+[22]
+<fig/result/Elastic-Distortions-Example.png, id=401, 496.85625pt x 279.0425pt>
+File: fig/result/Elastic-Distortions-Example.png Graphic file (type png)
+<use fig/result/Elastic-Distortions-Example.png>
+Package pdftex.def Info: fig/result/Elastic-Distortions-Example.png  used on input line 684.
+(pdftex.def)             Requested size: 429.89502pt x 241.44081pt.
+ [23 <./fig/result/Image_translations_mnist.png (PNG copy)>] [24 <./fig/result/Elastic-Distortions-Example.png>] [25]
+chapter 7.
+<fig/contribution/Fashion_MNIST_Heatmap.png, id=420, 1219.55624pt x 977.6525pt>
+File: fig/contribution/Fashion_MNIST_Heatmap.png Graphic file (type png)
+<use fig/contribution/Fashion_MNIST_Heatmap.png>
+Package pdftex.def Info: fig/contribution/Fashion_MNIST_Heatmap.png  used on input line 749.
+(pdftex.def)             Requested size: 472.88713pt x 379.09003pt.
+
+Overfull \hbox (42.99211pt too wide) in paragraph at lines 749--750
+ [][] 
+ []
+
+[26
+
+
+] [27 <./fig/contribution/Fashion_MNIST_Heatmap.png>] [28]
+<fig/contribution/mnist-ensamble-result.png, id=449, 1352.05125pt x 504.88625pt>
+File: fig/contribution/mnist-ensamble-result.png Graphic file (type png)
+<use fig/contribution/mnist-ensamble-result.png>
+Package pdftex.def Info: fig/contribution/mnist-ensamble-result.png  used on input line 812.
+(pdftex.def)             Requested size: 429.89502pt x 160.52686pt.
+<fig/contribution/fashion-mnist-ensamble-result.png, id=450, 1358.07375pt x 513.92pt>
+File: fig/contribution/fashion-mnist-ensamble-result.png Graphic file (type png)
+<use fig/contribution/fashion-mnist-ensamble-result.png>
+Package pdftex.def Info: fig/contribution/fashion-mnist-ensamble-result.png  used on input line 820.
+(pdftex.def)             Requested size: 429.89502pt x 162.67767pt.
+<fig/contribution/cifar-10-ensamble-result.png, id=451, 1358.07375pt x 513.92pt>
+File: fig/contribution/cifar-10-ensamble-result.png Graphic file (type png)
+<use fig/contribution/cifar-10-ensamble-result.png>
+Package pdftex.def Info: fig/contribution/cifar-10-ensamble-result.png  used on input line 828.
+(pdftex.def)             Requested size: 429.89502pt x 162.67767pt.
+<fig/contribution/Fashion_MNIST_Ensamble.png, id=452, 728.7225pt x 523.9575pt>
+File: fig/contribution/Fashion_MNIST_Ensamble.png Graphic file (type png)
+<use fig/contribution/Fashion_MNIST_Ensamble.png>
+Package pdftex.def Info: fig/contribution/Fashion_MNIST_Ensamble.png  used on input line 835.
+(pdftex.def)             Requested size: 429.89502pt x 309.09227pt.
+ [29 <./fig/contribution/mnist-ensamble-result.png> <./fig/contribution/fashion-mnist-ensamble-result.png>] [30 <./fig/contribution/cifar-10-ensamble-result.png> <./fig/contribution/Fashion_MNIST_Ensamble.png>]
+<fig/contribution/original_cifar_10.png, id=472, 681.54625pt x 511.9125pt>
+File: fig/contribution/original_cifar_10.png Graphic file (type png)
+<use fig/contribution/original_cifar_10.png>
+Package pdftex.def Info: fig/contribution/original_cifar_10.png  used on input line 853.
+(pdftex.def)             Requested size: 429.89502pt x 322.89714pt.
+ [31 <./fig/contribution/original_cifar_10.png>]
+<fig/contribution/cifar-10-random-color-result.png, id=482, 1356.06625pt x 519.9425pt>
+File: fig/contribution/cifar-10-random-color-result.png Graphic file (type png)
+<use fig/contribution/cifar-10-random-color-result.png>
+Package pdftex.def Info: fig/contribution/cifar-10-random-color-result.png  used on input line 900.
+(pdftex.def)             Requested size: 429.89502pt x 164.83pt.
+ [32]
+<fig/contribution/random-erasing-result.png, id=501, 1364.09625pt x 596.2275pt>
+File: fig/contribution/random-erasing-result.png Graphic file (type png)
+<use fig/contribution/random-erasing-result.png>
+Package pdftex.def Info: fig/contribution/random-erasing-result.png  used on input line 936.
+(pdftex.def)             Requested size: 429.89502pt x 187.90363pt.
+ [33 <./fig/contribution/cifar-10-random-color-result.png>] [34 <./fig/contribution/random-erasing-result.png>]
+chapter 8.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 942.
+
+) [35
+
+
+] [36]
+chapter 9.
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 10.0pt on input line 91.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `T1/zi4/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `T1/zi4/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]\T1/jkposn/m/it/10 (+20) Convolutional Neu-ral Net-works Tu-to-rial in Py-Torch\T1/jkposn/m/n/10 (+20) . [][]$\T1/zi4/m/n/10 https : / /
+ []
+
+[37
+
+
+] [38] [39]
+Package tocbasic Info: character protrusion at lof deactivated on input line 111.
  (./master.lof)
 \tf@lof=\write9
 \openout9 = `master.lof'.
 
- [22
+ [40
 
 
 
-]
-Package tocbasic Info: character protrusion at lot deactivated on input line 102.
+] [41]
+Package tocbasic Info: character protrusion at lot deactivated on input line 111.
  (./master.lot)
 \tf@lot=\write10
 \openout10 = `master.lot'.
 
- [23
+ [42
 
 
 
-] (./tpl/declaration.tex) [24
+] (./tpl/declaration.tex) [43
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  (./master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'master.run.xml'.
 \openout1 = `master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51592 strings out of 492616
- 991768 string characters out of 6129482
- 1561462 words of memory out of 5000000
- 54262 multiletter control sequences out of 15000+600000
- 784221 words of font info for 523 fonts, out of 8000000 for 9000
+ 51964 strings out of 492616
+ 999854 string characters out of 6129482
+ 1566741 words of memory out of 5000000
+ 54392 multiletter control sequences out of 15000+600000
+ 807361 words of font info for 647 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,20n,120p,9178b,1758s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmitc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmite.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on master.pdf (28 pages, 2034268 bytes).
+ 66i,21n,120p,9150b,1759s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpbsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmitc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmnc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on master.pdf (48 pages, 4272404 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 100 named destinations out of 1000 (max. 500000)
- 90434 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 863 PDF objects out of 1000 (max. 8388607)
+ 737 compressed objects within 8 object streams
+ 175 named destinations out of 1000 (max. 500000)
+ 92605 words of extra memory for PDF output out of 106986 (max. 10000000)
 

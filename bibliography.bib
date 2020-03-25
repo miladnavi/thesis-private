@@ -71,7 +71,7 @@
    title = {{Prüfungsordnung für den Masterstudiengang Computer Science der Ma\-the\-ma\-tisch-Na\-tur\-wis\-senschaftlichen Fakultät der
    Rheinischen Friedrich-Wilhelms-Universität Bonn}},
    note = "\url{http://www.informatik.uni-bonn.de/lehre+studium/pa-ordnungen.html}",
-   month = jan,
+   month = Jan,
    year = 2008,
    key = "DPO"
 }
@@ -120,6 +120,13 @@
   note = {Accessed: 2019-12-16}
 }
 
+@misc{FashionMNIST_dataset_example,
+  title = {{Medium} Intro to PyTorch with image classification on a Fashion clothes dataset},
+  author={Ravish Chawla},
+  howpublished = {\url{https://medium.com/ml2vec/intro-to-pytorch-with-image-classification-on-a-fashion-clothes-dataset-e589682df0c5}},
+  note = {Accessed: 2020-02-10}
+}
+
 @misc{MNIST_data_reference,
   title = {{exdb} THE MNIST DATABASE of handwritten digits},
   author={Yann LeCun},
@@ -128,7 +135,7 @@
 }
 
 @misc{MNIST_best_result_reference,
-    author =       {Dan Cireşan and Ueli Meier and Juergen Schmidhuber},
+    author =       {Dan Cireşan, Ueli Meier, and Juergen Schmidhuber},
     title =        "Multi-column Deep Neural Networks for Image Classification",
     journal =      "Annalen der Physik",
     volume =       "20",
@@ -136,6 +143,16 @@
    archivePrefix = {arXiv},
        eprint = {1202.2745},
    primaryClass = {cs.CV},
+}
+
+@online{Fashion_MNIST_reference,
+  author       = {Han Xiao, Kashif Rasul, and Roland Vollgraf},
+  title        = {Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms},
+  date         = {2017-08-28},
+  year         = {2017},
+  eprintclass  = {cs.LG},
+  eprinttype   = {arXiv},
+  eprint       = {cs.LG/1708.07747},
 }
 
 @misc{CIFAR-10_origin_dataset,
@@ -163,8 +180,35 @@
    primaryClass = {cs.CV},
 }
 
-@article{
-   stroke_tumor,
+@incollection{image_translation_paper,
+title = {Imagenet classification with deep convolutional neural networks},
+author = {A. Krizhevsky and I. Sutskever and G. E. Hinton},
+volume = {60},
+pages = {84–90},
+year = {2017},
+publisher = {Commun. ACM},
+url = {https://doi.org/10.1109/ICDAR.2003.1227801}
+}
+
+@incollection{elastic_distortion_paper,
+title = {Best practices for convolutional neural networks applied to visual document analysis},
+author = {P. Y. Simard and D. Steinkraus and J. C. Platt},
+volume = {2},
+pages = {958-963},
+year = {Edinburgh, Scotland, UK, 2003.},
+publisher = {Seventh International Conference on Document Analysis and Recognition (ICDAR 2003)},
+url = {https://ieeexplore.ieee.org/document/1227801}
+}
+
+@misc{stroke_warping_github_picture,
+    author       = {Marcus D. Bloice},
+    title        = {{Augmentor}},
+    year         = 2017,
+    version      = {0.2.8},
+    url          = {https://github.com/mdbloice/Augmentor}
+}
+
+@article{stroke_tumor,
    author = {Baik, Sung W. and Muhammad Sajjad and Salman Khan and Khan Muhammad and Wanqing Wu and Amin Ullah},
    title = "Multi-grade brain tumor classification using deep CNN with extensive data augmentation",
    publisher = "Elsevier BV",
@@ -215,7 +259,44 @@ url = {http://papers.nips.cc/paper/1250-effective-training-of-a-neural-network-c
    note = "ISBN 978-0-387-97525-2"
 }
 
-@misc{bayesian_approach,
+@book{ensemble_learning,
+   author = "Robi Polikar",
+   title = "{Ensemble Machine Learning}",
+   subtitle = {Methods and Applications},
+   publisher = "Springer, Boston, MA",
+   year = 2003,
+   pages = {1-34},
+   note = "ISBN 978-1-4419-9326-7"
+}
+
+@book{MAP_Bayesian,
+   author = "D. M. Greig and  B. T. Porteous and  A. H. Seheult",
+   title = "{Exact Maximum A Posteriori Estimation for Binary Images}",
+   publisher = "Journal of the Royal Statistical Society: Series B (Methodological)",
+   edition = 1,
+   year = 1989,
+   volume = 51,
+   pages = {271-279},
+   url = {https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1989.tb01764.x}
+}
+
+@misc{goodflew_bayesian_approach,
+    author =       {Ian J. Goodfellow and Jean Pouget-Abadie and Mehdi Mirza and Bing Xu and David Warde-Farley and Sherjil Ozair and  Aaron Courville and Yoshua Bengio},
+    title =        "Generative Adversarial Networks",
+    year =         "2014",
+   archivePrefix = {arXiv},
+       eprint = {1406.2661},
+   primaryClass = {cs.CV},
+}
+
+@misc{google_bayesian_approach,
+    author       = {Google Company},
+    title        = {{Generative Adversarial Networks}},
+    howpublished = {\url{https://developers.google.com/machine-learning/gan/generator}},
+    note = {Accessed: 2020-01-15}
+}
+
+@misc{refrence_bayesian_approach,
     author =       {T. Tran and T. Pham and G. Carneiro and L. J. Palmer and I. D. Reid},
     title =        "A bayesian data augmentation approach for learning deep models,",
     journal =      "NIPS",
@@ -237,14 +318,26 @@ url = {http://papers.nips.cc/paper/1250-effective-training-of-a-neural-network-c
    note = "ISBN 82(398):528–540"
 }
 
-@misc{AC-GANS,
-    author =       { A.Odena and C.Olah andJ.Shlens},
+@misc{AC_GANS,
+    author =       { A. Odena , C. Olah ,and J. Shlens},
     title =        "Conditional Image Synthesis With Auxiliary Classifier GANs",
     year =         "2016",
    archivePrefix = {arXiv},
        eprint = {1610.09585},
    primaryClass = {cs.CV},
 }
+
+
+@misc{adam_optimizer,
+    author =       {Diederik P. Kingma and Jimmy Ba},
+    title =        "Adam: A Method for Stochastic Optimization",
+    publisher = "3rd International Conference for Learning Representations, San Diego, 2015",
+    year =         "2014",
+   archivePrefix = {arXiv},
+       eprint = {1412.6980},
+   primaryClass = {cs.LG},
+}
+
 
 @misc{MNIST_CNN_Architecture,
   title = {adventures-in-ml-code},
@@ -262,9 +355,50 @@ url = {http://papers.nips.cc/paper/1250-effective-training-of-a-neural-network-c
 }
 
 @misc{CIFAR_CNN_Architecture,
-  title = {Deep Learning with Pytorch on CIFAR10 Dataset},
+  title = {Deep Learning with Pytorch on CIFAR-10 Dataset},
   author={Zhenye},
   year = 2018,
   howpublished = {\url{https://zhenye-na.github.io/2018/09/28/pytorch-cnn-cifar10.html}},
   note = {Accessed: 2020-01-15}
+}
+
+@incollection{cross_validation,
+title = {Estimating the Error Rate of a Prediction Rule: Improvement on Cross-Validation},
+author = {Bradley Efron},
+pages = {316-331},
+year = {1983},
+volume = {78},
+publisher = {Journal of the American Statistical Association},
+url = {https://amstat.tandfonline.com/doi/ref/10.1080/01621459.1983.10477973?scroll=top#.XlvbR5NKjOQ}
+}
+
+@incollection{image-processing,
+title = {Digital Image Processing},
+author = {Rafael C. Gonzalez and Richard E. Woods},
+pages = {407-414},
+year = {2008},
+edition = 3,
+publisher = { Pearson Education, Inc.},
+url = {https://pdfs.semanticscholar.org/15bd/427a1a5f9bc57a7f67fb1b1fc85c5bb39f46.pdf}
+}
+
+@misc{random_erasing,
+    author =       {Zhun Zhong and Liang Zheng and Guoliang Kang and Shaozi Li and Yi Yang},
+    title =        "Random Erasing Data Augmentation",
+    year =         "2017",
+    journal =      "Cognitive Science Department, Xiamen University, China and University of Technology Sydney",
+   archivePrefix = {arXiv},
+       eprint = {1708.04896},
+   primaryClass = {cs.CV},
+}
+
+@book{dropout_book,
+   author = {Haibing Wu and Xiaodong Gu},
+   title = "Towards dropout training for convolutional neural networks",
+   publisher = "Elsevier BV",
+   volume = {71},
+   year = 2015,
+   month = Nov,
+   pages={1-10},
+   note = "\url{https://doi.org/10.1016/j.neunet.2015.07.007}"
 }

@@ -1,37 +1,51 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'master.blg'
-[47] biber-darwin:315> INFO - === Wed Jan 15, 2020, 16:57:57
-[71] Biber.pm:371> INFO - Reading 'master.bcf'
-[180] Biber.pm:889> INFO - Found 22 citekeys in bib section 0
+[46] biber-darwin:315> INFO - === Sat Mar 21, 2020, 19:32:48
+[75] Biber.pm:371> INFO - Reading 'master.bcf'
+[186] Biber.pm:889> INFO - Found 32 citekeys in bib section 0
 [199] Biber.pm:4093> INFO - Processing section 0
-[213] Biber.pm:4254> INFO - Looking for bibtex format file 'tpl/rfc.bib' for section 0
-[499] bibtex.pm:1523> INFO - LaTeX decoding ...
-[15011] bibtex.pm:1340> INFO - Found BibTeX data source 'tpl/rfc.bib'
-[15828] Biber.pm:4254> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[15831] bibtex.pm:1523> INFO - LaTeX decoding ...
-[15870] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliography.bib'
-[15970] Utils.pm:193> WARN - I didn't find a database entry for 'TODO-Augmentaion' (section 0)
-[15970] Utils.pm:193> WARN - I didn't find a database entry for 'TODO' (section 0)
-[15970] Utils.pm:193> WARN - I didn't find a database entry for 'Same' (section 0)
-[15970] Utils.pm:193> WARN - I didn't find a database entry for 'TODO-google-reference' (section 0)
-[15972] Utils.pm:193> WARN - Datamodel: Entry 'NIST' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
-[15972] Utils.pm:193> WARN - Datamodel: Entry 'MNIST_data_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
-[15972] Utils.pm:193> WARN - Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'
-[15973] Utils.pm:193> WARN - Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'
-[15973] Utils.pm:193> WARN - Datamodel: Entry 'MNIST_dataset_example' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
-[15973] Utils.pm:193> WARN - Datamodel: Entry 'CIFAR-10_origin_dataset' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
-[15973] Utils.pm:193> WARN - Datamodel: Entry 'CIFAR-10_dataset_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
-[15973] Utils.pm:193> WARN - Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'
-[15973] Utils.pm:193> WARN - Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'
-[15974] Utils.pm:193> WARN - Datamodel: Entry 'stroke_tumor' (bibliography.bib): Invalid field 'publisher' for entrytype 'article'
-[15974] Utils.pm:193> WARN - Datamodel: Entry 'stroke_tumor' (bibliography.bib): Missing mandatory field 'journaltitle'
-[15974] Utils.pm:193> WARN - Datamodel: Entry 'stroke_idea_1992' (bibliography.bib): Missing mandatory field 'editor'
-[15975] Utils.pm:193> WARN - Datamodel: Entry 'stroke_idea_1993' (bibliography.bib): Missing mandatory field 'editor'
-[15975] Utils.pm:193> WARN - Datamodel: Entry 'bayesian_approach' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'
-[16008] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[16008] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[16008] Biber.pm:3921> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[16008] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[16033] bbl.pm:636> INFO - Writing 'master.bbl' with encoding 'UTF-8'
-[16040] bbl.pm:739> INFO - Output to master.bbl
-[16042] Biber.pm:110> INFO - WARNINGS: 18
+[215] Biber.pm:4254> INFO - Looking for bibtex format file 'tpl/rfc.bib' for section 0
+[444] bibtex.pm:1523> INFO - LaTeX decoding ...
+[16305] bibtex.pm:1340> INFO - Found BibTeX data source 'tpl/rfc.bib'
+[17290] Biber.pm:4254> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[17294] bibtex.pm:1523> INFO - LaTeX decoding ...
+[17356] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliography.bib'
+[17374] Utils.pm:193> WARN - year field 'Edinburgh, Scotland, UK, 2003.' in entry 'elastic_distortion_paper' is not an integer - this will probably not sort properly.
+[17531] Utils.pm:193> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[17531] Utils.pm:193> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[17531] Utils.pm:193> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[17531] Utils.pm:193> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[17532] Utils.pm:193> WARN - Datamodel: Entry 'image_translation_paper' (bibliography.bib): Missing mandatory field 'editor'
+[17532] Utils.pm:193> WARN - Datamodel: Entry 'image_translation_paper' (bibliography.bib): Missing mandatory field 'booktitle'
+[17532] Utils.pm:193> WARN - Datamodel: Entry 'elastic_distortion_paper' (bibliography.bib): Missing mandatory field 'editor'
+[17532] Utils.pm:193> WARN - Datamodel: Entry 'elastic_distortion_paper' (bibliography.bib): Missing mandatory field 'booktitle'
+[17533] Utils.pm:193> WARN - Datamodel: Entry 'stroke_tumor' (bibliography.bib): Invalid field 'publisher' for entrytype 'article'
+[17533] Utils.pm:193> WARN - Datamodel: Entry 'stroke_tumor' (bibliography.bib): Missing mandatory field 'journaltitle'
+[17533] Utils.pm:193> WARN - Datamodel: Entry 'stroke_idea_1992' (bibliography.bib): Missing mandatory field 'editor'
+[17533] Utils.pm:193> WARN - Datamodel: Entry 'stroke_idea_1993' (bibliography.bib): Missing mandatory field 'editor'
+[17533] Utils.pm:193> WARN - Datamodel: Entry 'google_bayesian_approach' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
+[17533] Utils.pm:193> WARN - Datamodel: Entry 'refrence_bayesian_approach' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'
+[17533] Utils.pm:193> WARN - Datamodel: Entry 'NIST' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
+[17533] Utils.pm:193> WARN - Datamodel: Entry 'MNIST_data_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
+[17534] Utils.pm:193> WARN - Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'
+[17534] Utils.pm:193> WARN - Datamodel: Entry 'MNIST_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'
+[17534] Utils.pm:193> WARN - Datamodel: Entry 'MNIST_dataset_example' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
+[17534] Utils.pm:193> WARN - Datamodel: Entry 'Fashion_MNIST_reference' (bibliography.bib): Missing mandatory field 'url'
+[17534] Utils.pm:193> WARN - Datamodel: Entry 'CIFAR-10_origin_dataset' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
+[17534] Utils.pm:193> WARN - Datamodel: Entry 'CIFAR-10_dataset_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
+[17534] Utils.pm:193> WARN - Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'
+[17534] Utils.pm:193> WARN - Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'
+[17534] Utils.pm:193> WARN - Datamodel: Entry 'adam_optimizer' (bibliography.bib): Invalid field 'publisher' for entrytype 'misc'
+[17534] Utils.pm:193> WARN - Datamodel: Entry 'FashionMNIST_dataset_example' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined
+[17535] Utils.pm:193> WARN - Datamodel: Entry 'cross_validation' (bibliography.bib): Missing mandatory field 'editor'
+[17535] Utils.pm:193> WARN - Datamodel: Entry 'cross_validation' (bibliography.bib): Missing mandatory field 'booktitle'
+[17535] Utils.pm:193> WARN - Datamodel: Entry 'image-processing' (bibliography.bib): Missing mandatory field 'editor'
+[17535] Utils.pm:193> WARN - Datamodel: Entry 'image-processing' (bibliography.bib): Missing mandatory field 'booktitle'
+[17535] Utils.pm:193> WARN - Datamodel: Entry 'random_erasing' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'
+[17583] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[17583] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[17583] Biber.pm:3921> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[17583] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[17622] bbl.pm:636> INFO - Writing 'master.bbl' with encoding 'UTF-8'
+[17634] bbl.pm:739> INFO - Output to master.bbl
+[17634] Biber.pm:110> INFO - WARNINGS: 32

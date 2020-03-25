@@ -29,16 +29,15 @@
       \field{title}{Convolutional Neural Networks Tutorial in PyTorch}
       \field{year}{2017}
     \endentry
-    \entry{AC-GANS}{misc}{}
-      \name{author}{2}{}{%
-        {{hash=e7f99f5a6446b361517d6011546d8f8c}{%
-           family={A.Odena},
-           familyi={A\bibinitperiod}}}%
-        {{hash=fd434f4a680c4d82d98bad93a81d244f}{%
-           family={andJ.Shlens},
-           familyi={a\bibinitperiod},
-           given={C.Olah},
-           giveni={C\bibinitperiod}}}%
+    \entry{AC_GANS}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2e554d167ee0c899b92b2830c7b21744}{%
+           family={A.\bibnamedelimi Odena},
+           familyi={A\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={and\bibnamedelimb J.\bibnamedelimi Shlens},
+           giveni={a\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           suffix={C.\bibnamedelimi Olah},
+           suffixi={C\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
       }
       \strng{namehash}{2e554d167ee0c899b92b2830c7b21744}
       \strng{fullhash}{2e554d167ee0c899b92b2830c7b21744}
@@ -46,7 +45,7 @@
       \strng{authorbibnamehash}{2e554d167ee0c899b92b2830c7b21744}
       \strng{authornamehash}{2e554d167ee0c899b92b2830c7b21744}
       \strng{authorfullhash}{2e554d167ee0c899b92b2830c7b21744}
-      \field{labelalpha}{Aa16}
+      \field{labelalpha}{A O16}
       \field{sortinit}{A}
       \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
       \field{labelnamesource}{author}
@@ -140,33 +139,105 @@
       \warn{\item Datamodel: Entry 'stroke_tumor' (bibliography.bib): Invalid field 'publisher' for entrytype 'article'}
       \warn{\item Datamodel: Entry 'stroke_tumor' (bibliography.bib): Missing mandatory field 'journaltitle'}
     \endentry
-    \entry{MNIST_best_result_reference}{misc}{}
-      \name{author}{3}{}{%
-        {{hash=b44d52b65e72fd8ceb4f0fe71c2d13b5}{%
-           family={Cireşan},
+    \entry{stroke_warping_github_picture}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1c1af9e39b273d8922a5536fd52d34cd}{%
+           family={Bloice},
+           familyi={B\bibinitperiod},
+           given={Marcus\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \strng{fullhash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \strng{bibnamehash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \strng{authorbibnamehash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \strng{authornamehash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \strng{authorfullhash}{1c1af9e39b273d8922a5536fd52d34cd}
+      \field{labelalpha}{Blo17}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Augmentor}}
+      \field{version}{0.2.8}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://github.com/mdbloice/Augmentor
+      \endverb
+      \verb{url}
+      \verb https://github.com/mdbloice/Augmentor
+      \endverb
+    \endentry
+    \entry{FashionMNIST_dataset_example}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=403c1e2d6796a445c47661a143efbfae}{%
+           family={Chawla},
            familyi={C\bibinitperiod},
-           given={Dan},
-           giveni={D\bibinitperiod}}}%
-        {{hash=be71dea014b345d130231579ad7a5115}{%
-           family={Meier},
-           familyi={M\bibinitperiod},
-           given={Ueli},
-           giveni={U\bibinitperiod}}}%
+           given={Ravish},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{403c1e2d6796a445c47661a143efbfae}
+      \strng{fullhash}{403c1e2d6796a445c47661a143efbfae}
+      \strng{bibnamehash}{403c1e2d6796a445c47661a143efbfae}
+      \strng{authorbibnamehash}{403c1e2d6796a445c47661a143efbfae}
+      \strng{authornamehash}{403c1e2d6796a445c47661a143efbfae}
+      \strng{authorfullhash}{403c1e2d6796a445c47661a143efbfae}
+      \field{labelalpha}{Cha}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://medium.com/ml2vec/intro-to-pytorch-with-image-classification-on-a-fashion-clothes-dataset-e589682df0c5}}
+      \field{note}{Accessed: 2020-02-10}
+      \field{title}{{Medium} Intro to PyTorch with image classification on a Fashion clothes dataset}
+      \warn{\item Datamodel: Entry 'FashionMNIST_dataset_example' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
+    \entry{google_bayesian_approach}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=af7545d4f569a74e8b9cd0b88c4682b6}{%
+           family={Company},
+           familyi={C\bibinitperiod},
+           given={Google},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{af7545d4f569a74e8b9cd0b88c4682b6}
+      \strng{fullhash}{af7545d4f569a74e8b9cd0b88c4682b6}
+      \strng{bibnamehash}{af7545d4f569a74e8b9cd0b88c4682b6}
+      \strng{authorbibnamehash}{af7545d4f569a74e8b9cd0b88c4682b6}
+      \strng{authornamehash}{af7545d4f569a74e8b9cd0b88c4682b6}
+      \strng{authorfullhash}{af7545d4f569a74e8b9cd0b88c4682b6}
+      \field{labelalpha}{Com}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://developers.google.com/machine-learning/gan/generator}}
+      \field{note}{Accessed: 2020-01-15}
+      \field{title}{{Generative Adversarial Networks}}
+      \warn{\item Datamodel: Entry 'google_bayesian_approach' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
+    \entry{MNIST_best_result_reference}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=20577d410ea1c550252d5cc0dd290377}{%
+           family={Dan\bibnamedelima Cireşan},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Ueli\bibnamedelima Meier},
+           giveni={U\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
         {{hash=2333709f91a1b22edafa71582c31e391}{%
            family={Schmidhuber},
            familyi={S\bibinitperiod},
            given={Juergen},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{9fef942f24e57a49a7c7bdcc0614af99}
-      \strng{fullhash}{9fef942f24e57a49a7c7bdcc0614af99}
-      \strng{bibnamehash}{9fef942f24e57a49a7c7bdcc0614af99}
-      \strng{authorbibnamehash}{9fef942f24e57a49a7c7bdcc0614af99}
-      \strng{authornamehash}{9fef942f24e57a49a7c7bdcc0614af99}
-      \strng{authorfullhash}{9fef942f24e57a49a7c7bdcc0614af99}
-      \field{labelalpha}{CMS12}
-      \field{sortinit}{C}
-      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \strng{namehash}{529e007fc98082592b5f521da7d4386f}
+      \strng{fullhash}{529e007fc98082592b5f521da7d4386f}
+      \strng{bibnamehash}{529e007fc98082592b5f521da7d4386f}
+      \strng{authorbibnamehash}{529e007fc98082592b5f521da7d4386f}
+      \strng{authornamehash}{529e007fc98082592b5f521da7d4386f}
+      \strng{authorfullhash}{529e007fc98082592b5f521da7d4386f}
+      \field{labelalpha}{DS12}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.CV}
@@ -217,6 +288,262 @@
       \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
       \warn{\item Datamodel: Entry 'CIFAR-10_best_result_reference' (bibliography.bib): Invalid field 'volume' for entrytype 'misc'}
     \endentry
+    \entry{cross_validation}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=5470455fc7dceb3ccf6db38cb22a113d}{%
+           family={Efron},
+           familyi={E\bibinitperiod},
+           given={Bradley},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Journal of the American Statistical Association}%
+      }
+      \strng{namehash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{fullhash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{bibnamehash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{authorbibnamehash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{authornamehash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \strng{authorfullhash}{5470455fc7dceb3ccf6db38cb22a113d}
+      \field{labelalpha}{Efr83}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Estimating the Error Rate of a Prediction Rule: Improvement on Cross-Validation}
+      \field{volume}{78}
+      \field{year}{1983}
+      \field{pages}{316\bibrangedash 331}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb https://amstat.tandfonline.com/doi/ref/10.1080/01621459.1983.10477973?scroll=top#.XlvbR5NKjOQ
+      \endverb
+      \verb{url}
+      \verb https://amstat.tandfonline.com/doi/ref/10.1080/01621459.1983.10477973?scroll=top#.XlvbR5NKjOQ
+      \endverb
+      \warn{\item Datamodel: Entry 'cross_validation' (bibliography.bib): Missing mandatory field 'editor'}
+      \warn{\item Datamodel: Entry 'cross_validation' (bibliography.bib): Missing mandatory field 'booktitle'}
+    \endentry
+    \entry{goodflew_bayesian_approach}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=d4f74ef4c79f3bb1e51e378184d8850e}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian\bibnamedelima J.},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a341d25f80a8118cdbb90b272adc8b4f}{%
+           family={Pouget-Abadie},
+           familyi={P\bibinithyphendelim A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9e80f4779b032f68a6106e1424345450}{%
+           family={Mirza},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=743dd6cdaa6639320289d219d351d7b7}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e8151f1b8f85a048cacb34f374ec922b}{%
+           family={Warde-Farley},
+           familyi={W\bibinithyphendelim F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9ca00ffd7cc35f7cfb8f698aa9239c76}{%
+           family={Ozair},
+           familyi={O\bibinitperiod},
+           given={Sherjil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{fullhash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{bibnamehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{authorbibnamehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{authornamehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{authorfullhash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \field{labelalpha}{Goo+14}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Generative Adversarial Networks}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1406.2661
+      \endverb
+    \endentry
+    \entry{MAP_Bayesian}{book}{}
+      \name{author}{3}{}{%
+        {{hash=2aa6c4e63254f275b1f874accec16dd5}{%
+           family={Greig},
+           familyi={G\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ae44cd61e7e570a6cdf559e5e89698ea}{%
+           family={Porteous},
+           familyi={P\bibinitperiod},
+           given={B.\bibnamedelimi T.},
+           giveni={B\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=57748d95189f16d1f3bd789802eea9b3}{%
+           family={Seheult},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Journal of the Royal Statistical Society: Series B (Methodological)}%
+      }
+      \strng{namehash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \strng{fullhash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \strng{bibnamehash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \strng{authorbibnamehash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \strng{authornamehash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \strng{authorfullhash}{3ab15a27219053d0f8f19237f2dadf5e}
+      \field{labelalpha}{GPS89}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{{Exact Maximum A Posteriori Estimation for Binary Images}}
+      \field{volume}{51}
+      \field{year}{1989}
+      \field{pages}{271\bibrangedash 279}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1989.tb01764.x
+      \endverb
+      \verb{url}
+      \verb https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1989.tb01764.x
+      \endverb
+    \endentry
+    \entry{image-processing}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=07713b8c79fe78ffaf9ab728a5f3ce88}{%
+           family={Gonzalez},
+           familyi={G\bibinitperiod},
+           given={Rafael\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f7e4f4ce32d8e1ac04f7ee5eefcabe8f}{%
+           family={Woods},
+           familyi={W\bibinitperiod},
+           given={Richard\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education, Inc.}%
+      }
+      \strng{namehash}{629c2754a63b62c1f205866b8ab085f9}
+      \strng{fullhash}{629c2754a63b62c1f205866b8ab085f9}
+      \strng{bibnamehash}{629c2754a63b62c1f205866b8ab085f9}
+      \strng{authorbibnamehash}{629c2754a63b62c1f205866b8ab085f9}
+      \strng{authornamehash}{629c2754a63b62c1f205866b8ab085f9}
+      \strng{authorfullhash}{629c2754a63b62c1f205866b8ab085f9}
+      \field{labelalpha}{GW08}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Digital Image Processing}
+      \field{year}{2008}
+      \field{pages}{407\bibrangedash 414}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://pdfs.semanticscholar.org/15bd/427a1a5f9bc57a7f67fb1b1fc85c5bb39f46.pdf
+      \endverb
+      \verb{url}
+      \verb https://pdfs.semanticscholar.org/15bd/427a1a5f9bc57a7f67fb1b1fc85c5bb39f46.pdf
+      \endverb
+      \warn{\item Datamodel: Entry 'image-processing' (bibliography.bib): Missing mandatory field 'editor'}
+      \warn{\item Datamodel: Entry 'image-processing' (bibliography.bib): Missing mandatory field 'booktitle'}
+    \endentry
+    \entry{Fashion_MNIST_reference}{online}{}
+      \name{author}{2}{}{%
+        {{hash=00495ee6382c425a18ddb6ab9671d21b}{%
+           family={Han\bibnamedelima Xiao},
+           familyi={H\bibinitperiod\bibinitdelim X\bibinitperiod},
+           given={Kashif\bibnamedelima Rasul},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=626b3b250f5889797be5d59aab9e0ac5}{%
+           family={Vollgraf},
+           familyi={V\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0259d5198e123ddb15140efa2fed5354}
+      \strng{fullhash}{0259d5198e123ddb15140efa2fed5354}
+      \strng{bibnamehash}{0259d5198e123ddb15140efa2fed5354}
+      \strng{authorbibnamehash}{0259d5198e123ddb15140efa2fed5354}
+      \strng{authornamehash}{0259d5198e123ddb15140efa2fed5354}
+      \strng{authorfullhash}{0259d5198e123ddb15140efa2fed5354}
+      \field{labelalpha}{HV17}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{month}{8}
+      \field{title}{Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb cs.LG/1708.07747
+      \endverb
+      \warn{\item Datamodel: Entry 'Fashion_MNIST_reference' (bibliography.bib): Missing mandatory field 'url'}
+    \endentry
+    \entry{adam_optimizer}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {3rd International Conference for Learning Representations, San Diego, 2015}%
+      }
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \field{labelalpha}{KB14}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Adam: A Method for Stochastic Optimization}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1412.6980
+      \endverb
+      \warn{\item Datamodel: Entry 'adam_optimizer' (bibliography.bib): Invalid field 'publisher' for entrytype 'misc'}
+    \endentry
     \entry{CIFAR-10_dataset_reference}{misc}{}
       \name{author}{1}{}{%
         {{hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
@@ -241,6 +568,52 @@
       \field{title}{The CIFAR-10 dataset (Canadian Institute for Advanced Research)}
       \warn{\item Datamodel: Entry 'CIFAR-10_dataset_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
     \endentry
+    \entry{image_translation_paper}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=a98c6ee140cff383b5deb40f1bbadc4a}{%
+           family={Krizhevsky},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a3cfbe74042f3457db587a42603e1509}{%
+           family={Sutskever},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=9c5f7dcfa6f8cfad7a98e00d2c3b338d}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={G.\bibnamedelimi E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Commun. ACM}%
+      }
+      \strng{namehash}{723eb41c5b040b12b8b4380943619007}
+      \strng{fullhash}{723eb41c5b040b12b8b4380943619007}
+      \strng{bibnamehash}{723eb41c5b040b12b8b4380943619007}
+      \strng{authorbibnamehash}{723eb41c5b040b12b8b4380943619007}
+      \strng{authornamehash}{723eb41c5b040b12b8b4380943619007}
+      \strng{authorfullhash}{723eb41c5b040b12b8b4380943619007}
+      \field{labelalpha}{KSH17}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Imagenet classification with deep convolutional neural networks}
+      \field{volume}{60}
+      \field{year}{2017}
+      \field{pages}{84\bibrangedash 90}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/ICDAR.2003.1227801
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/ICDAR.2003.1227801
+      \endverb
+      \warn{\item Datamodel: Entry 'image_translation_paper' (bibliography.bib): Missing mandatory field 'editor'}
+      \warn{\item Datamodel: Entry 'image_translation_paper' (bibliography.bib): Missing mandatory field 'booktitle'}
+    \endentry
     \entry{MNIST_data_reference}{misc}{}
       \name{author}{1}{}{%
         {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
@@ -264,6 +637,35 @@
       \field{note}{Accessed: 2019-12-16}
       \field{title}{{exdb} THE MNIST DATABASE of handwritten digits}
       \warn{\item Datamodel: Entry 'MNIST_data_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
+    \entry{ensemble_learning}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a29bd97f376d67ceb3d885362b1fa525}{%
+           family={Polikar},
+           familyi={P\bibinitperiod},
+           given={Robi},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Boston, MA}%
+      }
+      \strng{namehash}{a29bd97f376d67ceb3d885362b1fa525}
+      \strng{fullhash}{a29bd97f376d67ceb3d885362b1fa525}
+      \strng{bibnamehash}{a29bd97f376d67ceb3d885362b1fa525}
+      \strng{authorbibnamehash}{a29bd97f376d67ceb3d885362b1fa525}
+      \strng{authornamehash}{a29bd97f376d67ceb3d885362b1fa525}
+      \strng{authorfullhash}{a29bd97f376d67ceb3d885362b1fa525}
+      \field{labelalpha}{Pol03}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{ISBN 978-1-4419-9326-7}
+      \field{subtitle}{Methods and Applications}
+      \field{title}{{Ensemble Machine Learning}}
+      \field{year}{2003}
+      \field{pages}{1\bibrangedash 34}
+      \range{pages}{34}
     \endentry
     \entry{MNIST_CNN_Architecture}{misc}{}
       \name{author}{1}{}{%
@@ -372,6 +774,53 @@
       \range{pages}{9}
       \warn{\item Datamodel: Entry 'stroke_idea_1993' (bibliography.bib): Missing mandatory field 'editor'}
     \endentry
+    \entry{elastic_distortion_paper}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=f87cb5ca5bb69474ce4c6750c54016bc}{%
+           family={Simard},
+           familyi={S\bibinitperiod},
+           given={P.\bibnamedelimi Y.},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=bf668391e6e420548511fc8c77fcd621}{%
+           family={Steinkraus},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=544ae8100f35e3afea8c1d8178268645}{%
+           family={Platt},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Seventh International Conference on Document Analysis}%
+        {Recognition (ICDAR 2003)}%
+      }
+      \strng{namehash}{64d80b398151894decee5e3fe7acc66c}
+      \strng{fullhash}{64d80b398151894decee5e3fe7acc66c}
+      \strng{bibnamehash}{64d80b398151894decee5e3fe7acc66c}
+      \strng{authorbibnamehash}{64d80b398151894decee5e3fe7acc66c}
+      \strng{authornamehash}{64d80b398151894decee5e3fe7acc66c}
+      \strng{authorfullhash}{64d80b398151894decee5e3fe7acc66c}
+      \field{labelalpha}{SSP03}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Best practices for convolutional neural networks applied to visual document analysis}
+      \field{volume}{2}
+      \field{year}{Edinburgh, Scotland, UK, 2003.}
+      \field{pages}{958\bibrangedash 963}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/1227801
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/1227801
+      \endverb
+      \warn{\item Datamodel: Entry 'elastic_distortion_paper' (bibliography.bib): Missing mandatory field 'editor'}
+      \warn{\item Datamodel: Entry 'elastic_distortion_paper' (bibliography.bib): Missing mandatory field 'booktitle'}
+    \endentry
     \entry{NIST}{misc}{}
       \name{author}{1}{}{%
         {{hash=9d2bc8e83f6d89ecafc7252636bf7b82}{%
@@ -423,7 +872,7 @@
       \field{volume}{67}
       \field{year}{1991}
     \endentry
-    \entry{bayesian_approach}{misc}{}
+    \entry{refrence_bayesian_approach}{misc}{}
       \name{author}{5}{}{%
         {{hash=04aab702d1b36c57f391ad5190b8c6c6}{%
            family={Tran},
@@ -470,7 +919,7 @@
       \verb{eprint}
       \verb 1710.10564
       \endverb
-      \warn{\item Datamodel: Entry 'bayesian_approach' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
+      \warn{\item Datamodel: Entry 'refrence_bayesian_approach' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
     \endentry
     \entry{Statistical_data_augmentation}{book}{}
       \name{author}{2}{}{%
@@ -531,6 +980,41 @@
       \field{note}{Accessed: 2019-12-16}
       \field{title}{{Visual Dictionary} Teaching computers to recognize objects}
       \warn{\item Datamodel: Entry 'CIFAR-10_origin_dataset' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
+    \entry{dropout_book}{book}{}
+      \name{author}{2}{}{%
+        {{hash=c0035cf22db28f37ce79b3a1853b489c}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Haibing},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1366473b0feb73316d9ae6cb1800fa28}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Xiaodong},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{907e013084f00d5bc838e562f67dff8d}
+      \strng{fullhash}{907e013084f00d5bc838e562f67dff8d}
+      \strng{bibnamehash}{907e013084f00d5bc838e562f67dff8d}
+      \strng{authorbibnamehash}{907e013084f00d5bc838e562f67dff8d}
+      \strng{authornamehash}{907e013084f00d5bc838e562f67dff8d}
+      \strng{authorfullhash}{907e013084f00d5bc838e562f67dff8d}
+      \field{labelalpha}{WG15}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{\url{https://doi.org/10.1016/j.neunet.2015.07.007}}
+      \field{title}{Towards dropout training for convolutional neural networks}
+      \field{volume}{71}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
     \endentry
     \entry{storke_warping_1997_source}{incollection}{}
       \name{author}{3}{}{%
@@ -615,14 +1099,59 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://zhenye-na.github.io/2018/09/28/pytorch-cnn-cifar10.html}}
       \field{note}{Accessed: 2020-01-15}
-      \field{title}{Deep Learning with Pytorch on CIFAR10 Dataset}
+      \field{title}{Deep Learning with Pytorch on CIFAR-10 Dataset}
       \field{year}{2018}
     \endentry
+    \entry{random_erasing}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=5ffd59133d7d49ddc05ba07d2bbe8c66}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Zhun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=7f1ed47c0c1b22e46324b0745b5b65eb}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3c065eed66394a54f1d36a69511ea026}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Guoliang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bc6feb32222eb9129e27d20dbc31167a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shaozi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=446e84a6f09f26fc6cf5730853e551ba}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{9beb7313dee5fea863f2a90fa266a247}
+      \strng{fullhash}{aa6bb3b2b5a8e821b6e99f37d5de0376}
+      \strng{bibnamehash}{9beb7313dee5fea863f2a90fa266a247}
+      \strng{authorbibnamehash}{9beb7313dee5fea863f2a90fa266a247}
+      \strng{authornamehash}{9beb7313dee5fea863f2a90fa266a247}
+      \strng{authorfullhash}{aa6bb3b2b5a8e821b6e99f37d5de0376}
+      \field{labelalpha}{Zho+17}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Cognitive Science Department, Xiamen University, China and University of Technology Sydney}
+      \field{title}{Random Erasing Data Augmentation}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1708.04896
+      \endverb
+      \warn{\item Datamodel: Entry 'random_erasing' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
+    \endentry
   \enddatalist
-  \missing{Same}
-  \missing{TODO}
-  \missing{TODO-Augmentaion}
-  \missing{TODO-google-reference}
 \endrefsection
 \endinput
 
