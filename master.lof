@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces An example of single channel image with size of $4\times 4$ with its translations with size of $3\times 3$ patches and their horizontal reflections. The numbers determinate the pixels intensity}}{5}{figure.3.1}% 
+\contentsline {figure}{\numberline {1}{\ignorespaces An example of single channel image with size of $4\times 4$ with its translations with size of $3\times 3$ patches and their horizontal reflections. The numbers determinate the pixels intensity.}}{5}{figure.3.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2}{\ignorespaces An example of rotation, skew, and shear (scale) transformations for stroke warping \cite {stroke_warping_github_picture}.}}{7}{figure.3.2}% 
 \defcounter {refsection}{0}\relax 
@@ -50,16 +50,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {17}{\ignorespaces Comparative result between Ensemble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on MNIST dataset.}}{29}{figure.7.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces Comparative result between Ensemble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on Fashion-MNIST dataset.}}{30}{figure.7.18}% 
+\contentsline {figure}{\numberline {18}{\ignorespaces Comparative result between Ensemble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on Fashion-MNIST dataset.}}{29}{figure.7.18}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {19}{\ignorespaces Comparative result between Ensemble Learning \& Label Preserving Transformations augmentation and other augmentation techniques on CIFAR-10 dataset.}}{30}{figure.7.19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {20}{\ignorespaces Prediction accuracy of each class on Fashion-MNIST for Ensemble Learning \& Label Preserving Transformations.}}{31}{figure.7.20}% 
+\contentsline {figure}{\numberline {20}{\ignorespaces Prediction accuracy of each class on Fashion-MNIST for Ensemble Learning \& Label Preserving Transformations.}}{30}{figure.7.20}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {21}{\ignorespaces Prediction accuracy of each class on the original CIFAR-10 dataset.}}{32}{figure.7.21}% 
+\contentsline {figure}{\numberline {21}{\ignorespaces Prediction accuracy of each class on the original CIFAR-10 dataset.}}{31}{figure.7.21}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {22}{\ignorespaces Comparative result between Color Randomization \& Ensemble Learning augmentation and other augmentation techniques on CIFAR-10 dataset.}}{33}{figure.7.22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {23}{\ignorespaces Comparative result between Bayesian Approach with and without random erasing.}}{35}{figure.7.23}% 
+\contentsline {figure}{\numberline {23}{\ignorespaces Comparative result between Bayesian Approach with and without random erasing.}}{34}{figure.7.23}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

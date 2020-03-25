@@ -68,12 +68,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}Ensemble Learning \& Label Preserving Transformations}{26}{section.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Color Randomization \& Ensemble Learning}{29}{section.7.2}% 
+\contentsline {section}{\numberline {7.2}Color Randomization \& Ensemble Learning}{31}{section.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Random Erasing \& Bayesian Approach}{34}{section.7.3}% 
+\contentsline {section}{\numberline {7.3}Random Erasing \& Bayesian Approach}{33}{section.7.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Bibliography}{36}{chapter.8}% 
+\contentsline {chapter}{\numberline {8}Conclusion}{35}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Figures}{39}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Bibliography}{37}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Tables}{41}{chapter*.5}% 
+\contentsline {chapter}{List of Figures}{40}{chapter.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Tables}{42}{chapter*.5}% 

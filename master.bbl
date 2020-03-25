@@ -168,6 +168,30 @@
       \verb https://github.com/mdbloice/Augmentor
       \endverb
     \endentry
+    \entry{FashionMNIST_dataset_example}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=403c1e2d6796a445c47661a143efbfae}{%
+           family={Chawla},
+           familyi={C\bibinitperiod},
+           given={Ravish},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{403c1e2d6796a445c47661a143efbfae}
+      \strng{fullhash}{403c1e2d6796a445c47661a143efbfae}
+      \strng{bibnamehash}{403c1e2d6796a445c47661a143efbfae}
+      \strng{authorbibnamehash}{403c1e2d6796a445c47661a143efbfae}
+      \strng{authornamehash}{403c1e2d6796a445c47661a143efbfae}
+      \strng{authorfullhash}{403c1e2d6796a445c47661a143efbfae}
+      \field{labelalpha}{Cha}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://medium.com/ml2vec/intro-to-pytorch-with-image-classification-on-a-fashion-clothes-dataset-e589682df0c5}}
+      \field{note}{Accessed: 2020-02-10}
+      \field{title}{{Medium} Intro to PyTorch with image classification on a Fashion clothes dataset}
+      \warn{\item Datamodel: Entry 'FashionMNIST_dataset_example' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
     \entry{google_bayesian_approach}{misc}{}
       \name{author}{1}{}{%
         {{hash=af7545d4f569a74e8b9cd0b88c4682b6}{%
@@ -613,6 +637,35 @@
       \field{note}{Accessed: 2019-12-16}
       \field{title}{{exdb} THE MNIST DATABASE of handwritten digits}
       \warn{\item Datamodel: Entry 'MNIST_data_reference' (bibliography.bib): Missing mandatory field - one of 'date, year' must be defined}
+    \endentry
+    \entry{ensemble_learning}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a29bd97f376d67ceb3d885362b1fa525}{%
+           family={Polikar},
+           familyi={P\bibinitperiod},
+           given={Robi},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Boston, MA}%
+      }
+      \strng{namehash}{a29bd97f376d67ceb3d885362b1fa525}
+      \strng{fullhash}{a29bd97f376d67ceb3d885362b1fa525}
+      \strng{bibnamehash}{a29bd97f376d67ceb3d885362b1fa525}
+      \strng{authorbibnamehash}{a29bd97f376d67ceb3d885362b1fa525}
+      \strng{authornamehash}{a29bd97f376d67ceb3d885362b1fa525}
+      \strng{authorfullhash}{a29bd97f376d67ceb3d885362b1fa525}
+      \field{labelalpha}{Pol03}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{ISBN 978-1-4419-9326-7}
+      \field{subtitle}{Methods and Applications}
+      \field{title}{{Ensemble Machine Learning}}
+      \field{year}{2003}
+      \field{pages}{1\bibrangedash 34}
+      \range{pages}{34}
     \endentry
     \entry{MNIST_CNN_Architecture}{misc}{}
       \name{author}{1}{}{%
@@ -1099,7 +1152,6 @@
       \warn{\item Datamodel: Entry 'random_erasing' (bibliography.bib): Invalid field 'journaltitle' for entrytype 'misc'}
     \endentry
   \enddatalist
-  \missing{TODO}
 \endrefsection
 \endinput
 

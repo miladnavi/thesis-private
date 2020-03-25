@@ -2032,11 +2032,11 @@
     <bcf:citekey order="34">adam_optimizer</bcf:citekey>
     <bcf:citekey order="35">MNIST_CNN_Architecture_Image</bcf:citekey>
     <bcf:citekey order="36">MNIST_CNN_Architecture_Image</bcf:citekey>
-    <bcf:citekey order="37">TODO</bcf:citekey>
+    <bcf:citekey order="37">FashionMNIST_dataset_example</bcf:citekey>
     <bcf:citekey order="38">CIFAR_CNN_Architecture</bcf:citekey>
     <bcf:citekey order="39">refrence_bayesian_approach</bcf:citekey>
     <bcf:citekey order="40">cross_validation</bcf:citekey>
-    <bcf:citekey order="41">TODO</bcf:citekey>
+    <bcf:citekey order="41">ensemble_learning</bcf:citekey>
     <bcf:citekey order="42">image-processing</bcf:citekey>
     <bcf:citekey order="43">random_erasing</bcf:citekey>
     <bcf:citekey order="44">dropout_book</bcf:citekey>
